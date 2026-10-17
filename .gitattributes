@@ -1,0 +1,7 @@
+# LF in the repository for every text file; binaries untouched.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.tflite binary
+*.png binary
+*.jpg binary
+*.jar binary

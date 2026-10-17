@@ -1,0 +1,26 @@
+name: chemsort
+description: "ChemSort - Scan, Classify, Discover, Learn."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image: ^4.2.0
+  image_picker: ^1.1.2
+  tflite_flutter: ^0.12.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  # YOLO11n-cls TFLite model, labels, 9-to-6 mapping and flashcards.
+  # Classification runs on the phone.
+  assets:
+    - assets/chemsort/
