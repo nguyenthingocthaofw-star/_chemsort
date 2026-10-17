@@ -1,0 +1,1782 @@
+[
+  {
+    "id": "paper_cardboard_001",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Giấy được làm chủ yếu từ cellulose",
+    "content_vi": "Thành phần chính của giấy là cellulose – một polymer tự nhiên gồm rất nhiều phân tử glucose nối thành chuỗi dài. Các chuỗi này bó lại thành sợi nhỏ, giúp tờ giấy chắc.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_002",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Vì sao khăn giấy thấm nước nhanh?",
+    "content_vi": "Cellulose có nhiều nhóm –OH, tạo được liên kết hydrogen với nước nên dễ hút nước. Thêm vào đó, khe hở nhỏ giữa các sợi kéo nước lan ra nhờ hiện tượng mao dẫn.",
+    "source_title": "OpenStax Chemistry 2e – Properties of Liquids",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-2-properties-of-liquids",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_003",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Con người không tiêu hóa được cellulose",
+    "content_vi": "Cellulose cũng làm từ glucose như tinh bột, nhưng các glucose nối với nhau theo kiểu khác. Enzyme tiêu hóa của người chỉ cắt được liên kết trong tinh bột, không cắt được cellulose.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_004",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Cellulose bền nhờ các chuỗi xếp khít nhau",
+    "content_vi": "Các chuỗi cellulose thẳng, dài và nằm sát nhau thành bó sợi. Giữa các chuỗi có rất nhiều liên kết hydrogen, nên sợi cellulose cứng và khó bị kéo đứt.",
+    "source_title": "OpenStax Concepts of Biology – Biological Molecules",
+    "source_url": "https://openstax.org/books/concepts-biology/pages/2-3-biological-molecules",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_005",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Tờ giấy là vật liệu gồm nhiều thành phần",
+    "content_vi": "Ngoài sợi cellulose, tờ giấy còn chứa nước, không khí trong các khe hở và chất phụ gia. Tỉ lệ các thành phần này quyết định giấy dày hay mỏng, mềm hay cứng, bền đến đâu.",
+    "source_title": "USDA Forest Products Laboratory – Cellulosic Material Relations",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/pdf1989/suhli89a.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_006",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Vì sao giấy ướt dễ rách?",
+    "content_vi": "Nước chen vào giữa các sợi cellulose và làm yếu liên kết hydrogen nối các sợi với nhau. Sợi dễ tách rời hơn, nên giấy thường mất phần lớn độ bền khi bị ướt.",
+    "source_title": "USDA Forest Products Laboratory – Agro-Fiber Thermoplastic Composites",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/pdf1997/sanad97b.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_007",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Acid làm giấy giòn và dễ vỡ vụn",
+    "content_vi": "Acid thúc đẩy phản ứng thủy phân, cắt chuỗi cellulose dài thành những đoạn ngắn hơn. Chuỗi càng ngắn, giấy càng mất độ dẻo và dễ gãy vụn khi gấp.",
+    "source_title": "Library of Congress – Deterioration and Preservation of Paper",
+    "source_url": "https://www.loc.gov/preservation/care/deterioratebrochure.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_008",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Không khí ô nhiễm làm giấy nhanh hỏng",
+    "content_vi": "Giấy hấp thụ các oxide của sulfur và nitrogen từ không khí ô nhiễm. Các khí này chuyển thành acid ngay trong giấy, làm chuỗi cellulose yếu dần theo thời gian.",
+    "source_title": "Library of Congress – Deterioration and Preservation of Paper",
+    "source_url": "https://www.loc.gov/preservation/care/deterioratebrochure.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_009",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Nóng ẩm làm giấy nhanh vàng và giòn",
+    "content_vi": "Nhiệt độ cao làm các phản ứng phân hủy trong giấy xảy ra nhanh hơn, còn hơi ẩm cung cấp nước cho các phản ứng đó. Vì vậy giấy cất ở nơi nóng ẩm sớm ố vàng và giòn.",
+    "source_title": "Library of Congress – Care, Handling, and Storage of Photographs",
+    "source_url": "https://www.loc.gov/preservation/care/photolea.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_010",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Giấy báo cũ ngả vàng vì lignin",
+    "content_vi": "Giấy làm từ bột gỗ, như giấy báo, còn giữ lại nhiều lignin. Theo thời gian, lignin biến đổi thành các chất có màu và có tính acid, làm giấy ngả vàng và yếu đi.",
+    "source_title": "Library of Congress – Cool, CALM, and Collected",
+    "source_url": "https://www.loc.gov/preservation/resources/staffpubs/Cool%20CALM.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_011",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Giấy hơi phồng lên khi hút ẩm",
+    "content_vi": "Sợi cellulose hút các phân tử nước vào bên trong và trương lên. Vì vậy tờ giấy để ở nơi ẩm có thể hơi phồng, quăn mép hoặc thay đổi kích thước.",
+    "source_title": "USDA Forest Products Laboratory – Nanocellulose in Continuous Fibers",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/pdf2016/fpl_2016_clemons001P.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_012",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Giấy có \"thớ\" giống như gỗ",
+    "content_vi": "Khi làm giấy bằng máy, phần lớn sợi nằm xuôi theo chiều máy chạy. Vì vậy độ bền và độ co giãn của tờ giấy khác nhau theo từng hướng, và giấy dễ xé thẳng theo chiều sợi hơn.",
+    "source_title": "USDA Forest Products Laboratory – Cellulosic Material Relations",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/pdf1989/suhli89a.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_013",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Không cần keo, sợi giấy vẫn dính vào nhau",
+    "content_vi": "Khi bột giấy được ép và làm khô, nước thoát ra, các sợi cellulose tiến sát nhau và tạo rất nhiều liên kết hydrogen. Nhờ đó các sợi rời trở thành một tờ giấy liền.",
+    "source_title": "USDA Forest Products Laboratory – Agro-Fiber Thermoplastic Composites",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/pdf1997/sanad97b.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_014",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Giấy ít acid thì bền lâu hơn",
+    "content_vi": "Giấy dùng để lưu trữ lâu dài thường là loại không acid hoặc có thêm chất kiềm để trung hòa acid. Nhờ vậy chuỗi cellulose bị cắt chậm hơn và giấy giữ được độ bền lâu hơn.",
+    "source_title": "Library of Congress – Deterioration and Preservation of Paper",
+    "source_url": "https://www.loc.gov/preservation/care/deterioratebrochure.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_015",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Vì sao giấy nhẹ đến vậy?",
+    "content_vi": "Giữa các sợi giấy có rất nhiều khe nhỏ chứa không khí, nên giấy nhẹ hơn nhiều so với một khối cellulose đặc cùng kích thước. Khi ép mạnh, các khe này bị nén lại.",
+    "source_title": "USDA Forest Products Laboratory – Cellulosic Material Relations",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/pdf1989/suhli89a.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_016",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Bò và mối tiêu hóa được cellulose",
+    "content_vi": "Bò, trâu hay mối tiêu hóa được thức ăn giàu cellulose nhờ các vi sinh vật sống trong cơ thể chúng. Những vi sinh vật này tiết ra enzyme cellulase để phân giải cellulose.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_017",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Tinh bột và cellulose: cùng gốc, khác liên kết",
+    "content_vi": "Cả tinh bột lẫn cellulose đều là chuỗi glucose. Điểm khác nằm ở kiểu liên kết: tinh bột dùng liên kết α, còn cellulose dùng liên kết β, nên hai chất có tính chất rất khác nhau.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_018",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Thùng carton được tái chế nhiều nhất",
+    "content_vi": "Năm 2018 ở Mỹ, 96,5% thùng carton gợn sóng được đem tái chế. Trong khi đó, các loại bao bì giấy khác chỉ đạt khoảng 20,8%.",
+    "source_title": "US EPA – Paper and Paperboard: Material-Specific Data",
+    "source_url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/paper-and-paperboard-material-specific-data",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_019",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Giấy chiếm phần lớn nhất trong rác sinh hoạt",
+    "content_vi": "Theo số liệu năm 2018 của Mỹ, giấy và bìa là thành phần nhiều nhất trong rác thải sinh hoạt, khoảng 67,4 triệu tấn, và 68,2% trong số đó được tái chế.",
+    "source_title": "US EPA – Paper and Paperboard: Material-Specific Data",
+    "source_url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/paper-and-paperboard-material-specific-data",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "paper_cardboard_020",
+    "material_key": "paper_cardboard",
+    "plastic_code": null,
+    "title_vi": "Glucose là \"viên gạch\" xây nên cellulose",
+    "content_vi": "Glucose có công thức C₆H₁₂O₆. Khi các phân tử glucose nối với nhau thành polymer, mỗi lần nối lại tách ra một phân tử nước, tạo nên chuỗi cellulose trong giấy.",
+    "source_title": "OpenStax Biology 2e – Synthesis of Biological Macromolecules",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-1-synthesis-of-biological-macromolecules",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_001",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Đống ủ phân compost tự nóng lên",
+    "content_vi": "Vi sinh vật phân hủy rác hữu cơ và giải phóng nhiệt trong quá trình sống. Nếu đủ ẩm và thoáng khí, bên trong đống ủ compost có thể nóng lên rõ rệt.",
+    "source_title": "Cornell Composting – Compost Physics",
+    "source_url": "https://compost.css.cornell.edu/physics.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_002",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vỏ trứng chủ yếu là calcium carbonate",
+    "content_vi": "Khoảng 94% khối lượng vỏ trứng là calcium carbonate (CaCO₃) – cũng là thành phần chính của đá vôi. Chất khoáng cứng này giúp lớp vỏ mỏng vẫn bảo vệ được quả trứng.",
+    "source_title": "USDA FSIS – What Are Egg Shells Made Of?",
+    "source_url": "https://ask.fsis.usda.gov/article/What-are-egg-shells-made-of",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_003",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vì sao táo cắt ra bị thâm?",
+    "content_vi": "Khi táo bị cắt, enzyme polyphenol oxidase trong quả gặp oxygen và oxi hóa các hợp chất phenol. Sản phẩm tạo thành có màu nâu, làm mặt cắt thâm dần.",
+    "source_title": "ACS – Journal of Agricultural and Food Chemistry",
+    "source_url": "https://pubs.acs.org/doi/10.1021/jf034461q",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_004",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vì sao lòng trắng trứng hóa trắng khi luộc?",
+    "content_vi": "Protein trong lòng trắng vốn cuộn gọn. Khi gặp nhiệt, protein bị biến tính: chuỗi duỗi ra rồi dính vào nhau thành mạng rắn, nên lòng trắng từ trong chuyển sang trắng đục.",
+    "source_title": "OpenStax Concepts of Biology – Biological Molecules",
+    "source_url": "https://openstax.org/books/concepts-biology/pages/2-3-biological-molecules",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_005",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Cơm, khoai chứa nhiều tinh bột",
+    "content_vi": "Tinh bột gồm nhiều glucose nối thành hai dạng: amylose (mạch thẳng) và amylopectin (mạch nhánh). Thực vật dự trữ năng lượng bằng tinh bột trong hạt gạo, củ khoai, củ sắn.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_006",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vỏ tôm, cua chứa chitin",
+    "content_vi": "Vỏ cứng của tôm, cua và côn trùng chứa chitin – một polysaccharide giống cellulose nhưng có thêm nguyên tố nitrogen. Chitin tạo nên bộ xương ngoài bảo vệ cơ thể con vật.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_007",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vì sao dầu ăn ở thể lỏng?",
+    "content_vi": "Dầu thực vật chứa nhiều acid béo không no có liên kết đôi, làm chuỗi carbon bị gấp khúc. Các phân tử gấp khúc khó xếp sát nhau nên dầu vẫn lỏng ở nhiệt độ phòng.",
+    "source_title": "OpenStax Concepts of Biology – Biological Molecules",
+    "source_url": "https://openstax.org/books/concepts-biology/pages/2-3-biological-molecules",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_008",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Cellulose làm khung cho tế bào rau củ",
+    "content_vi": "Mỗi tế bào thực vật được bọc bởi thành tế bào chứa sợi cellulose. Lớp khung này chống lại áp lực nước bên trong, giúp tế bào và cả cọng rau giữ được hình dạng.",
+    "source_title": "OpenStax Biology 2e – Eukaryotic Cells",
+    "source_url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_009",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Lignin làm thân cây cứng như gỗ",
+    "content_vi": "Lignin là một polymer phức tạp bám vào thành tế bào của thân và cành cây. Nó làm thành tế bào cứng lại, giúp thân cây đứng vững.",
+    "source_title": "OpenStax Biology 2e – Stems",
+    "source_url": "https://openstax.org/books/biology-2e/pages/30-2-stems",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_010",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vì sao lá rau, lá cây chuyển vàng?",
+    "content_vi": "Chlorophyll tạo màu xanh cho lá. Khi cây ngừng tạo chlorophyll và sắc tố này bị phân hủy, các carotenoid màu vàng cam vốn có sẵn trong lá mới lộ ra.",
+    "source_title": "US Forest Service – The Joy and Science of Fall Colors",
+    "source_url": "https://www.fs.usda.gov/visit/fall-colors/joy-and-science",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_011",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Anthocyanin tạo màu đỏ và tím",
+    "content_vi": "Anthocyanin là sắc tố tạo màu đỏ, tím ở nhiều loại lá và quả. Màu của nó thay đổi theo môi trường hóa học trong tế bào, nên cùng một sắc tố có thể cho màu khác nhau.",
+    "source_title": "US Forest Service – The Joy and Science of Fall Colors",
+    "source_url": "https://www.fs.usda.gov/visit/fall-colors/joy-and-science",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_012",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vi sinh vật cần nước để phân hủy rác",
+    "content_vi": "Phần lớn quá trình phân hủy diễn ra trong lớp nước rất mỏng bao quanh mẩu rác. Nếu đống ủ quá khô, vi sinh vật thiếu nước và hoạt động chậm lại.",
+    "source_title": "Cornell Composting – Biological Processing",
+    "source_url": "https://compost.css.cornell.edu/MSWFactSheets/msw.fs2.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_013",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Đống ủ quá ướt sẽ thiếu oxygen",
+    "content_vi": "Nước thừa lấp đầy các khe vốn chứa không khí. Oxygen đi qua nước chậm hơn nhiều so với qua không khí, nên vùng quá ướt chuyển sang phân hủy yếm khí (không có oxygen).",
+    "source_title": "Cornell Composting – Biological Processing",
+    "source_url": "https://compost.css.cornell.edu/MSWFactSheets/msw.fs2.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_014",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Cắt nhỏ rác hữu cơ để phân hủy nhanh hơn",
+    "content_vi": "Cắt nhỏ vỏ rau, vỏ trái cây làm tăng diện tích bề mặt cho vi sinh vật bám vào. Càng nhiều chỗ tiếp xúc, quá trình phân hủy càng diễn ra nhanh.",
+    "source_title": "Cornell CALS – Composting Science and Engineering",
+    "source_url": "https://cals.cornell.edu/ny-center-organics-recycling-education/composting/science-and-engineering",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_015",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Đống ủ compost có nhiều giai đoạn nhiệt độ",
+    "content_vi": "Đống ủ thường ấm lên, nóng dần rồi nguội đi. Mỗi khoảng nhiệt độ thích hợp cho một nhóm vi sinh vật khác nhau, nên các nhóm vi sinh vật thay nhau hoạt động.",
+    "source_title": "Cornell CALS – Composting Science and Engineering",
+    "source_url": "https://cals.cornell.edu/ny-center-organics-recycling-education/composting/science-and-engineering",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_016",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Một quả chín làm cả túi chín nhanh",
+    "content_vi": "Trái cây chín tỏa ra khí ethylene (C₂H₄) – một hormone thực vật ở dạng khí. Để quả xanh chung túi kín với quả chín, ethylene sẽ làm cả túi chín nhanh hơn.",
+    "source_title": "OpenStax Biology 2e – Plant Sensory Systems and Responses",
+    "source_url": "https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_017",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Vì sao quả chín ngọt hơn quả xanh?",
+    "content_vi": "Khi quả chín, ethylene thúc đẩy việc chuyển tinh bột và acid trong quả thành đường. Vì vậy quả chín thường ngọt hơn và bớt chua so với lúc còn xanh.",
+    "source_title": "OpenStax Biology 2e – Plant Sensory Systems and Responses",
+    "source_url": "https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_018",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Đường kính gồm hai loại đường đơn",
+    "content_vi": "Đường kính (sucrose) là disaccharide phổ biến nhất, gồm một phân tử glucose nối với một phân tử fructose. Glucose và fructose có cùng công thức C₆H₁₂O₆.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_019",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Đường trong sữa là lactose",
+    "content_vi": "Lactose là loại đường có sẵn trong sữa. Đây là một disaccharide, gồm một phân tử glucose nối với một phân tử galactose.",
+    "source_title": "OpenStax Biology 2e – Carbohydrates",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_020",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Chất béo gồm glycerol và acid béo",
+    "content_vi": "Một phân tử chất béo được tạo từ glycerol và các acid béo. Cơ thể dự trữ năng lượng lâu dài dưới dạng chất béo, nên dầu mỡ là nguồn năng lượng dự trữ quan trọng.",
+    "source_title": "OpenStax Biology 2e – Lipids",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-3-lipids",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "organic_021",
+    "material_key": "organic",
+    "plastic_code": null,
+    "title_vi": "Rác thực phẩm chôn lấp sinh ra methane",
+    "content_vi": "Trong bãi chôn lấp, chất hữu cơ như thức ăn thừa bị phân hủy và tạo ra khí bãi rác, gồm khoảng 50% methane và 50% CO₂. Methane cũng là thành phần chính của khí thiên nhiên.",
+    "source_title": "US EPA – Basic Information about Landfill Gas",
+    "source_url": "https://www.epa.gov/lmop/basic-information-about-landfill-gas",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_001",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Thủy tinh là chất rắn vô định hình",
+    "content_vi": "Thủy tinh cứng như chất rắn, nhưng các hạt bên trong không xếp thành mạng đều đặn như tinh thể muối ăn. Cấu trúc thiếu trật tự này được gọi là vô định hình.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_002",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Kính thông dụng làm từ cát, soda và vôi",
+    "content_vi": "Kính cửa, chai lọ thường là thủy tinh soda–vôi, gồm silica (SiO₂, có trong cát), soda và vôi, trong đó silica chiếm phần lớn. Loại này tương đối dễ tạo hình khi nóng.",
+    "source_title": "Corning Museum of Glass – Soda-lime Glass",
+    "source_url": "https://allaboutglass.cmog.org/definition/soda-lime-glass",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_003",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Kính cửa sổ cổ không hề \"chảy\" xuống",
+    "content_vi": "Nhiều người tin kính cửa sổ cũ dày ở đáy vì thủy tinh chảy dần theo thời gian. Thực tế thủy tinh không chảy ở nhiệt độ phòng; độ dày không đều là do cách làm kính ngày xưa.",
+    "source_title": "Corning Museum of Glass – Does Glass Flow?",
+    "source_url": "https://info.cmog.org/node/631",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_004",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Thạch anh và thủy tinh thạch anh đều là SiO₂",
+    "content_vi": "Thạch anh (quartz) và thủy tinh thạch anh (fused silica) có cùng công thức SiO₂. Khác biệt là cách sắp xếp: thạch anh có mạng tinh thể đều, còn thủy tinh thạch anh thì vô định hình.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_005",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Nguội nhanh nên không kịp kết tinh",
+    "content_vi": "Khi silica nóng chảy được làm nguội đủ nhanh, các nguyên tử không kịp xếp thành mạng tinh thể. Chúng bị giữ lại ở trạng thái lộn xộn và tạo thành thủy tinh.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_006",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Thủy tinh mềm dần chứ không tan ngay",
+    "content_vi": "Nước đá tan ở đúng 0 °C, nhưng thủy tinh không có nhiệt độ nóng chảy cố định. Khi đun, nó mềm dần qua cả một khoảng nhiệt độ, nhờ vậy thợ có thể thổi và uốn thủy tinh.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_007",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Thủy tinh borosilicate ít giãn nở khi nóng",
+    "content_vi": "Trong thủy tinh borosilicate, boron oxide thay thế phần lớn chất trợ chảy như soda. Nhờ đó loại thủy tinh này giãn nở vì nhiệt ít hơn nhiều so với kính thông thường.",
+    "source_title": "Corning Museum of Glass – Borosilicate Glass",
+    "source_url": "https://allaboutglass.cmog.org/definition/borosilicate-glass",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_008",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Vì sao cốc borosilicate ít nứt khi rót nước sôi?",
+    "content_vi": "Khi nhiệt độ đổi đột ngột, phần nóng giãn ra còn phần lạnh thì chưa, tạo lực căng làm kính nứt. Borosilicate giãn nở ít nên chịu được thay đổi nhiệt tốt hơn.",
+    "source_title": "Corning Museum of Glass – Borosilicate Glass",
+    "source_url": "https://allaboutglass.cmog.org/definition/borosilicate-glass",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_009",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Ủ kính là làm nguội thật chậm",
+    "content_vi": "Sau khi tạo hình, đồ thủy tinh được đưa vào lò ủ để nguội từ từ, giúp bên trong và bề mặt nguội đều nhau. Cách này loại bớt lực căng còn kẹt lại trong kính.",
+    "source_title": "Corning Museum of Glass – Annealing",
+    "source_url": "https://allaboutglass.cmog.org/definition/annealing",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_010",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Kính nguội quá nhanh có thể nứt về sau",
+    "content_vi": "Nếu bề mặt nguội và co lại trước phần bên trong, kính giữ lại lực căng lớn bên trong. Kính không được ủ đúng cách vì thế dễ vỡ khi va nhẹ hoặc khi gặp nóng lạnh đột ngột.",
+    "source_title": "Corning Museum of Glass – Annealing",
+    "source_url": "https://allaboutglass.cmog.org/definition/annealing",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_011",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Pha lê lấp lánh nhờ lead oxide",
+    "content_vi": "Thủy tinh chì (pha lê) chứa nhiều lead oxide nên bẻ cong ánh sáng mạnh hơn kính thường. Ánh sáng đi qua các mặt cắt bị khúc xạ mạnh, tạo vẻ lấp lánh đặc trưng.",
+    "source_title": "Corning Museum of Glass – Lead Glass",
+    "source_url": "https://allaboutglass.cmog.org/definition/lead-glass",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_012",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Sợi quang dẫn ánh sáng nhờ phản xạ toàn phần",
+    "content_vi": "Ánh sáng đi trong lõi sợi thủy tinh liên tục bị phản xạ lại khi chạm thành sợi ở góc phù hợp. Nhờ vậy tín hiệu ánh sáng đi được rất xa, kể cả khi sợi cong nhẹ.",
+    "source_title": "OpenStax College Physics 2e – Total Internal Reflection",
+    "source_url": "https://openstax.org/books/college-physics-2e/pages/25-4-total-internal-reflection",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_013",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Lớp vỏ sợi quang giữ ánh sáng trong lõi",
+    "content_vi": "Lõi sợi quang được bọc bằng lớp vỏ có chiết suất thấp hơn. Chênh lệch này giúp ánh sáng phản xạ toàn phần, không lọt ra ngoài hay sang sợi bên cạnh.",
+    "source_title": "OpenStax College Physics 2e – Total Internal Reflection",
+    "source_url": "https://openstax.org/books/college-physics-2e/pages/25-4-total-internal-reflection",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_014",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Vết xước nhỏ làm kính yếu đi nhiều",
+    "content_vi": "Khi kính chịu lực, lực dồn vào đầu các vết nứt li ti trên bề mặt. Thủy tinh gần như không uốn dẻo được, nên vết nứt lan rất nhanh và kính vỡ đột ngột.",
+    "source_title": "NIST – Microstructure of Ceramic Materials",
+    "source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/MP/nbsmiscellaneouspub257.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_015",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Trao đổi ion giúp kính bền hơn",
+    "content_vi": "Trong cách tôi kính hóa học, ion nhỏ như Na⁺ ở bề mặt được thay bằng ion lớn hơn như K⁺. Ion lớn chen chúc tạo lớp bề mặt bị nén, giúp cản vết nứt lan rộng.",
+    "source_title": "NIST – Standard Terminology Relating to Trace Materials Analysis",
+    "source_url": "https://www.nist.gov/document/osac-2025-n-0017-standard-terminology-relating-trace-materials-analysis-version-10",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_016",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Silicon chiếm gần 1/4 khối lượng vỏ Trái Đất",
+    "content_vi": "Silicon là nguyên tố nhiều thứ hai trong vỏ Trái Đất, chỉ sau oxygen, chiếm gần một phần tư khối lượng. Phần lớn silicon nằm trong đá và cát ở dạng silica và silicate.",
+    "source_title": "OpenStax Chemistry 2e – Metalloids",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/18-3-structure-and-general-properties-of-the-metalloids",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_017",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Trong SiO₂, mỗi silicon nối với 4 oxygen",
+    "content_vi": "Silicon dioxide là chất rắn có mạng cộng hóa trị: mỗi nguyên tử silicon liên kết đơn với bốn nguyên tử oxygen, tạo thành một mạng lưới ba chiều rất bền.",
+    "source_title": "OpenStax Chemistry 2e – Metalloids",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/18-3-structure-and-general-properties-of-the-metalloids",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_018",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Thạch anh nóng chảy ở khoảng 1600 °C",
+    "content_vi": "Ở khoảng 1600 °C, thạch anh nóng chảy thành chất lỏng rất sánh. Khi nguội, chất lỏng này khó kết tinh lại mà thường đông cứng thành thủy tinh silica.",
+    "source_title": "OpenStax Chemistry 2e – Metalloids",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/18-3-structure-and-general-properties-of-the-metalloids",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_019",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Đất đá quanh ta phần lớn là silicate",
+    "content_vi": "Silicate là các muối có anion chứa silicon và oxygen. Vỏ Trái Đất gần như hoàn toàn được tạo từ khoáng chất silicate – cùng họ hàng hóa học với thủy tinh.",
+    "source_title": "OpenStax Chemistry 2e – Metalloids",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/18-3-structure-and-general-properties-of-the-metalloids",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "glass_020",
+    "material_key": "glass",
+    "plastic_code": null,
+    "title_vi": "Chỉ khoảng 1/3 chai lọ thủy tinh được tái chế",
+    "content_vi": "Năm 2018 ở Mỹ, khoảng 3,1 triệu tấn chai lọ thủy tinh được tái chế, đạt tỉ lệ 31,3%. Thủy tinh trong rác sinh hoạt chủ yếu là chai lọ đựng đồ uống.",
+    "source_title": "US EPA – Glass: Material-Specific Data",
+    "source_url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/glass-material-specific-data",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_001",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Kim loại dẫn điện nhờ electron tự do",
+    "content_vi": "Trong kim loại, một số electron không bị giữ chặt ở nguyên tử nào mà di chuyển khắp khối kim loại. Chính các electron tự do này mang dòng điện đi qua dây dẫn.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_002",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Nhôm tự tạo lớp áo bảo vệ",
+    "content_vi": "Nhôm phản ứng nhanh với oxygen trong không khí, tạo một lớp aluminium oxide rất mỏng bám chặt trên bề mặt. Lớp này ngăn không khí tiếp xúc nên nhôm bị ăn mòn rất chậm.",
+    "source_title": "OpenStax Chemistry 2e – Periodicity",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/18-1-periodicity",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_003",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Lớp gỉ xanh trên đồng lại bảo vệ đồng",
+    "content_vi": "Đồng để ngoài trời lâu ngày phản ứng với không khí và nước, tạo lớp patina màu xanh. Khác với gỉ sắt, lớp này bám chắc và che chở phần đồng bên dưới.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_004",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Liên kết kim loại như một \"biển electron\"",
+    "content_vi": "Trong kim loại, các ion dương nằm xen giữa một \"biển\" electron tự do dùng chung cho cả khối. Lực hút giữa ion dương và biển electron này chính là liên kết kim loại.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_005",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Nồi kim loại nóng nhanh nhờ electron",
+    "content_vi": "Electron tự do ở vùng nóng nhận năng lượng rồi di chuyển nhanh sang vùng lạnh hơn. Nhờ vậy nhiều kim loại dẫn nhiệt tốt, ví dụ nồi nhôm nóng lên rất nhanh.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_006",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Sắt cần cả nước và oxygen mới gỉ",
+    "content_vi": "Gỉ sắt hình thành qua ăn mòn điện hóa khi bề mặt sắt có đồng thời oxygen và nước. Sơn phủ, bôi dầu hay giữ khô là những cách ngăn một trong hai yếu tố đó.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_007",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Gỉ sắt không bảo vệ được sắt",
+    "content_vi": "Gỉ sắt (Fe₂O₃·xH₂O) xốp và dễ bong. Khi lớp gỉ rơi ra, phần sắt mới bên dưới lại tiếp xúc với nước và oxygen, nên sắt tiếp tục bị ăn mòn.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_008",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Inox không gỉ nhờ chromium",
+    "content_vi": "Thép không gỉ (inox) có chứa chromium. Chromium tạo một lớp oxide rất mỏng, bám chặt trên bề mặt, che phần sắt bên dưới khỏi nước và không khí.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_009",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Tôn mạ kẽm được bảo vệ hai lớp",
+    "content_vi": "Lớp kẽm vừa che không cho không khí chạm vào sắt, vừa dễ bị oxi hóa hơn sắt. Vì vậy kể cả khi có vết xước nhỏ, kẽm vẫn bị ăn mòn thay cho sắt.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_010",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Kim loại \"hi sinh\" để bảo vệ sắt",
+    "content_vi": "Người ta nối khối kẽm hoặc magnesium với đường ống, bồn chứa ngầm bằng sắt. Kim loại này dễ bị oxi hóa hơn nên bị ăn mòn trước, còn sắt được bảo vệ – gọi là anode hi sinh.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_011",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Thủy ngân là kim loại ở thể lỏng",
+    "content_vi": "Không phải kim loại nào cũng rắn: nhiệt độ nóng chảy của kim loại khác nhau rất nhiều vì độ mạnh của liên kết kim loại khác nhau. Thủy ngân là kim loại lỏng ngay ở nhiệt độ phòng.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_012",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Vì sao kim loại dát mỏng được?",
+    "content_vi": "Liên kết kim loại không gắn chặt các nguyên tử theo một hướng cố định. Khi bị đập, các lớp nguyên tử trượt lên nhau mà không đứt, nên có thể dát nhôm thành giấy bạc mỏng.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_013",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Kim loại kéo được thành sợi dây",
+    "content_vi": "Khi bị kéo, mạng nguyên tử của nhiều kim loại biến dạng mà liên kết vẫn được giữ. Vì vậy đồng, nhôm có thể kéo thành dây điện dài và mảnh mà không gãy.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_014",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Thép không phải là một nguyên tố",
+    "content_vi": "Thép là hợp kim của sắt với một lượng nhỏ carbon, đôi khi thêm nguyên tố khác. Chỉ thêm một chút carbon đã làm thép cứng và bền khác hẳn sắt nguyên chất.",
+    "source_title": "OpenStax Chemistry 2e – Transition Metals",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/19-1-occurrence-preparation-and-properties-of-transition-metals-and-their-compounds",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_015",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Vì sao nhiều hợp chất kim loại có màu?",
+    "content_vi": "Ion của nhiều kim loại chuyển tiếp như đồng, sắt hấp thụ một phần ánh sáng nhìn thấy. Phần ánh sáng còn lại tới mắt ta tạo ra màu, ví dụ dung dịch muối đồng có màu xanh.",
+    "source_title": "OpenStax Chemistry 2e – Coordination Compound Properties",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_016",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Tượng Nữ thần Tự do xanh vì đồng bị oxi hóa",
+    "content_vi": "Lớp vỏ ngoài của Tượng Nữ thần Tự do làm bằng đồng. Qua nhiều năm, đồng bị oxi hóa bởi không khí, tạo lớp patina xanh gồm các muối như Cu₂CO₃(OH)₂.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_017",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Nhôm được lấy từ quặng bauxite",
+    "content_vi": "Bauxite là nguồn nhôm phổ biến nhất. Quặng được làm sạch thành aluminium oxide (Al₂O₃) rồi mới đem điện phân để tách ra kim loại nhôm.",
+    "source_title": "OpenStax Chemistry 2e – Representative Metals",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/18-2-occurrence-and-preparation-of-the-representative-metals",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_018",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Nhôm được tạo ra bằng dòng điện",
+    "content_vi": "Aluminium oxide được hòa tan trong cryolite (Na₃AlF₆) nóng chảy rồi điện phân. Ion Al³⁺ nhận electron ở cathode để thành nhôm; phương pháp này có từ năm 1886.",
+    "source_title": "OpenStax Chemistry 2e – Representative Metals",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/18-2-occurrence-and-preparation-of-the-representative-metals",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_019",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Lon nước là đồ nhôm được tái chế nhiều nhất",
+    "content_vi": "Năm 2018 ở Mỹ, lon bia và nước ngọt là loại đồ nhôm được tái chế nhiều nhất, đạt 50,4%. Bao bì là nguồn nhôm lớn nhất trong rác thải sinh hoạt.",
+    "source_title": "US EPA – Aluminum: Material-Specific Data",
+    "source_url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/aluminum-material-specific-data",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "metal_020",
+    "material_key": "metal",
+    "plastic_code": null,
+    "title_vi": "Sắt gỉ là một phản ứng oxi hóa – khử",
+    "content_vi": "Khi sắt bị gỉ, sắt nhường electron (bị oxi hóa) còn oxygen nhận electron (bị khử). Ăn mòn kim loại vì thế là một phản ứng oxi hóa – khử diễn ra ngay quanh ta.",
+    "source_title": "OpenStax Chemistry 2e – Corrosion",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_001",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Vải cotton gần như là cellulose",
+    "content_vi": "Phần lớn khối lượng sợi bông (cotton) là cellulose. Vì vậy về mặt hóa học, chiếc áo cotton gần với tờ giấy hơn là với chiếc áo len.",
+    "source_title": "USDA – Cellulose Technical Report",
+    "source_url": "https://www.ams.usda.gov/sites/default/files/media/Cellulose%20TR%202001.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_002",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Len được làm từ protein keratin",
+    "content_vi": "Sợi len chủ yếu là keratin – cùng loại protein tạo nên tóc và móng tay. Vì vậy len khác hẳn cotton, loại sợi được tạo chủ yếu từ cellulose.",
+    "source_title": "Oregon State University Libraries – The Grandfather of All Proteins",
+    "source_url": "https://scarc.library.oregonstate.edu/coll/pauling/proteins/narrative/page9.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_003",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Cao su tự nhiên là polymer của isoprene",
+    "content_vi": "Cao su tự nhiên gồm các chuỗi polyisoprene dài. Khi các chuỗi được nối ngang với nhau vừa phải, cao su kéo giãn được rồi trở lại gần như hình dạng ban đầu.",
+    "source_title": "Carnegie Mellon University – Natural vs Synthetic Polymers",
+    "source_url": "https://www.cmu.edu/gelfand/k12-educational-resources/polymers/natural-synthetic-polymers/index.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_004",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Gỗ bền khác nhau theo hướng thớ",
+    "content_vi": "Tế bào gỗ chủ yếu kéo dài dọc theo thân cây. Vì vậy gỗ chịu lực dọc thớ rất khác ngang thớ – đó là lý do chẻ củi theo thớ dễ hơn nhiều.",
+    "source_title": "USDA Forest Products Laboratory – Mechanical Properties of Wood",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr113/ch04.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_005",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Gỗ co giãn khi trời ẩm hay khô",
+    "content_vi": "Nước đi vào hoặc thoát khỏi thành tế bào làm gỗ trương lên hay co lại. Mức co giãn khác nhau theo từng hướng thớ, nên tấm gỗ có thể bị cong vênh, cửa gỗ bị kẹt.",
+    "source_title": "USDA Forest Products Laboratory – Mechanical Properties of Wood",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr113/ch04.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_006",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Mắt gỗ là điểm yếu của thanh gỗ",
+    "content_vi": "Mắt gỗ là chỗ cành cây mọc ra, nơi thớ gỗ phải uốn cong vòng quanh. Lực dồn vào chỗ thớ đổi hướng này, nên thanh gỗ có mắt thường yếu hơn thanh thớ thẳng.",
+    "source_title": "USDA Forest Products Laboratory – Mechanical Properties of Wood",
+    "source_url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr113/ch04.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_007",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Bê tông cứng lại nhờ phản ứng với nước",
+    "content_vi": "Xi măng phản ứng hóa học với nước (phản ứng hydrate hóa), tạo ra chất rắn gắn cát và đá lại với nhau. Bê tông đông cứng nhờ phản ứng này, không phải do nước bay hơi.",
+    "source_title": "American Cement Association – Applications of Cement",
+    "source_url": "https://www.cement.org/cement-concrete/applications-of-cement/",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_008",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Giữ ẩm giúp bê tông chắc hơn",
+    "content_vi": "Sau khi đổ, bê tông cần được giữ ẩm (bảo dưỡng) để phản ứng giữa xi măng và nước tiếp tục. Nếu mặt bê tông khô quá sớm, bê tông sẽ kém đặc chắc và yếu hơn.",
+    "source_title": "American Cement Association – Applications of Cement",
+    "source_url": "https://www.cement.org/cement-concrete/applications-of-cement/",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_009",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Kim cương và than chì đều là carbon",
+    "content_vi": "Kim cương và than chì (graphite) đều chỉ gồm nguyên tử carbon. Khác biệt nằm ở cách liên kết: kim cương là mạng ba chiều, than chì gồm các lớp phẳng, nên tính chất khác hẳn.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_010",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Ruột bút chì mềm vì than chì có nhiều lớp",
+    "content_vi": "Trong mỗi lớp than chì, carbon liên kết rất bền, nhưng các lớp chỉ hút nhau yếu. Khi viết, các lớp trượt ra và bám lên giấy – đó chính là nét bút chì.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_011",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Graphene chỉ dày một nguyên tử",
+    "content_vi": "Graphene là một lớp carbon duy nhất của than chì, các nguyên tử xếp thành hình tổ ong. Dù mỏng như vậy, graphene rất bền và dẫn điện tốt.",
+    "source_title": "OpenStax Chemistry 2e – The Solid State of Matter",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_012",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Aerogel là chất rắn gần như toàn không khí",
+    "content_vi": "Aerogel được tạo bằng cách rút hết chất lỏng khỏi một khối gel và thay bằng không khí. Khung rắn chứa vô số lỗ nhỏ nên vật liệu cực kỳ nhẹ.",
+    "source_title": "NASA – Aerogels: Thinner, Lighter, Stronger",
+    "source_url": "https://www.nasa.gov/aeronautics/aerogels-thinner-lighter-stronger/",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_013",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Aerogel cách nhiệt cực tốt",
+    "content_vi": "Không khí bị nhốt trong vô số lỗ rất nhỏ nên khó lưu thông để mang nhiệt đi. Khung rắn lại rất mảnh, ít đường truyền nhiệt, vì vậy aerogel cách nhiệt rất tốt.",
+    "source_title": "NASA – Aerogels: Thinner, Lighter, Stronger",
+    "source_url": "https://www.nasa.gov/aeronautics/aerogels-thinner-lighter-stronger/",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_014",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Đồ gốm cứng nhưng dễ vỡ",
+    "content_vi": "Liên kết ion và cộng hóa trị mạnh giúp gốm sứ rất cứng và chịu nhiệt cao. Nhưng các nguyên tử khó dịch chuyển, nên gốm không uốn được mà vỡ ngay khi bị va mạnh.",
+    "source_title": "NIST – Microstructure of Ceramic Materials",
+    "source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/MP/nbsmiscellaneouspub257.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_015",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Gạch nung không thể biến lại thành đất sét",
+    "content_vi": "Khi nung, đất sét mất nước liên kết, các khoáng phản ứng tạo chất mới và các hạt kết dính lại. Vì vậy gạch, gốm đã nung không thể trở lại thành đất sét dù ngâm nước.",
+    "source_title": "NIST – Microstructure of Ceramic Materials",
+    "source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/MP/nbsmiscellaneouspub257.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_016",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Pin cũ chứa kim loại độc hại",
+    "content_vi": "Pin có thể chứa các kim loại như thủy ngân, chì, cadmium, nickel và bạc. Nếu vứt lẫn rác thường, các chất này có thể gây hại cho sức khỏe con người và môi trường.",
+    "source_title": "US EPA – Used Household Batteries",
+    "source_url": "https://www.epa.gov/recycle/used-household-batteries",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_017",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Pin lithium hỏng có thể gây cháy",
+    "content_vi": "Pin lithium-ion vẫn còn năng lượng dù trông như đã hết. Nếu bị móp hoặc hai cực chạm nhau, pin có thể tóe lửa gây cháy, nên cần dán băng keo hai cực và thu gom riêng.",
+    "source_title": "US EPA – Used Household Batteries",
+    "source_url": "https://www.epa.gov/recycle/used-household-batteries",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_018",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Mưa acid hình thành từ khí thải",
+    "content_vi": "Khí SO₂ và NOₓ từ việc đốt nhiên liệu hóa thạch phản ứng với nước và oxygen trong không khí, tạo ra sulfuric acid và nitric acid, rồi rơi xuống cùng nước mưa.",
+    "source_title": "US EPA – What is Acid Rain?",
+    "source_url": "https://www.epa.gov/acidrain/what-acid-rain",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_019",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Methane giữ nhiệt mạnh hơn CO₂ nhiều lần",
+    "content_vi": "Methane là khí nhà kính giữ nhiệt mạnh hơn CO₂ ít nhất 28 lần (tính trong 100 năm). Bãi rác là một nguồn methane vì chất hữu cơ bị phân hủy bên trong.",
+    "source_title": "US EPA – Basic Information about Landfill Gas",
+    "source_url": "https://www.epa.gov/lmop/basic-information-about-landfill-gas",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_020",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Vải co giãn trong đồ bơi là polyurethane",
+    "content_vi": "Sợi spandex co giãn trong đồ bơi và đồ thể thao là một loại polyurethane. Nhờ đó vải có thể kéo dãn ra rồi co lại ôm sát cơ thể.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "other_021",
+    "material_key": "other",
+    "plastic_code": null,
+    "title_vi": "Nylon được tạo từ hai loại monomer",
+    "content_vi": "Nylon 66 được tạo từ phản ứng giữa adipic acid và hexamethylenediamine, hai chất đều có 6 nguyên tử carbon – đó là lý do có con số \"66\" trong tên gọi.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_001",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Polymer là chuỗi dài của nhiều monomer",
+    "content_vi": "Nhựa được tạo từ polymer – những phân tử rất dài gồm nhiều phân tử nhỏ (monomer) nối với nhau. Giống như nhiều mắt xích nối thành một sợi dây xích dài.",
+    "source_title": "OpenStax Organic Chemistry – Chain-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-1-chain-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_002",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Hai monomer khác nhau tạo ra copolymer",
+    "content_vi": "Khi hai hay nhiều loại monomer khác nhau cùng nối vào một chuỗi, ta được copolymer. Nhờ trộn các mắt xích khác loại, vật liệu có tính chất mới mà từng polymer riêng không có.",
+    "source_title": "OpenStax Organic Chemistry – Copolymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-3-copolymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_003",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Mút xốp polyurethane nở ra nhờ khí CO₂",
+    "content_vi": "Khi làm mút xốp polyurethane, người ta thêm một ít nước vào phản ứng. Nước tạo ra bọt khí CO₂ ngay trong khối polymer, làm khối nhựa nở thành mút nhẹ và xốp.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_004",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Nhựa nhiệt dẻo và nhựa nhiệt rắn",
+    "content_vi": "Nhựa nhiệt dẻo mềm ra khi đun nên có thể nấu chảy và tạo hình lại. Nhựa nhiệt rắn có các chuỗi nối chéo chằng chịt, khi đã cứng thì đun nóng cũng không chảy lại.",
+    "source_title": "EdTech Books – Thermal Changes in Polymers",
+    "source_url": "https://books.byui.edu/plastics_materials_a/thermal_changes_in_p",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_005",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Vì sao dây thun co lại sau khi kéo?",
+    "content_vi": "Chất đàn hồi có các chuỗi polymer mềm, được nối ngang với nhau ở một số điểm. Khi kéo, chuỗi duỗi ra; khi thả, các điểm nối kéo chuỗi trở về vị trí cũ.",
+    "source_title": "OpenStax Organic Chemistry – Chain-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-1-chain-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_006",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Nhựa có thể mềm ra trước khi chảy",
+    "content_vi": "Nhiều loại nhựa có một \"nhiệt độ hóa thủy tinh\": dưới nhiệt độ này nhựa cứng và giòn, trên đó nhựa mềm và dẻo hơn. Mềm ra chưa có nghĩa là nhựa đã chảy lỏng.",
+    "source_title": "NIST – Glass Transition Temperature of Polymer Melts",
+    "source_url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=853991",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_007",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Trong nhựa có vùng trật tự và vùng lộn xộn",
+    "content_vi": "Trong nhiều loại nhựa, có vùng các chuỗi xếp ngay ngắn (vùng tinh thể) xen với vùng chuỗi rối (vô định hình). Vì vậy nhựa có cả nhiệt độ hóa thủy tinh lẫn nhiệt độ nóng chảy.",
+    "source_title": "NIST – Specific Volume and Crystallinity of Polymers",
+    "source_url": "https://nvlpubs.nist.gov/nistpubs/jres/60/jresv60n5p465_A1b.pdf",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_008",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Thứ tự monomer tạo ra nhiều loại copolymer",
+    "content_vi": "Hai loại monomer có thể xếp ngẫu nhiên, xen kẽ nhau hoặc thành từng khối trên chuỗi. Cùng hai nguyên liệu, chỉ đổi cách sắp xếp đã cho ra vật liệu có tính chất khác.",
+    "source_title": "OpenStax Organic Chemistry – Copolymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-3-copolymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_009",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Trộn polymer khác với nối polymer",
+    "content_vi": "Polymer blend là hỗn hợp trộn sẵn nhiều polymer, giống như trộn hai loại bột. Còn copolymer là các monomer khác nhau được nối trực tiếp vào cùng một chuỗi.",
+    "source_title": "OpenStax Organic Chemistry – Copolymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-3-copolymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_010",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Phản ứng trùng hợp: nối tiếp từng mắt xích",
+    "content_vi": "Trong phản ứng trùng hợp, các monomer có liên kết đôi lần lượt gắn vào đầu chuỗi đang phát triển. PE, PP, PVC và PS đều được tạo theo cách này.",
+    "source_title": "OpenStax Organic Chemistry – Chain-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-1-chain-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_011",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Phản ứng trùng ngưng tách ra phân tử nhỏ",
+    "content_vi": "Trong phản ứng trùng ngưng, các monomer có nhóm chức phản ứng với nhau, đồng thời tách ra phân tử nhỏ như nước. Nhựa PET và sợi nylon được tạo theo cách này.",
+    "source_title": "OpenStax Biology 2e – Synthesis of Biological Macromolecules",
+    "source_url": "https://openstax.org/books/biology-2e/pages/3-1-synthesis-of-biological-macromolecules",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_012",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Phụ gia làm cùng một loại nhựa trông khác nhau",
+    "content_vi": "Nhà sản xuất trộn thêm chất màu, chất ổn định, chất độn hay chất hóa dẻo vào nhựa. Vì vậy hai món đồ cùng loại nhựa vẫn có thể khác nhau về màu, độ cứng và độ bền.",
+    "source_title": "EdTech Books – Properties, Materials, and Applications",
+    "source_url": "https://books.byui.edu/plastics_materials_a/properties_materials",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_013",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Nhựa sinh học chưa chắc tự phân hủy",
+    "content_vi": "\"Nhựa gốc sinh học\" nói về nguyên liệu làm ra nó, như từ thực vật. \"Nhựa phân hủy sinh học\" nói về việc vi sinh vật có phân hủy được nó hay không. Hai điều này không đi kèm nhau.",
+    "source_title": "US EPA – Plastic Recycling and Composting FAQ",
+    "source_url": "https://www.epa.gov/trash-free-waters/frequently-asked-questions-about-plastic-recycling-and-composting",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_014",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Nhựa \"phân hủy được\" cũng cần đúng điều kiện",
+    "content_vi": "Nhiều loại nhựa compostable chỉ phân hủy tốt ở nhà máy ủ công nghiệp có nhiệt độ, độ ẩm và vi sinh vật phù hợp. Vứt ra môi trường bình thường, chúng phân hủy rất chậm.",
+    "source_title": "US EPA – Plastic Recycling and Composting FAQ",
+    "source_url": "https://www.epa.gov/trash-free-waters/frequently-asked-questions-about-plastic-recycling-and-composting",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_015",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Có mã nhựa chưa chắc đã tái chế được",
+    "content_vi": "Con số trong hình tam giác chỉ cho biết sản phẩm làm từ loại nhựa nào. Sản phẩm có được thu gom tái chế hay không còn tùy thiết kế và hệ thống xử lý rác ở địa phương.",
+    "source_title": "US EPA – How Do I Recycle Common Recyclables",
+    "source_url": "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_016",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Vi nhựa là mảnh nhựa nhỏ hơn 5 mm",
+    "content_vi": "Vi nhựa là những mảnh nhựa dài dưới 5 mm. Chúng sinh ra khi đồ nhựa lớn vỡ vụn, từ hạt nhựa nguyên liệu, hoặc từ các hạt vi nhựa trong mỹ phẩm.",
+    "source_title": "NOAA – What are microplastics?",
+    "source_url": "https://oceanservice.noaa.gov/facts/microplastics.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_017",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Hạt li ti trong sữa rửa mặt có thể là nhựa",
+    "content_vi": "Một số sữa rửa mặt, kem đánh răng từng chứa hạt vi nhựa bằng polyethylene để tẩy tế bào chết. Hạt quá nhỏ nên lọt qua hệ thống lọc nước và trôi ra biển.",
+    "source_title": "NOAA – What are microplastics?",
+    "source_url": "https://oceanservice.noaa.gov/facts/microplastics.html",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_018",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Chỉ một phần nhỏ nhựa được tái chế",
+    "content_vi": "Năm 2018, Mỹ thải ra khoảng 35,7 triệu tấn nhựa, chiếm 12,2% rác sinh hoạt, nhưng chỉ tái chế được khoảng 3 triệu tấn, tức 8,7%.",
+    "source_title": "US EPA – Plastics: Material-Specific Data",
+    "source_url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/plastics-material-specific-data",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_019",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Bakelite là nhựa tổng hợp lâu đời nhất",
+    "content_vi": "Bakelite là nhựa nhiệt rắn được sản xuất lần đầu năm 1907 và vẫn còn được dùng. Khi đun nóng, các chuỗi nối chéo thành một khối cứng, không tan, không chảy lại.",
+    "source_title": "OpenStax Organic Chemistry – Polymer Structure and Physical Properties",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-7-polymer-structure-and-physical-properties",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_general_020",
+    "material_key": "plastic",
+    "plastic_code": null,
+    "title_vi": "Sợi nhựa được kéo qua những lỗ nhỏ",
+    "content_vi": "Để làm sợi, polymer nóng chảy được ép qua những lỗ rất nhỏ rồi kéo dài ra. Nylon, polyester và polyethylene đều có thể kéo thành sợi theo cách này.",
+    "source_title": "OpenStax Organic Chemistry – Polymer Structure and Physical Properties",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-7-polymer-structure-and-physical-properties",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_001",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "PET được tạo từ hai loại monomer",
+    "content_vi": "PET là polyester được tạo từ ethylene glycol và terephthalic acid. Hai chất này nối xen kẽ với nhau rất nhiều lần để tạo thành chuỗi polymer dài.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_002",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "Chuỗi PET chứa nhiều nhóm ester",
+    "content_vi": "Mỗi lần nối hai monomer của PET tạo ra một nhóm ester (–COO–) trong mạch chính. Vì chuỗi có rất nhiều nhóm ester lặp lại, PET được xếp vào họ polyester.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_003",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "PET là nhựa nhiệt dẻo",
+    "content_vi": "Các chuỗi PET không nối chéo cố định với nhau. Khi được đun nóng vừa đủ, PET mềm ra và có thể thổi thành chai, kéo thành sợi hoặc tạo hình lại.",
+    "source_title": "EdTech Books – Thermoplastic Polyester (PET/PBT)",
+    "source_url": "https://books.byui.edu/plastics_materials_a/thermoplastic_polyes",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_004",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "Vì sao chai PET trong suốt?",
+    "content_vi": "Khi các chuỗi PET xếp lộn xộn (vô định hình), ánh sáng đi qua dễ dàng nên chai trong suốt. Nếu nhiều vùng tinh thể hình thành, ánh sáng bị tán xạ và nhựa trở nên đục.",
+    "source_title": "EdTech Books – Thermoplastic Polyester (PET/PBT)",
+    "source_url": "https://books.byui.edu/plastics_materials_a/thermoplastic_polyes",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_005",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "PET cản mùi tốt hơn nhiều loại nhựa",
+    "content_vi": "PET ngăn nhiều phân tử mùi đi xuyên qua tốt hơn một số loại nhựa thông dụng. Cùng với độ trong và độ bền, điều này giúp PET phù hợp làm chai và hộp đựng.",
+    "source_title": "EdTech Books – Thermoplastic Polyester (PET/PBT)",
+    "source_url": "https://books.byui.edu/plastics_materials_a/thermoplastic_polyes",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_006",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "Chai nước ngọt thường làm bằng PET",
+    "content_vi": "PET là polyester được dùng để làm chai nước ngọt. Nhìn dưới đáy chai, bạn thường thấy hình tam giác với số 1 – đó chính là mã của nhựa PET.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_007",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "Áo polyester và chai PET là \"họ hàng\"",
+    "content_vi": "PET cũng được kéo thành sợi vải polyester (tên thương mại Dacron). Vì vậy chiếc áo polyester và chai nước ngọt có chung bản chất hóa học.",
+    "source_title": "OpenStax Organic Chemistry – Polymer Structure and Physical Properties",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-7-polymer-structure-and-physical-properties",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_1_008",
+    "material_key": "plastic",
+    "plastic_code": 1,
+    "title_vi": "Chưa đến 1/3 chai PET được tái chế",
+    "content_vi": "Năm 2018 ở Mỹ, tỉ lệ tái chế chai và hũ PET chỉ đạt 29,1%. Nghĩa là cứ 10 chai thì chưa tới 3 chai được thu gom để tái chế.",
+    "source_title": "US EPA – Plastics: Material-Specific Data",
+    "source_url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/plastics-material-specific-data",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_001",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "HDPE có chuỗi gần như thẳng",
+    "content_vi": "Các chuỗi polyethylene trong HDPE gần như không phân nhánh nên xếp sát nhau được. Nhờ vậy HDPE đặc hơn và cứng hơn LDPE – loại polyethylene có nhiều nhánh.",
+    "source_title": "OpenStax Organic Chemistry – Ziegler–Natta Catalysts",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-2-stereochemistry-of-polymerization-ziegler-natta-catalysts",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_002",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "HDPE có rất ít nhánh phụ",
+    "content_vi": "So với LDPE, chuỗi HDPE chỉ có rất ít nhánh phụ. Ít nhánh giúp các chuỗi xếp chặt vào nhau, giống như bó đũa thẳng xếp gọn hơn bó cành cây.",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_003",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "Vì sao can HDPE thường có màu đục?",
+    "content_vi": "Chuỗi thẳng của HDPE dễ xếp thành các vùng tinh thể có trật tự. Nhiều vùng tinh thể làm nhựa cứng hơn và tán xạ ánh sáng, nên can, chai HDPE thường có màu trắng đục.",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_004",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "HDPE cứng và bền hơn LDPE",
+    "content_vi": "Nhờ các chuỗi xếp chặt và kết tinh nhiều, HDPE chịu lực và chịu mài mòn tốt hơn LDPE mềm dẻo. Vì vậy HDPE hay dùng làm can, thùng, còn LDPE làm túi, màng bọc.",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_005",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "Nhựa \"mật độ cao\" nhưng vẫn nổi trên nước",
+    "content_vi": "Chữ \"mật độ cao\" chỉ để so HDPE với các loại polyethylene khác. Khối lượng riêng của HDPE vẫn nhỏ hơn nước, nên một miếng HDPE đặc thả vào nước sẽ nổi.",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_006",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "Polyethylene rắn được làm từ một chất khí",
+    "content_vi": "Ethylene (C₂H₄) là chất khí ở nhiệt độ phòng. Khi trùng hợp nhờ chất xúc tác, các phân tử ethylene nối thành chuỗi dài –CH₂– gọi là polyethylene, một chất rắn.",
+    "source_title": "OpenStax Chemistry 2e – Hydrocarbons",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_007",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "Chất xúc tác đặc biệt tạo ra HDPE",
+    "content_vi": "HDPE được sản xuất nhờ chất xúc tác Ziegler–Natta, giúp chuỗi polymer mọc thẳng, gần như không phân nhánh. Nhờ vậy HDPE kết tinh cao, bền và chịu nhiệt tốt hơn LDPE.",
+    "source_title": "OpenStax Organic Chemistry – Ziegler–Natta Catalysts",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-2-stereochemistry-of-polymerization-ziegler-natta-catalysts",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_2_008",
+    "material_key": "plastic",
+    "plastic_code": 2,
+    "title_vi": "Chai HDPE không màu được tái chế khoảng 29%",
+    "content_vi": "Năm 2018 ở Mỹ, tỉ lệ tái chế chai HDPE không màu (như bình sữa) đạt 29,3%. Chai HDPE mang hình tam giác với số 2 dưới đáy.",
+    "source_title": "US EPA – Plastics: Material-Specific Data",
+    "source_url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/plastics-material-specific-data",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_001",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "Chất hóa dẻo làm PVC mềm ra",
+    "content_vi": "PVC nguyên chất khá cứng, nhưng khi thêm chất hóa dẻo sẽ trở nên mềm và dẻo. Vì vậy nhựa mã 3 có mặt ở cả ống nước cứng lẫn vỏ dây điện mềm.",
+    "source_title": "EdTech Books – Polyvinyl Chloride",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyvinyl_chloride_p",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_002",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "Mỗi mắt xích PVC có một nguyên tử chlorine",
+    "content_vi": "PVC được tạo từ vinyl chloride (CH₂=CHCl), nên mỗi mắt xích mang một nguyên tử chlorine. Nguyên tử này làm các chuỗi hút nhau mạnh hơn so với polyethylene.",
+    "source_title": "EdTech Books – Polyvinyl Chloride",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyvinyl_chloride_p",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_003",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "PVC không hóa dẻo rất cứng",
+    "content_vi": "Lực hút giữa các nhóm chứa chlorine giữ các chuỗi PVC khó trượt lên nhau. Khi không thêm chất hóa dẻo, PVC cứng và giữ hình tốt, thích hợp làm ống nước.",
+    "source_title": "EdTech Books – Polyvinyl Chloride",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyvinyl_chloride_p",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_004",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "PVC cách điện tốt",
+    "content_vi": "Trong PVC không có electron tự do để mang dòng điện như trong kim loại. Vì vậy PVC có điện trở rất lớn và thường được dùng làm vỏ bọc dây điện.",
+    "source_title": "EdTech Books – Polyvinyl Chloride",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyvinyl_chloride_p",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_005",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "PVC cần chất ổn định khi gia công nóng",
+    "content_vi": "PVC nhạy với nhiệt và có thể bắt đầu phân hủy ngay trong khoảng nhiệt độ dùng để tạo hình. Người ta phải thêm chất ổn định nhiệt để làm chậm quá trình này.",
+    "source_title": "EdTech Books – Polyvinyl Chloride",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyvinyl_chloride_p",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_006",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "Chất hóa dẻo như \"dầu bôi trơn\" giữa các chuỗi",
+    "content_vi": "Chất hóa dẻo là những phân tử hữu cơ nhỏ chen vào giữa các chuỗi polymer, giúp chuỗi trượt lên nhau dễ hơn. Nhờ đó nhựa không bị giòn ở nhiệt độ phòng.",
+    "source_title": "OpenStax Organic Chemistry – Polymer Structure and Physical Properties",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-7-polymer-structure-and-physical-properties",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_007",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "Hơn một nửa khối lượng PVC là chlorine",
+    "content_vi": "Mỗi mắt xích –CH₂–CHCl– nặng khoảng 62,5 amu, trong đó chlorine chiếm 35,5 amu. Tính ra chlorine chiếm khoảng 57% khối lượng PVC – nhiều hơn cả carbon.",
+    "source_title": "OpenStax Organic Chemistry – Polymer Structure and Physical Properties",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-7-polymer-structure-and-physical-properties",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_3_008",
+    "material_key": "plastic",
+    "plastic_code": 3,
+    "title_vi": "PVC được tạo bằng phản ứng trùng hợp",
+    "content_vi": "Liên kết đôi C=C trong vinyl chloride mở ra để các phân tử nối tiếp nhau thành chuỗi dài. Đây là phản ứng trùng hợp, giống cách tạo ra PE, PP và PS.",
+    "source_title": "OpenStax Organic Chemistry – Chain-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-1-chain-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_001",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "LDPE có nhiều nhánh trên chuỗi",
+    "content_vi": "Chuỗi LDPE có nhiều nhánh phụ mọc ra, nên các chuỗi khó xếp sát nhau như trong HDPE. Chính cấu trúc nhánh làm LDPE nhẹ hơn và mềm dẻo hơn.",
+    "source_title": "OpenStax Organic Chemistry – Ziegler–Natta Catalysts",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-2-stereochemistry-of-polymerization-ziegler-natta-catalysts",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_002",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "Nhánh phụ cản LDPE kết tinh",
+    "content_vi": "Các nhánh chen giữa những chuỗi chính, ngăn nhiều đoạn chuỗi xếp thành hàng ngay ngắn. Vì vậy LDPE có nhiều vùng vô định hình (lộn xộn) hơn HDPE.",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_003",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "LDPE có mật độ thấp vì xếp lỏng lẻo",
+    "content_vi": "Các nhánh tạo thêm khoảng trống giữa các chuỗi polyethylene. Cùng một thể tích, LDPE vì thế chứa ít polymer hơn HDPE – đó là ý nghĩa của \"mật độ thấp\".",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_004",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "Túi nilon mềm nhờ chuỗi LDPE dễ chuyển động",
+    "content_vi": "LDPE ít kết tinh nên có nhiều đoạn chuỗi rối, có thể uốn và trượt lên nhau. Nhờ vậy LDPE mềm và dẻo ở nhiệt độ thường, thích hợp làm túi và màng bọc.",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_005",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "Màng LDPE mỏng thường trong mờ",
+    "content_vi": "LDPE có ít vùng tinh thể lớn nên ít làm tán xạ ánh sáng hơn HDPE. Vì vậy màng bọc thực phẩm và túi LDPE mỏng thường trong hoặc trong mờ.",
+    "source_title": "EdTech Books – Polyethylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polyethylene_pe",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_006",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "LDPE được tạo bằng phản ứng gốc tự do",
+    "content_vi": "LDPE được sản xuất bằng phản ứng trùng hợp gốc tự do. Cách này làm chuỗi mọc ra nhiều nhánh, nên LDPE kém bền và chịu nhiệt kém hơn HDPE làm bằng xúc tác Ziegler–Natta.",
+    "source_title": "OpenStax Organic Chemistry – Ziegler–Natta Catalysts",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-2-stereochemistry-of-polymerization-ziegler-natta-catalysts",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_007",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "Polyethylene chủ yếu dùng làm túi và màng",
+    "content_vi": "Polyethylene là loại nhựa thông dụng, được dùng chủ yếu làm bao bì như túi và màng mỏng. Túi nilon, màng bọc thực phẩm thường là LDPE mang mã số 4.",
+    "source_title": "OpenStax Chemistry 2e – Hydrocarbons",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_4_008",
+    "material_key": "plastic",
+    "plastic_code": 4,
+    "title_vi": "LDPE chỉ gồm carbon và hydrogen",
+    "content_vi": "Polyethylene là một hydrocarbon: chuỗi chỉ gồm các nhóm –CH₂– lặp lại. Vì vậy khi cháy hoàn toàn, LDPE tạo ra CO₂ và hơi nước, giống như khi đốt nến paraffin.",
+    "source_title": "OpenStax Chemistry 2e – Hydrocarbons",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_001",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "Chỉ đổi cách xếp nhóm methyl, PP đã khác",
+    "content_vi": "Trên chuỗi polypropylene, các nhóm methyl (–CH₃) có thể nằm cùng một phía hoặc xếp theo kiểu khác. Chỉ khác cách sắp xếp này thôi đã làm PP có tính chất khác nhau.",
+    "source_title": "OpenStax Organic Chemistry – Ziegler–Natta Catalysts",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-2-stereochemistry-of-polymerization-ziegler-natta-catalysts",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_002",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "PP khác PE ở nhóm methyl",
+    "content_vi": "Mỗi mắt xích của PP có thêm một nhóm methyl (–CH₃) gắn bên mạch carbon. Nhóm nhỏ này làm chuỗi PP cứng hơn và khó xoay tự do hơn chuỗi polyethylene.",
+    "source_title": "EdTech Books – Polypropylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polypropylene_pp",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_003",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "PP chịu nhiệt tốt hơn PE",
+    "content_vi": "Các nhóm methyl xếp đều đặn giúp PP tạo vùng tinh thể bền. Vì vậy PP thường nóng chảy ở nhiệt độ cao hơn polyethylene, nên hay được dùng làm hộp đựng đồ ăn nóng.",
+    "source_title": "EdTech Books – Polypropylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polypropylene_pp",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_004",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "PP là một trong những nhựa nhẹ nhất",
+    "content_vi": "PP chỉ gồm carbon và hydrogen, có khối lượng riêng nhỏ hơn nước và nhỏ hơn nhiều loại nhựa phổ biến khác. Nhờ vậy đồ dùng bằng PP vừa cứng vừa nhẹ.",
+    "source_title": "EdTech Books – Polypropylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polypropylene_pp",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_005",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "Nắp bật bằng PP gập nhiều lần không gãy",
+    "content_vi": "Một dải PP mỏng có thể gập đi gập lại ở cùng một chỗ rất nhiều lần mà không gãy. Nhờ vậy người ta làm được bản lề liền khối trên nắp chai dầu gội, hộp nhựa.",
+    "source_title": "EdTech Books – Polypropylene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polypropylene_pp",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_006",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "Isotactic, syndiotactic và atactic là gì?",
+    "content_vi": "PP có nhóm methyl cùng một phía gọi là isotactic, xen kẽ đều hai phía là syndiotactic, còn xếp ngẫu nhiên là atactic. Ba dạng này có tính chất vật lý khác nhau.",
+    "source_title": "OpenStax Organic Chemistry – Ziegler–Natta Catalysts",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-2-stereochemistry-of-polymerization-ziegler-natta-catalysts",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_007",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "Chất xúc tác giúp \"sắp xếp\" nhóm methyl",
+    "content_vi": "Chất xúc tác Ziegler–Natta điều khiển được cách các nhóm methyl sắp xếp khi PP hình thành. Nhờ vậy nhà sản xuất tạo ra loại PP có cấu trúc đều đặn như mong muốn.",
+    "source_title": "OpenStax Organic Chemistry – Ziegler–Natta Catalysts",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-2-stereochemistry-of-polymerization-ziegler-natta-catalysts",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_5_008",
+    "material_key": "plastic",
+    "plastic_code": 5,
+    "title_vi": "PP cũng là một hydrocarbon",
+    "content_vi": "Giống polyethylene và polystyrene, polypropylene chỉ gồm carbon và hydrogen, tức là một hydrocarbon. Monomer của nó là propylene (CH₂=CH–CH₃).",
+    "source_title": "OpenStax Chemistry 2e – Hydrocarbons",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_001",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "Polystyrene có dạng đặc và dạng xốp",
+    "content_vi": "Polystyrene có thể làm thành nhựa đặc hoặc nhựa xốp. Ở dạng xốp, vật liệu chứa rất nhiều ô khí nên cực nhẹ và cách nhiệt tốt.",
+    "source_title": "The Open University – Insulation Materials",
+    "source_url": "https://www.open.edu/openlearn/nature-environment/energy-buildings/content-section-3.2.3",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_002",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "Mỗi mắt xích PS có một vòng benzene",
+    "content_vi": "Polystyrene được tạo từ styrene, nên mỗi mắt xích mang một vòng phenyl (vòng benzene) khá to gắn bên mạch. Các vòng cồng kềnh này cản chuỗi chuyển động.",
+    "source_title": "EdTech Books – Polystyrene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polystyrene_ps",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_003",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "Vì sao PS đặc có thể trong suốt?",
+    "content_vi": "Chuỗi PS thường không xếp thành tinh thể mà nằm lộn xộn (vô định hình). Ánh sáng đi qua ít bị tán xạ, nên PS đặc có thể trong suốt như thủy tinh.",
+    "source_title": "EdTech Books – Polystyrene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polystyrene_ps",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_004",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "PS cứng nhưng khá giòn",
+    "content_vi": "Các vòng phenyl cản chuỗi PS xoay và trượt khi bị tác dụng lực. Vì vậy PS cứng nhưng hầu như không uốn được, dễ gãy – giống chiếc muỗng nhựa bị bẻ gãy giòn.",
+    "source_title": "EdTech Books – Polystyrene",
+    "source_url": "https://books.byui.edu/plastics_materials_a/polystyrene_ps",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_005",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "Hộp xốp phần lớn là không khí",
+    "content_vi": "Khi làm hộp xốp, polystyrene được tạo bọt: những vách nhựa rất mỏng bao quanh vô số ô khí. Khí chiếm phần lớn thể tích nên hộp xốp rất nhẹ và giữ nhiệt tốt.",
+    "source_title": "The Open University – Insulation Materials",
+    "source_url": "https://www.open.edu/openlearn/nature-environment/energy-buildings/content-section-3.2.3",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_006",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "Ly cà phê xốp làm từ polystyrene",
+    "content_vi": "Polystyrene dùng làm ly cà phê xốp được sản xuất bằng phản ứng trùng hợp styrene với chất xúc tác butyllithium. Ly và hộp xốp thường mang mã nhựa số 6.",
+    "source_title": "OpenStax Organic Chemistry – Chain-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-1-chain-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_007",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "Styrene có vòng benzene và liên kết đôi",
+    "content_vi": "Monomer styrene gồm một vòng benzene gắn với nhóm vinyl (CH₂=CH–). Liên kết đôi của nhóm vinyl mở ra khi trùng hợp, còn vòng benzene ở lại thành nhóm bên của PS.",
+    "source_title": "OpenStax Chemistry 2e – Hydrocarbons",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_6_008",
+    "material_key": "plastic",
+    "plastic_code": 6,
+    "title_vi": "PS cũng là một hydrocarbon",
+    "content_vi": "Polystyrene chỉ gồm carbon và hydrogen, giống polyethylene và polypropylene. Mỗi mắt xích có công thức –CH₂–CH(C₆H₅)–, trong đó C₆H₅ là nhóm phenyl.",
+    "source_title": "OpenStax Chemistry 2e – Hydrocarbons",
+    "source_url": "https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_001",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Mã 7 không chỉ một loại nhựa",
+    "content_vi": "Mã 7 (\"Other\") dùng cho mọi loại nhựa không thuộc sáu nhóm từ 1 đến 6. Vì vậy hai sản phẩm cùng mã 7 có thể là hai loại nhựa rất khác nhau.",
+    "source_title": "CalRecycle – Recycling Is in Your Hands",
+    "source_url": "https://calrecycle.ca.gov/bevcontainer/consumers/",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_002",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Nhựa PLA thường mang mã 7",
+    "content_vi": "PLA (polylactic acid) không thuộc sáu nhóm nhựa đầu nên thường được xếp vào mã 7. Dù có nguồn gốc sinh học, PLA không có mã riêng trong hệ 1–7.",
+    "source_title": "US EPA – Sustainable End-of-Life Management of Plastics",
+    "source_url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101C0IO.TXT",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_003",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Polycarbonate thường mang mã 7",
+    "content_vi": "Polycarbonate là một loại nhựa kỹ thuật không thuộc các mã 1–6. Vì vậy nhiều sản phẩm làm từ polycarbonate mang ký hiệu tam giác với số 7.",
+    "source_title": "CalRecycle – Recycling Is in Your Hands",
+    "source_url": "https://calrecycle.ca.gov/bevcontainer/consumers/",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_004",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Cùng mã 7 nhưng tính chất rất khác nhau",
+    "content_vi": "Nhóm 7 gồm nhiều loại polymer và cả vật liệu nhiều lớp dán lại. Mỗi loại có chuỗi và liên kết riêng, nên độ cứng, nhiệt độ mềm ra và khả năng cản khí đều khác nhau.",
+    "source_title": "US EPA – Sustainable End-of-Life Management of Plastics",
+    "source_url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101C0IO.TXT",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_005",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Mã 7 chưa cho biết cách xử lý",
+    "content_vi": "Số 7 chỉ cho biết sản phẩm nằm ngoài sáu nhóm nhựa đầu. Muốn biết xử lý thế nào, cần biết chính xác đó là loại polymer gì và quy định thu gom ở địa phương.",
+    "source_title": "US EPA – How Do I Recycle Common Recyclables",
+    "source_url": "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_006",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Polycarbonate chịu va đập cực tốt",
+    "content_vi": "Polycarbonate (tên thương mại Lexan) chịu va đập rất tốt. Nhờ vậy nó được dùng làm vỏ máy, mũ bảo hiểm xe đạp và cả kính chống đạn.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_007",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Nylon cũng thuộc nhóm nhựa mã 7",
+    "content_vi": "Nylon không thuộc sáu nhóm nhựa đầu nên được xếp vào mã 7. Có nhiều loại nylon: nylon 6 được tạo từ một monomer là caprolactam, còn nylon 66 từ hai monomer.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  },
+  {
+    "id": "plastic_7_008",
+    "material_key": "plastic",
+    "plastic_code": 7,
+    "title_vi": "Mút xốp polyurethane thuộc nhóm 7",
+    "content_vi": "Polyurethane không nằm trong sáu mã nhựa đầu nên thường thuộc nhóm 7. Loại nhựa này dùng làm mút xốp cách nhiệt và cả sợi spandex co giãn trong đồ bơi.",
+    "source_title": "OpenStax Organic Chemistry – Step-Growth Polymers",
+    "source_url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+    "review_status": "reviewed"
+  }
+]
