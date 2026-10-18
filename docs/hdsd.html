@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HDSD - Hướng dẫn sử dụng Waste Scanner.">
+  <title>HDSD — Hướng dẫn sử dụng | Waste Scanner</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Waste Scanner Documentation - Trang chủ">
+        <span class="brand-mark" aria-hidden="true">♻</span>
+        <span>Waste Scanner <small>Documentation</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Mở menu</span>☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a class="active" href="hdsd.html" aria-current="page">HDSD</a>
+        <a href="hdcd.html">HDCD</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="doc-layout container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><span>HDSD</span></div>
+    <div class="doc-heading">
+      <p class="eyebrow">HDSD</p>
+      <h1>Hướng dẫn sử dụng</h1>
+      <p>Tài liệu dành cho người sử dụng Waste Scanner.</p>
+    </div>
+    <div class="doc-grid">
+      <aside class="toc" aria-label="Mục lục HDSD">
+        <h2>Mục lục</h2>
+        <nav>
+          <a href="#gioi-thieu">1. Giới thiệu</a>
+          <a href="#bat-dau">2. Bắt đầu quét</a>
+          <a href="#ket-qua">3. Đọc kết quả</a>
+          <a href="#ma-nhua">4. Trường hợp nhựa</a>
+          <a href="#flashcard">5. Flashcard Hóa học</a>
+          <a href="#luu-y">6. Lưu ý</a>
+          <a href="#hinh-minh-hoa">7. Hình minh họa</a>
+        </nav>
+      </aside>
+      <article class="doc-content">
+        <section id="gioi-thieu">
+          <h2>1. Giới thiệu</h2>
+          <p>ChemSort là ứng dụng Flutter cho Android và iOS, hỗ trợ nhận diện một vật thể rác, hiển thị nhóm vật liệu và cung cấp một flashcard Hóa học liên quan.</p>
+          <p>Ứng dụng hiện xử lý ảnh bằng model YOLO11n-cls dạng TFLite chạy trực tiếp trên điện thoại. Luồng sử dụng chính là:</p>
+          <p class="callout"><strong>Trang bắt đầu → Quét vật thể → Kết quả nhận diện → (nếu là nhựa) chọn mã nhựa → Flashcard Hóa học.</strong></p>
+        </section>
+        <section id="bat-dau">
+          <h2>2. Bắt đầu quét</h2>
+          <ol>
+            <li>Mở ứng dụng và chọn <strong>Bắt đầu</strong>.</li>
+            <li>Ở màn hình <strong>Quét vật thể</strong>, chọn một trong hai cách:
+              <ul>
+                <li><strong>Chụp ảnh</strong>: dùng camera để chụp vật thể.</li>
+                <li><strong>Album</strong>: chọn ảnh đã có trên thiết bị.</li>
+              </ul>
+            </li>
+            <li>Chờ ứng dụng phân tích ảnh. Trong lúc xử lý, màn hình hiển thị trạng thái <strong>Đang nhận diện…</strong>.</li>
+          </ol>
+          <p>Để kết quả ổn định hơn, nên chụp đủ sáng, đưa một vật thể chính vào khung hình và chụp tương đối gần.</p>
+        </section>
+        <section id="ket-qua">
+          <h2>3. Đọc kết quả</h2>
+          <p>Màn hình <strong>Kết quả nhận diện</strong> hiển thị:</p>
+          <ul>
+            <li>Tên vật liệu bằng tiếng Anh và tiếng Việt.</li>
+            <li>Ảnh đã được phân tích.</li>
+            <li>Độ tin cậy của dự đoán.</li>
+            <li>Nhóm phân loại và gợi ý liên quan.</li>
+          </ul>
+          <p>Chọn <strong>Tiếp tục</strong> để xem nội dung tiếp theo hoặc chọn <strong>Quét lại</strong> nếu muốn chụp/chọn ảnh khác.</p>
+          <p class="callout">Nếu độ tin cậy thấp hơn ngưỡng của ứng dụng, kết quả sẽ không được mở. Ứng dụng yêu cầu chụp gần hơn, đủ sáng và chỉ đưa một vật thể vào ảnh.</p>
+        </section>
+        <section id="ma-nhua">
+          <h2>4. Trường hợp vật thể là nhựa</h2>
+          <p>Ứng dụng không tự đọc mã nhựa từ hình ảnh. Khi kết quả là <strong>Nhựa</strong>, màn hình <strong>Chọn mã nhựa</strong> hiển thị các mã từ 1 đến 7.</p>
+          <ol>
+            <li>Tìm ký hiệu mã nhựa được in trên sản phẩm.</li>
+            <li>Chọn mã tương ứng trong ứng dụng.</li>
+            <li>Xem tên resin/polymer và chọn <strong>Xem fact</strong>.</li>
+          </ol>
+          <p>Nếu không thấy mã, chọn <strong>Không thấy mã? Xem fact nhựa chung</strong>. Mã nhựa cho biết loại resin/polymer, không tự quyết định nhóm phân loại rác.</p>
+        </section>
+        <section id="flashcard">
+          <h2>5. Flashcard Hóa học</h2>
+          <p>Flashcard hiển thị một kiến thức liên quan đến vật liệu hoặc mã nhựa đã chọn, kèm nguồn tham khảo.</p>
+          <p>Sau khi đọc, chọn <strong>Quét vật khác</strong> để quay lại màn hình quét. Ứng dụng được thiết kế theo nguyên tắc mỗi lần quét hiển thị một kiến thức.</p>
+        </section>
+        <section id="luu-y">
+          <h2>6. Lưu ý khi sử dụng</h2>
+          <ul>
+            <li>Model nhận diện vật thể chính trong ảnh; ảnh có nhiều vật thể hoặc vật làm từ nhiều vật liệu có thể cho kết quả không chính xác.</li>
+            <li>Kết quả nhóm rác là phân loại chung tại Việt Nam, không có nghĩa vật liệu chắc chắn được tái chế ở mọi địa phương.</li>
+            <li>Ảnh được xử lý trên thiết bị theo kiến trúc hiện tại của repository; tài liệu này không mô tả một dịch vụ tải ảnh lên máy chủ.</li>
+            <li>Nếu app không khởi động được, nguyên nhân có thể là model hoặc dữ liệu flashcard đi kèm không tải được; hãy báo người phụ trách bản cài đặt.</li>
+          </ul>
+        </section>
+        <section id="hinh-minh-hoa">
+          <h2>7. Hình minh họa</h2>
+          <div class="image-placeholder">[BỔ SUNG ẢNH MINH HỌA TẠI ĐÂY]</div>
+          <p class="muted">Các ảnh giao diện thực tế chưa có trong repository. Đặt ảnh trong <code>docs/assets/images/</code> và thay placeholder bằng thẻ <code>&lt;img&gt;</code> có văn bản thay thế.</p>
+        </section>
+        <div class="doc-navigation">
+          <a class="button button-secondary" href="index.html">← Trang chủ</a>
+          <a class="button button-primary" href="hdcd.html">Xem HDCD →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Quay lại đầu trang">↑</button>
+  <footer class="site-footer"><div class="container footer-inner"><span>Waste Scanner Documentation</span><span>© <span data-current-year>2026</span></span></div></footer>
+</body>
+</html>
