@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HDCD - Hướng dẫn cài đặt Waste Scanner.">
+  <title>HDCD — Hướng dẫn cài đặt | Waste Scanner</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Waste Scanner Documentation - Trang chủ">
+        <span class="brand-mark" aria-hidden="true">♻</span>
+        <span>Waste Scanner <small>Documentation</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Mở menu</span>☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="hdsd.html">HDSD</a>
+        <a class="active" href="hdcd.html" aria-current="page">HDCD</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="doc-layout container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><span>HDCD</span></div>
+    <div class="doc-heading">
+      <p class="eyebrow">HDCD</p>
+      <h1>Hướng dẫn cài đặt</h1>
+      <p>Tài liệu dành cho người chuẩn bị môi trường và cài đặt Waste Scanner.</p>
+    </div>
+    <div class="doc-grid">
+      <aside class="toc" aria-label="Mục lục HDCD">
+        <h2>Mục lục</h2>
+        <nav>
+          <a href="#gioi-thieu">1. Giới thiệu</a>
+          <a href="#yeu-cau">2. Yêu cầu cài đặt</a>
+          <a href="#cai-apk">3. Cài APK Android</a>
+          <a href="#android">4. Chạy từ source trên Android</a>
+          <a href="#ios">5. Chạy từ source trên iOS</a>
+          <a href="#kiem-tra">6. Kiểm tra sau cài đặt</a>
+          <a href="#loi-thuong-gap">7. Lỗi thường gặp</a>
+          <a href="#hinh-minh-hoa">8. Hình minh họa</a>
+        </nav>
+      </aside>
+      <article class="doc-content">
+        <section id="gioi-thieu">
+          <h2>1. Giới thiệu</h2>
+          <p>Tài liệu này hướng dẫn chuẩn bị môi trường phát triển và chạy bản ChemSort hiện tại từ source code. Repository hiện chưa cung cấp gói cài đặt phát hành công khai cho người dùng cuối.</p>
+          <p class="callout">Các lệnh dưới đây dùng cho người có source code và Flutter SDK; chúng không phải hướng dẫn tải ứng dụng từ Google Play hoặc App Store.</p>
+        </section>
+        <section id="yeu-cau">
+          <h2>2. Yêu cầu cài đặt</h2>
+          <h3>Yêu cầu chung</h3>
+          <ul>
+            <li>Flutter SDK 3.44 trở lên.</li>
+            <li>Project khai báo Dart SDK từ 3.6.0 đến trước 4.0.0; Flutter SDK cần đáp ứng ràng buộc này.</li>
+            <li>Clone source code repository về máy và chạy lệnh từ thư mục gốc project.</li>
+          </ul>
+          <h3>Android</h3>
+          <ul>
+            <li>Android Studio và Android SDK.</li>
+            <li>Thiết bị Android 8.0 trở lên (API 26+).</li>
+            <li>Nếu chạy trên điện thoại thật, bật USB debugging.</li>
+          </ul>
+          <h3>iOS</h3>
+          <ul>
+            <li>macOS và Xcode 15 trở lên.</li>
+            <li>CocoaPods.</li>
+            <li>iPhone chạy iOS 15 trở lên.</li>
+            <li>Project dùng CocoaPods cho runtime native của <code>tflite_flutter</code>.</li>
+          </ul>
+        </section>
+        <section id="cai-apk">
+          <h2>3. Cài APK Android cho người dùng cuối</h2>
+          <p>Chủ sở hữu dự án hiện chưa cung cấp tên file, phiên bản hoặc đường dẫn APK công khai trong repository này. Người dùng cần liên hệ trực tiếp với chủ sở hữu dự án để nhận đúng file cài đặt.</p>
+          <ol>
+            <li>Nhận file APK từ chủ sở hữu dự án và xác nhận đúng phiên bản.</li>
+            <li>Mở file APK trên thiết bị Android tương thích.</li>
+            <li>Nếu Android yêu cầu, cho phép cài ứng dụng từ nguồn gửi file đó.</li>
+            <li>Hoàn tất cài đặt, mở ứng dụng và thực hiện các bước kiểm tra bên dưới.</li>
+          </ol>
+          <p class="callout">Không tải APK từ nguồn không xác định. Link tải, tên file và phiên bản sẽ được bổ sung khi chủ sở hữu dự án cung cấp thông tin phát hành công khai.</p>
+        </section>
+        <section id="android">
+          <h2>4. Chạy từ source trên Android</h2>
+          <p>Mở PowerShell tại thư mục gốc của project và chạy:</p>
+          <pre><code>flutter pub get
+flutter test
+flutter run</code></pre>
+          <p>Để build APK release theo từng kiến trúc và cài bản ARM64 vào thiết bị:</p>
+          <pre><code>flutter build apk --release --split-per-abi
+adb install -r build\app\outputs\flutter-apk\app-arm64-v8a-release.apk</code></pre>
+          <p><code>adb</code> thường nằm trong <code>%LOCALAPPDATA%\Android\Sdk\platform-tools\</code>. Nếu chưa có trong PATH, dùng đường dẫn đầy đủ.</p>
+          <p>Thiết bị Xiaomi/Redmi/POCO có thể yêu cầu bật thêm <strong>Cài đặt qua USB</strong> trong Tùy chọn nhà phát triển.</p>
+        </section>
+        <section id="ios">
+          <h2>5. Chạy từ source trên iOS</h2>
+          <p>Trên macOS, mở Terminal tại thư mục gốc project và chạy:</p>
+          <pre><code>flutter pub get
+cd ios &amp;&amp; pod install &amp;&amp; cd ..
+flutter test
+flutter run</code></pre>
+          <p>Để chỉ kiểm tra quá trình biên dịch bản release chưa ký:</p>
+          <pre><code>flutter build ios --release --no-codesign</code></pre>
+          <p>Build archive hoặc IPA cần cấu hình signing/team trong Xcode. <code>tflite_flutter</code> có thể không chạy đúng trên iOS Simulator; nên kiểm tra luồng chụp/chọn ảnh và suy luận trên iPhone thật.</p>
+          <p>Ứng dụng đã khai báo mô tả quyền camera và thư viện ảnh trong cấu hình iOS.</p>
+        </section>
+        <section id="kiem-tra">
+          <h2>6. Kiểm tra sau cài đặt</h2>
+          <ol>
+            <li>Đảm bảo ứng dụng mở được đến màn hình <strong>ChemSort</strong>.</li>
+            <li>Chọn <strong>Bắt đầu</strong> và thử cả <strong>Chụp ảnh</strong> lẫn <strong>Album</strong>.</li>
+            <li>Kiểm tra ảnh được phân tích và màn hình kết quả hiển thị độ tin cậy.</li>
+            <li>Nếu kết quả là nhựa, kiểm tra màn hình chọn mã 1–7 và flashcard.</li>
+            <li>Kiểm tra nút <strong>Quét vật khác</strong> quay lại được luồng quét.</li>
+          </ol>
+        </section>
+        <section id="loi-thuong-gap">
+          <h2>7. Lỗi thường gặp</h2>
+          <ul>
+            <li><strong>Không tải được model hoặc flashcard:</strong> kiểm tra asset trong source code và chạy lại <code>flutter pub get</code>.</li>
+            <li><strong>Không chụp/chọn được ảnh:</strong> kiểm tra quyền camera hoặc thư viện ảnh trên thiết bị.</li>
+            <li><strong>Không nhận diện chắc chắn:</strong> chụp gần hơn, đủ sáng và chỉ để một vật thể chính trong ảnh.</li>
+            <li><strong>Android không cài được qua ADB:</strong> kiểm tra USB debugging, cáp/kết nối và PATH của <code>adb</code>.</li>
+            <li><strong>iOS build lỗi sau khi đổi cấu hình:</strong> có thể cần <code>flutter clean</code>, cài lại Pods rồi build lại theo hướng dẫn của project.</li>
+          </ul>
+        </section>
+        <section id="hinh-minh-hoa">
+          <h2>8. Hình minh họa</h2>
+          <div class="image-placeholder">[BỔ SUNG ẢNH MINH HỌA TẠI ĐÂY]</div>
+          <p class="muted">Ảnh chụp màn hình và ảnh thiết bị chưa có trong repository. Đặt ảnh trong <code>docs/assets/images/</code> và thay placeholder bằng thẻ <code>&lt;img&gt;</code> có văn bản thay thế.</p>
+        </section>
+        <div class="doc-navigation">
+          <a class="button button-secondary" href="hdsd.html">← Xem HDSD</a>
+          <a class="button button-primary" href="index.html">Trang chủ →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Quay lại đầu trang">↑</button>
+  <footer class="site-footer"><div class="container footer-inner"><span>Waste Scanner Documentation</span><span>© <span data-current-year>2026</span></span></div></footer>
+</body>
+</html>
