@@ -319,11 +319,13 @@ adb install -r build\app\outputs\flutter-apk\app-arm64-v8a-release.apk
 
 ### iOS
 
-Cần macOS, Xcode 15 trở lên và iPhone chạy iOS 15 trở lên. Project dùng Swift
-Package Manager của Flutter nên không cần chạy `pod install`.
+Cần macOS, Xcode 15 trở lên, CocoaPods và iPhone chạy iOS 15 trở lên. Project
+dùng CocoaPods vì `tflite_flutter 0.12.1` chưa cung cấp Swift Package Manager
+manifest cho phần native iOS.
 
 ```bash
 flutter pub get
+cd ios && pod install && cd ..
 flutter test
 flutter run
 # Hoặc build bản không ký để kiểm tra quá trình biên dịch:
@@ -333,7 +335,20 @@ flutter build ios --release --no-codesign
 Các mô tả quyền camera và thư viện ảnh đã có trong `ios/Runner/Info.plist`.
 `tflite_flutter` có thể không chạy đúng trên iOS Simulator; nên kiểm tra luồng
 chụp/chọn ảnh và suy luận trên iPhone thật trước khi phát hành. Build archive
-(`flutter build ipa`) cũng cần cấu hình signing/team trong Xcode.
+(`flutter build ipa`) cũng cần cấu hình signing/team trong Xcode. Project đã đặt
+`Strip Style` thành `Non-Global Symbols` cho Release/Profile để tránh loại bỏ các
+symbol C mà TFLite tra cứu khi chạy.
+
+Nếu vừa chuyển từ cấu hình Swift Package Manager cũ, hãy làm sạch artifact trước
+khi build lại:
+
+```bash
+flutter clean
+rm -rf ios/Pods ios/Podfile.lock
+flutter pub get
+cd ios && pod install --repo-update && cd ..
+flutter build ios --release --no-codesign
+```
 
 ---
 
