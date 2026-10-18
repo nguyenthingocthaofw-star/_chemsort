@@ -1,6 +1,6 @@
 # ChemSort — Scan, Classify, Discover, Learn
 
-ChemSort là app Android (Flutter) giúp học sinh **phân loại rác tại nguồn** và
+ChemSort là ứng dụng Flutter cho Android và iOS, giúp học sinh **phân loại rác tại nguồn** và
 **học Hóa học từ chính món rác trong tay**. Chụp một vật thể → model nhận diện
 vật liệu ngay trên điện thoại → app cho biết nhóm phân loại theo quy định Việt
 Nam → mở một flashcard Hóa học về vật liệu đó.
@@ -290,8 +290,12 @@ test/                         Unit test mapping, tiền xử lý ảnh, flashcar
 
 ## 8. Chạy và build
 
-Yêu cầu: Flutter SDK (Dart ≥ 3.6), Android Studio + Android SDK, điện thoại
-Android 8.0 trở lên (API 26+) đã bật USB debugging.
+Yêu cầu chung: Flutter SDK 3.44 trở lên (Dart ≥ 3.12).
+
+### Android
+
+Cần Android Studio + Android SDK và điện thoại Android 8.0 trở lên (API 26+)
+đã bật USB debugging.
 
 ```powershell
 flutter pub get
@@ -312,6 +316,24 @@ adb install -r build\app\outputs\flutter-apk\app-arm64-v8a-release.apk
   hãy build trong WSL hoặc Linux.
 - Điện thoại Xiaomi/Redmi/POCO cần bật **"Cài đặt qua USB"** trong Tùy chọn nhà
   phát triển thì `adb install` mới chạy được.
+
+### iOS
+
+Cần macOS, Xcode 15 trở lên và iPhone chạy iOS 15 trở lên. Project dùng Swift
+Package Manager của Flutter nên không cần chạy `pod install`.
+
+```bash
+flutter pub get
+flutter test
+flutter run
+# Hoặc build bản không ký để kiểm tra quá trình biên dịch:
+flutter build ios --release --no-codesign
+```
+
+Các mô tả quyền camera và thư viện ảnh đã có trong `ios/Runner/Info.plist`.
+`tflite_flutter` có thể không chạy đúng trên iOS Simulator; nên kiểm tra luồng
+chụp/chọn ảnh và suy luận trên iPhone thật trước khi phát hành. Build archive
+(`flutter build ipa`) cũng cần cấu hình signing/team trong Xcode.
 
 ---
 
