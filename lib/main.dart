@@ -23,6 +23,17 @@ class _ChemSortAppState extends State<ChemSortApp> {
       AppServices.load();
 
   @override
+  void dispose() {
+    // The interpreter owns native memory. Close it even if startup finishes
+    // after this widget has already left the tree.
+    _services.then<void>(
+      (services) => services.$1.close(),
+      onError: (_) {},
+    );
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     // AppServices sits above MaterialApp so every pushed route can reach it.
     return FutureBuilder(

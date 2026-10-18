@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../config.dart';
-import '../models/prediction.dart';
 import '../services/app_services.dart';
 import '../theme.dart';
 import 'result_screen.dart';
@@ -26,56 +25,53 @@ class _ScanScreenState extends State<ScanScreen> {
   String? _message;
 
   Future<void> _pick(ImageSource source) async {
-    final classifier = AppServices.of(context).classifier;
-    final XFile? file;
-    try {
-      // Downscale on the platform side; the model only needs 224x224.
-      file = await _picker.pickImage(
-        source: source,
-        maxWidth: 1024,
-        maxHeight: 1024,
-        imageQuality: 95,
-      );
-    } catch (error) {
-      setState(() => _message = 'Không mở được camera/album: $error');
-      return;
-    }
-    if (file == null) return;
+    if (_busy) return;
 
-    final bytes = await file.readAsBytes();
-    if (!mounted) return;
+    final classifier = AppServices.of(context).classifier;
     setState(() {
-      _imageBytes = bytes;
       _busy = true;
       _message = null;
     });
 
-    final Prediction prediction;
     try {
-      prediction = await classifier.classify(bytes);
+      // Downscale on the platform side; the model only needs 224x224.
+      final file = await _picker.pickImage(
+        source: source,
+        maxWidth: 1024,
+        maxHeight: 1024,
+        imageQuality: 95,
+        requestFullMetadata: false,
+      );
+      if (file == null) return;
+
+      final bytes = await file.readAsBytes();
+      if (!mounted) return;
+      setState(() => _imageBytes = bytes);
+
+      final prediction = await classifier.classify(bytes);
+      if (!mounted) return;
+
+      if (prediction.confidence < AppConfig.confidenceThreshold) {
+        setState(() => _message =
+            'Chưa nhận diện chắc chắn '
+            '(${(prediction.confidence * 100).toStringAsFixed(0)}%). '
+            'Hãy chụp gần hơn, đủ sáng và chỉ một vật thể.');
+        return;
+      }
+
+      await Navigator.of(context).push(MaterialPageRoute(
+        builder: (_) => ResultScreen(imageBytes: bytes, prediction: prediction),
+      ));
+      // Back from the result/fact: the previous photo is used up.
+      if (mounted) setState(() => _imageBytes = null);
     } catch (error) {
       if (!mounted) return;
-      setState(() {
-        _busy = false;
-        _message = 'Không phân tích được ảnh: $error';
-      });
-      return;
+      setState(() => _message = source == ImageSource.camera
+          ? 'Không chụp hoặc phân tích được ảnh: $error'
+          : 'Không mở hoặc phân tích được ảnh: $error');
+    } finally {
+      if (mounted) setState(() => _busy = false);
     }
-    if (!mounted) return;
-    setState(() => _busy = false);
-
-    if (prediction.confidence < AppConfig.confidenceThreshold) {
-      setState(() => _message =
-          'Chưa nhận diện chắc chắn '
-          '(${(prediction.confidence * 100).toStringAsFixed(0)}%). '
-          'Hãy chụp gần hơn, đủ sáng và chỉ một vật thể.');
-      return;
-    }
-    await Navigator.of(context).push(MaterialPageRoute(
-      builder: (_) => ResultScreen(imageBytes: bytes, prediction: prediction),
-    ));
-    // Back from the result/fact: the previous photo is used up.
-    if (mounted) setState(() => _imageBytes = null);
   }
 
   @override
