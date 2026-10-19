@@ -3,90 +3,158 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tài liệu công khai của dự án Waste Scanner.">
-  <title>Waste Scanner Documentation</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="theme-color" content="#f6f7f1">
+  <meta name="description" content="ChemSort giúp bạn nhận diện vật liệu, phân loại rác và khám phá Hóa học quanh mình.">
+  <title>ChemSort — Quét vật liệu, mở kiến thức</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/chemsort-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/home.css">
   <script defer src="assets/js/main.js"></script>
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="ChemSort — Quét vật liệu, mở kiến thức">
+  <meta property="og:description" content="ChemSort giúp bạn nhận diện vật liệu, phân loại rác và khám phá Hóa học quanh mình.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/chemsort-mark.svg">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ChemSort — Quét vật liệu, mở kiến thức">
+  <meta name="twitter:description" content="ChemSort giúp bạn nhận diện vật liệu, phân loại rác và khám phá Hóa học quanh mình.">
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Waste Scanner Documentation - Trang chủ">
-        <span class="brand-mark" aria-hidden="true">♻</span>
-        <span>Waste Scanner <small>Documentation</small></span>
+      <a class="brand" href="index.html" aria-label="ChemSort — Trang chủ tài liệu">
+        <img src="assets/images/chemsort-mark.svg" alt="" width="44" height="44">
+        <span class="brand-copy"><strong>ChemSort</strong><small>TÀI LIỆU HƯỚNG DẪN</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Mở menu</span>☰
+        <span class="sr-only">Mở menu</span><span aria-hidden="true">☰</span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Điều hướng chính">
         <a class="active" href="index.html" aria-current="page">Trang chủ</a>
-        <a href="hdsd.html">HDSD</a>
-        <a href="hdcd.html">HDCD</a>
+        <a href="hdsd.html">Cách sử dụng</a>
+        <a href="hdcd.html">Cài đặt</a>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">TÀI LIỆU DỰ ÁN</p>
-          <h1>Waste Scanner<br><span>Documentation</span></h1>
-          <p class="hero-lead">Trung tâm tài liệu công khai dành cho người sử dụng và người cài đặt ứng dụng Waste Scanner.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> PHÂN LOẠI · KHÁM PHÁ · HỌC HÓA</p>
+          <h1 id="hero-title">Quét một vật liệu.<br><span>Mở ra kiến thức.</span></h1>
+          <p class="hero-lead">ChemSort giúp bạn nhận diện vật liệu từ những món đồ quen thuộc, tìm hiểu cách phân loại và khám phá Hóa học ẩn trong chúng.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="hdsd.html">Đọc HDSD <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="hdcd.html">Xem HDCD</a>
+            <a class="button button-primary" href="hdsd.html">Khám phá cách dùng <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#tai-lieu">Tìm tài liệu <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">⌁</span>
+            <span>Nhận diện trên điện thoại <b>·</b> Ảnh của bạn ở lại trên thiết bị</span>
           </div>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="hero-orbit orbit-one"></div>
-          <div class="hero-orbit orbit-two"></div>
-          <div class="hero-leaf">♻</div>
+
+        <div class="hero-art" role="img" aria-label="Minh họa ChemSort đang quét một chai nhựa và nhận diện vật liệu PET">
+          <div class="art-glow" aria-hidden="true"></div>
+          <div class="art-label art-label-top"><span class="status-dot" aria-hidden="true"></span> NHẬN DIỆN NGOẠI TUYẾN</div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone-screen">
+              <div class="phone-status"><span>9:41</span><span>●●● &nbsp; ▰</span></div>
+              <div class="scan-heading"><span class="scan-back">‹</span><span>Quét vật thể</span><span class="scan-menu">···</span></div>
+              <div class="scan-stage">
+                <span class="scan-corner corner-tl"></span><span class="scan-corner corner-tr"></span>
+                <span class="scan-corner corner-bl"></span><span class="scan-corner corner-br"></span>
+                <svg class="bottle-art" viewBox="0 0 220 270" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="bottleFill" x1="40" y1="35" x2="178" y2="230" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#e7fff3" stop-opacity=".96"/>
+                      <stop offset="1" stop-color="#8edbb8" stop-opacity=".82"/>
+                    </linearGradient>
+                    <linearGradient id="labelFill" x1="70" y1="128" x2="153" y2="180" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#fffdf5"/><stop offset="1" stop-color="#e9f2e7"/>
+                    </linearGradient>
+                  </defs>
+                  <ellipse cx="111" cy="241" rx="59" ry="10" fill="#17372F" fill-opacity=".12"/>
+                  <path d="M89 30h44v24l18 19v137c0 17-11 28-28 28H99c-17 0-28-11-28-28V73l18-19V30Z" fill="url(#bottleFill)" stroke="#f6fff9" stroke-width="4"/>
+                  <path d="M87 29h48v17H87z" rx="5" fill="#d5f1df"/>
+                  <path d="M92 17a4 4 0 0 1 4-4h30a4 4 0 0 1 4 4v14H92V17Z" fill="#75c99a"/>
+                  <path d="M78 139c20 7 51 7 84 0v51c-27 8-57 8-84 0v-51Z" fill="url(#labelFill)"/>
+                  <circle cx="110" cy="157" r="12" fill="#d8efdc"/>
+                  <path d="M106 162c-5-6-4-12 3-16 1 6 5 9 5 13 0 3-3 5-6 5" stroke="#4d9b70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M98 178h26" stroke="#8cab91" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M83 78v38" stroke="#fff" stroke-opacity=".8" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                <div class="scan-line"></div>
+              </div>
+              <div class="phone-result">
+                <div><span class="result-caption">VẬT LIỆU NHẬN DIỆN</span><strong>Nhựa <small>· PET</small></strong></div>
+                <span class="confidence">93%</span>
+              </div>
+              <div class="phone-bottom"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="art-label art-label-bottom"><span class="sparkle" aria-hidden="true">✳</span> Mỗi lần quét, một điều mới</div>
+          <span class="art-orbit orbit-a" aria-hidden="true"></span>
+          <span class="art-orbit orbit-b" aria-hidden="true"></span>
         </div>
+      </div>
+      <div class="hero-footer container" aria-label="Điểm nổi bật của ChemSort">
+        <span><b>06</b> nhóm vật liệu</span><i aria-hidden="true"></i>
+        <span><b>178</b> flashcard Hóa học</span><i aria-hidden="true"></i>
+        <span><b>100%</b> xử lý trên thiết bị</span>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="documents-title">
+    <section class="section documents-section" id="tai-lieu" aria-labelledby="documents-title">
       <div class="container">
-        <p class="eyebrow">BẮT ĐẦU TẠI ĐÂY</p>
-        <h2 id="documents-title">Chọn tài liệu bạn cần</h2>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-light">BẮT ĐẦU TẠI ĐÂY</p>
+            <h2 id="documents-title">Bạn muốn tìm hiểu điều gì?</h2>
+          </div>
+          <p class="section-intro">Chọn hướng dẫn phù hợp để bắt đầu dùng ChemSort hoặc cài đặt dự án trên thiết bị của bạn.</p>
+        </div>
         <div class="document-grid">
-          <article class="document-card">
-            <div class="card-icon" aria-hidden="true">⌕</div>
-            <div>
-              <p class="card-kicker">HDSD</p>
-              <h3>Hướng dẫn sử dụng</h3>
-              <p>Tài liệu dành cho người dùng ứng dụng. Nội dung thao tác sẽ được bổ sung theo phiên bản được xác nhận của sản phẩm.</p>
-              <a class="text-link" href="hdsd.html">Mở tài liệu <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-          <article class="document-card">
-            <div class="card-icon" aria-hidden="true">⚙</div>
-            <div>
-              <p class="card-kicker">HDCD</p>
-              <h3>Hướng dẫn cài đặt</h3>
-              <p>Tài liệu dành cho người chuẩn bị môi trường và cài đặt ứng dụng. Các yêu cầu cụ thể sẽ được cập nhật khi được xác minh.</p>
-              <a class="text-link" href="hdcd.html">Mở tài liệu <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
+          <a class="document-card user-card" href="hdsd.html">
+            <div class="card-topline"><span class="card-number">01</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+            <div class="card-icon user-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="10" y="5" width="28" height="38" rx="7" stroke="currentColor" stroke-width="2.5"/><path d="M19 10h10M20 37h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="m18 25 4 4 9-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="card-content"><span class="card-kicker">DÀNH CHO NGƯỜI DÙNG</span><h3>Hướng dẫn sử dụng</h3><p>Tìm hiểu cách quét vật thể, đọc kết quả phân loại, chọn mã nhựa và khám phá flashcard Hóa học.</p><span class="card-link">Mở hướng dẫn <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="document-card install-card" href="hdcd.html">
+            <div class="card-topline"><span class="card-number">02</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+            <div class="card-icon install-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6v23m0 0 9-9m-9 9-9-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 30v7a5 5 0 0 0 5 5h18a5 5 0 0 0 5-5v-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+            <div class="card-content"><span class="card-kicker">DÀNH CHO NGƯỜI CÀI ĐẶT</span><h3>Hướng dẫn cài đặt</h3><p>Chuẩn bị môi trường, lấy mã nguồn và chạy ChemSort trên Android hoặc iOS.</p><span class="card-link">Mở hướng dẫn <span aria-hidden="true">→</span></span></div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted" aria-labelledby="about-title">
-      <div class="container narrow">
-        <p class="eyebrow">VỀ WEBSITE NÀY</p>
-        <h2 id="about-title">Tài liệu tĩnh, truy cập công khai</h2>
-        <p>Website này chứa tài liệu HTML độc lập và được phân phối qua GitHub Pages. Website không chạy ứng dụng Flutter, không có backend và không yêu cầu người xem chạy local.</p>
+    <section class="how-section" aria-labelledby="how-title">
+      <div class="container how-layout">
+        <div class="how-heading">
+          <p class="eyebrow eyebrow-light">THẬT ĐƠN GIẢN</p>
+          <h2 id="how-title">Một lần quét.<br><span>Ba bước khám phá.</span></h2>
+          <p>Biến một món đồ thường ngày thành điểm khởi đầu cho kiến thức mới.</p>
+        </div>
+        <ol class="steps-list">
+          <li><span class="step-index">01</span><div><h3>Chụp hoặc chọn ảnh</h3><p>Đưa một vật thể vào khung hình hoặc chọn ảnh có sẵn.</p></div><span class="step-check" aria-hidden="true">↗</span></li>
+          <li><span class="step-index">02</span><div><h3>Nhận diện vật liệu</h3><p>ChemSort phân tích ảnh ngay trên điện thoại của bạn.</p></div><span class="step-check" aria-hidden="true">↗</span></li>
+          <li><span class="step-index">03</span><div><h3>Đọc và khám phá</h3><p>Xem gợi ý phân loại cùng một kiến thức Hóa học thú vị.</p></div><span class="step-check" aria-hidden="true">✳</span></li>
+        </ol>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>Waste Scanner Documentation</span>
-      <span>© <span data-current-year>2026</span></span>
+      <a class="footer-brand" href="index.html"><img src="assets/images/chemsort-mark.svg" alt="" width="34" height="34"><span>ChemSort</span></a>
+      <p>Quét vật liệu, mở ra kiến thức.</p>
+      <span class="copyright">© <span data-current-year>2026</span> ChemSort</span>
     </div>
   </footer>
 </body>

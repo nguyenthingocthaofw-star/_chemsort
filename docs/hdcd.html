@@ -3,144 +3,482 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="HDCD - Hướng dẫn cài đặt Waste Scanner.">
-  <title>HDCD — Hướng dẫn cài đặt | Waste Scanner</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="theme-color" content="#f6f7f1">
+  <meta name="description" content="Hướng dẫn cài đặt và chạy ChemSort từ mã nguồn - Dành cho developers">
+  <title>Hướng dẫn cài đặt — ChemSort</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/chemsort-mark.svg">
+  <link rel="stylesheet" href="assets/css/home.css">
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Waste Scanner Documentation - Trang chủ">
-        <span class="brand-mark" aria-hidden="true">♻</span>
-        <span>Waste Scanner <small>Documentation</small></span>
+      <a class="brand" href="index.html" aria-label="ChemSort — Trang chủ tài liệu">
+        <img src="assets/images/chemsort-mark.svg" alt="" width="44" height="44">
+        <span class="brand-copy"><strong>ChemSort</strong><small>TÀI LIỆU HƯỚNG DẪN</small></span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Mở menu</span>☰</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Mở menu</span><span aria-hidden="true">☰</span>
+      </button>
       <nav id="site-nav" class="site-nav" aria-label="Điều hướng chính">
         <a href="index.html">Trang chủ</a>
-        <a href="hdsd.html">HDSD</a>
-        <a class="active" href="hdcd.html" aria-current="page">HDCD</a>
+        <a href="hdsd.html">Cách sử dụng</a>
+        <a class="active" href="hdcd.html" aria-current="page">Cài đặt</a>
       </nav>
     </div>
   </header>
-  <main id="main-content" class="doc-layout container">
-    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><span>HDCD</span></div>
-    <div class="doc-heading">
-      <p class="eyebrow">HDCD</p>
-      <h1>Hướng dẫn cài đặt</h1>
-      <p>Tài liệu dành cho người chuẩn bị môi trường và cài đặt Waste Scanner.</p>
-    </div>
-    <div class="doc-grid">
-      <aside class="toc" aria-label="Mục lục HDCD">
-        <h2>Mục lục</h2>
-        <nav>
-          <a href="#gioi-thieu">1. Giới thiệu</a>
-          <a href="#yeu-cau">2. Yêu cầu cài đặt</a>
-          <a href="#cai-apk">3. Cài APK Android</a>
-          <a href="#android">4. Chạy từ source trên Android</a>
-          <a href="#ios">5. Chạy từ source trên iOS</a>
-          <a href="#kiem-tra">6. Kiểm tra sau cài đặt</a>
-          <a href="#loi-thuong-gap">7. Lỗi thường gặp</a>
-          <a href="#hinh-minh-hoa">8. Hình minh họa</a>
-        </nav>
-      </aside>
-      <article class="doc-content">
-        <section id="gioi-thieu">
-          <h2>1. Giới thiệu</h2>
-          <p>Tài liệu này hướng dẫn chuẩn bị môi trường phát triển và chạy bản ChemSort hiện tại từ source code. Repository hiện chưa cung cấp gói cài đặt phát hành công khai cho người dùng cuối.</p>
-          <p class="callout">Các lệnh dưới đây dùng cho người có source code và Flutter SDK; chúng không phải hướng dẫn tải ứng dụng từ Google Play hoặc App Store.</p>
-        </section>
-        <section id="yeu-cau">
-          <h2>2. Yêu cầu cài đặt</h2>
-          <h3>Yêu cầu chung</h3>
-          <ul>
-            <li>Flutter SDK 3.44 trở lên.</li>
-            <li>Project khai báo Dart SDK từ 3.6.0 đến trước 4.0.0; Flutter SDK cần đáp ứng ràng buộc này.</li>
-            <li>Clone source code repository về máy và chạy lệnh từ thư mục gốc project.</li>
-          </ul>
-          <h3>Android</h3>
-          <ul>
-            <li>Android Studio và Android SDK.</li>
-            <li>Thiết bị Android 8.0 trở lên (API 26+).</li>
-            <li>Nếu chạy trên điện thoại thật, bật USB debugging.</li>
-          </ul>
-          <h3>iOS</h3>
-          <ul>
-            <li>macOS và Xcode 15 trở lên.</li>
-            <li>CocoaPods.</li>
-            <li>iPhone chạy iOS 15 trở lên.</li>
-            <li>Project dùng CocoaPods cho runtime native của <code>tflite_flutter</code>.</li>
-          </ul>
-        </section>
-        <section id="cai-apk">
-          <h2>3. Cài APK Android cho người dùng cuối</h2>
-          <p>Chủ sở hữu dự án hiện chưa cung cấp tên file, phiên bản hoặc đường dẫn APK công khai trong repository này. Người dùng cần liên hệ trực tiếp với chủ sở hữu dự án để nhận đúng file cài đặt.</p>
-          <ol>
-            <li>Nhận file APK từ chủ sở hữu dự án và xác nhận đúng phiên bản.</li>
-            <li>Mở file APK trên thiết bị Android tương thích.</li>
-            <li>Nếu Android yêu cầu, cho phép cài ứng dụng từ nguồn gửi file đó.</li>
-            <li>Hoàn tất cài đặt, mở ứng dụng và thực hiện các bước kiểm tra bên dưới.</li>
-          </ol>
-          <p class="callout">Không tải APK từ nguồn không xác định. Link tải, tên file và phiên bản sẽ được bổ sung khi chủ sở hữu dự án cung cấp thông tin phát hành công khai.</p>
-        </section>
-        <section id="android">
-          <h2>4. Chạy từ source trên Android</h2>
-          <p>Mở PowerShell tại thư mục gốc của project và chạy:</p>
-          <pre><code>flutter pub get
-flutter test
-flutter run</code></pre>
-          <p>Để build APK release theo từng kiến trúc và cài bản ARM64 vào thiết bị:</p>
-          <pre><code>flutter build apk --release --split-per-abi
-adb install -r build\app\outputs\flutter-apk\app-arm64-v8a-release.apk</code></pre>
-          <p><code>adb</code> thường nằm trong <code>%LOCALAPPDATA%\Android\Sdk\platform-tools\</code>. Nếu chưa có trong PATH, dùng đường dẫn đầy đủ.</p>
-          <p>Thiết bị Xiaomi/Redmi/POCO có thể yêu cầu bật thêm <strong>Cài đặt qua USB</strong> trong Tùy chọn nhà phát triển.</p>
-        </section>
-        <section id="ios">
-          <h2>5. Chạy từ source trên iOS</h2>
-          <p>Trên macOS, mở Terminal tại thư mục gốc project và chạy:</p>
-          <pre><code>flutter pub get
-cd ios &amp;&amp; pod install &amp;&amp; cd ..
-flutter test
-flutter run</code></pre>
-          <p>Để chỉ kiểm tra quá trình biên dịch bản release chưa ký:</p>
-          <pre><code>flutter build ios --release --no-codesign</code></pre>
-          <p>Build archive hoặc IPA cần cấu hình signing/team trong Xcode. <code>tflite_flutter</code> có thể không chạy đúng trên iOS Simulator; nên kiểm tra luồng chụp/chọn ảnh và suy luận trên iPhone thật.</p>
-          <p>Ứng dụng đã khai báo mô tả quyền camera và thư viện ảnh trong cấu hình iOS.</p>
-        </section>
-        <section id="kiem-tra">
-          <h2>6. Kiểm tra sau cài đặt</h2>
-          <ol>
-            <li>Đảm bảo ứng dụng mở được đến màn hình <strong>ChemSort</strong>.</li>
-            <li>Chọn <strong>Bắt đầu</strong> và thử cả <strong>Chụp ảnh</strong> lẫn <strong>Album</strong>.</li>
-            <li>Kiểm tra ảnh được phân tích và màn hình kết quả hiển thị độ tin cậy.</li>
-            <li>Nếu kết quả là nhựa, kiểm tra màn hình chọn mã 1–7 và flashcard.</li>
-            <li>Kiểm tra nút <strong>Quét vật khác</strong> quay lại được luồng quét.</li>
-          </ol>
-        </section>
-        <section id="loi-thuong-gap">
-          <h2>7. Lỗi thường gặp</h2>
-          <ul>
-            <li><strong>Không tải được model hoặc flashcard:</strong> kiểm tra asset trong source code và chạy lại <code>flutter pub get</code>.</li>
-            <li><strong>Không chụp/chọn được ảnh:</strong> kiểm tra quyền camera hoặc thư viện ảnh trên thiết bị.</li>
-            <li><strong>Không nhận diện chắc chắn:</strong> chụp gần hơn, đủ sáng và chỉ để một vật thể chính trong ảnh.</li>
-            <li><strong>Android không cài được qua ADB:</strong> kiểm tra USB debugging, cáp/kết nối và PATH của <code>adb</code>.</li>
-            <li><strong>iOS build lỗi sau khi đổi cấu hình:</strong> có thể cần <code>flutter clean</code>, cài lại Pods rồi build lại theo hướng dẫn của project.</li>
-          </ul>
-        </section>
-        <section id="hinh-minh-hoa">
-          <h2>8. Hình minh họa</h2>
-          <div class="image-placeholder">[BỔ SUNG ẢNH MINH HỌA TẠI ĐÂY]</div>
-          <p class="muted">Ảnh chụp màn hình và ảnh thiết bị chưa có trong repository. Đặt ảnh trong <code>docs/assets/images/</code> và thay placeholder bằng thẻ <code>&lt;img&gt;</code> có văn bản thay thế.</p>
-        </section>
-        <div class="doc-navigation">
-          <a class="button button-secondary" href="hdsd.html">← Xem HDSD</a>
-          <a class="button button-primary" href="index.html">Trang chủ →</a>
-        </div>
-      </article>
+
+  <main id="main-content" style="background: #f8fafb; padding: 3rem 0;">
+    <div class="container" style="max-width: 1200px;">
+      <!-- Breadcrumb -->
+      <div style="margin-bottom: 2rem; font-size: 0.875rem; color: #64748b;">
+        <a href="index.html" style="color: #00d9a3;">Trang chủ</a>
+        <span style="margin: 0 0.5rem;">/</span>
+        <span>Hướng dẫn cài đặt</span>
+      </div>
+
+      <!-- Page Header -->
+      <div style="margin-bottom: 3rem;">
+        <p style="color: #00d9a3; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 0.5rem;">HƯỚNG DẪN CÀI ĐẶT</p>
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #1e293b;">ChemSort — Installation Guide</h1>
+        <p style="font-size: 1.125rem; color: #64748b;">Tài liệu chi tiết dành cho developers và testers - Hướng dẫn cài đặt môi trường, chạy và build ChemSort từ mã nguồn.</p>
+      </div>
+
+      <!-- Alert Box -->
+      <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 3rem;">
+        <p style="margin: 0; color: #1e40af; font-size: 0.875rem;">
+          <strong>📌 Lưu ý:</strong> Đây là hướng dẫn chạy từ source code, không phải hướng dẫn tải app từ Google Play hay App Store. Repository hiện không kèm APK phát hành công khai.
+        </p>
+      </div>
+
+      <!-- Two Column Layout -->
+      <div style="display: grid; grid-template-columns: 280px 1fr; gap: 3rem; align-items: start;">
+        
+        <!-- Table of Contents -->
+        <aside style="position: sticky; top: 90px;">
+          <nav style="background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">Mục lục</h2>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <a href="#gioi-thieu" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">1. Phạm vi</a>
+              <a href="#yeu-cau" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">2. Yêu cầu</a>
+              <a href="#ma-nguon" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">3. Lấy mã nguồn</a>
+              <a href="#cong-cu" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">4. Cài công cụ</a>
+              <a href="#dependencies" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">5. Tải thư viện</a>
+              <a href="#android" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">6. Android</a>
+              <a href="#ios" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">7. iOS</a>
+              <a href="#kiem-tra" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">8. Kiểm tra</a>
+              <a href="#loi-thuong-gap" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">9. Xử lý sự cố</a>
+              <a href="#phat-hanh" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem;">10. Phát hành</a>
+            </div>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <article style="background: white; border-radius: 1.5rem; padding: 3rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+          
+          <!-- Section 1 -->
+          <section id="gioi-thieu" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">1. Phạm vi và thông tin phiên bản</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">1.1. Đối tượng và phạm vi</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Hướng dẫn phù hợp nếu bạn cần mở mã nguồn bằng VS Code hoặc Android Studio, chạy ứng dụng trên thiết bị Android/iOS, hoặc build APK/IPA để kiểm thử. Bạn nên biết cách sử dụng PowerShell hoặc Terminal và có hiểu biết cơ bản về Flutter/Dart.</p>
+            <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #78350f; font-size: 0.875rem;">⏱️ <strong>Thời gian:</strong> Lần cài đầu có thể mất từ vài chục phút đến vài giờ tùy tốc độ mạng và dung lượng Android SDK.</p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">1.2. Cấu hình hiện tại</h3>
+            <div style="overflow-x: auto; margin: 1.5rem 0;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                <thead style="background: #f1f5f9;">
+                  <tr>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Thành phần</th>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Giá trị trong dự án</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Flutter</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">3.44 trở lên</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Dart</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">3.6.0 đến trước 4.0.0</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Android</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">API 26+ (Android 8.0)</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Java/Kotlin</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Java 17, Kotlin JVM target 17</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>iOS</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">iOS 15.0+</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Model</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">yolo11n-cls_data_v2_float32.tflite (~6.2 MB)</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>App Version</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">0.1.0+1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="yeu-cau" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">2. Yêu cầu môi trường</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">2.1. Công cụ dùng chung</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><strong>Git</strong> để tải và cập nhật mã nguồn</li>
+              <li><strong>Flutter SDK</strong> đáp ứng phiên bản dự án</li>
+              <li><strong>VS Code</strong> với Flutter/Dart extension hoặc <strong>Android Studio</strong></li>
+              <li><strong>~10 GB dung lượng trống</strong> cho Android Studio, SDK, emulator</li>
+              <li><strong>Kết nối Internet</strong> lần đầu tải packages và SDK</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">2.2. Nếu build Android</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Android Studio hoặc Android SDK Command-line Tools</li>
+              <li>Android SDK Platform/Build Tools tương thích Flutter</li>
+              <li>Android SDK Platform-Tools (có <code>adb</code>)</li>
+              <li>JDK 17 (Android Studio thường cài kèm)</li>
+              <li>Điện thoại Android 8.0+ hoặc Android Emulator</li>
+              <li>USB debugging enabled trên điện thoại thật</li>
+            </ul>
+            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #1e40af; font-size: 0.875rem;">💡 <code>adb.exe</code> trên Windows thường ở: <code>%LOCALAPPDATA%\Android\Sdk\platform-tools\</code></p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">2.3. Nếu build iOS</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><strong>macOS</strong> (không thể build iOS trên Windows)</li>
+              <li>Xcode 15+ và Xcode Command Line Tools</li>
+              <li>CocoaPods</li>
+              <li>iPhone chạy iOS 15.0+</li>
+              <li>Team và chứng chỉ ký để chạy trên iPhone thật</li>
+            </ul>
+            <div style="background: #fee2e2; border-left: 4px solid #ef4444; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #991b1b; font-size: 0.875rem;">❌ <strong>Lưu ý:</strong> Project hiện tắt Swift Package Manager và dùng CocoaPods. Không bật lại SPM nếu chưa cập nhật cấu hình.</p>
+            </div>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="ma-nguon" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">3. Lấy mã nguồn và kiểm tra</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">3.1. Clone repository</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;"><strong>Windows PowerShell:</strong></p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>New-Item -ItemType Directory -Force "$HOME\source\repos" | Out-Null
+Set-Location "$HOME\source\repos"
+$repoUrl = Read-Host "Nhập URL Git của repository ChemSort"
+git clone $repoUrl chemsort
+Set-Location .\chemsort</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;"><strong>macOS Terminal:</strong></p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>mkdir -p ~/source/repos
+cd ~/source/repos
+read -r -p "Nhập URL Git của repository ChemSort: " repo_url
+git clone "$repo_url" chemsort
+cd chemsort</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">3.2. Kiểm tra các tệp cần thiết</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Thư mục gốc phải có:</p>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><code>pubspec.yaml</code></li>
+              <li><code>lib/</code>, <code>android/</code>, <code>ios/</code></li>
+              <li><code>assets/chemsort/yolo11n-cls_data_v2_float32.tflite</code> (model ~6.2 MB)</li>
+              <li><code>assets/chemsort/labels_9.txt</code> (9 nhãn model)</li>
+              <li><code>assets/chemsort/chemsort_mapping.json</code> (ánh xạ nhãn)</li>
+              <li><code>assets/chemsort/flashcards.json</code> (178 flashcards)</li>
+            </ul>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;"><strong>Kiểm tra bằng PowerShell:</strong></p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>Test-Path .\pubspec.yaml
+Test-Path .\assets\chemsort\yolo11n-cls_data_v2_float32.tflite
+Test-Path .\assets\chemsort\flashcards.json</code></pre>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="cong-cu" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">4. Cài đặt công cụ phát triển</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">4.1. Cài Flutter và kiểm tra PATH</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Cài Flutter SDK theo hướng dẫn chính thức, thêm <code>flutter/bin</code> vào PATH, sau đó mở terminal mới:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter --version
+dart --version
+git --version
+flutter doctor -v</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">4.2. Android Studio và Android SDK</h3>
+            <ol style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Cài Android Studio</li>
+              <li>Mở <strong>SDK Manager</strong> và cài Platform, Build-Tools, Platform-Tools, Command-line Tools</li>
+              <li>Mở <strong>Device Manager</strong> nếu muốn tạo emulator</li>
+              <li>Chấp nhận licenses:</li>
+            </ol>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter doctor --android-licenses</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">4.3. Xcode và CocoaPods (macOS)</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Cài Xcode, mở một lần để hoàn tất cấu hình, sau đó cài Command Line Tools:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>xcode-select --install
+xcodebuild -version</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Cài CocoaPods:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>gem install cocoapods
+pod --version</code></pre>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="dependencies" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">5. Tải thư viện của dự án</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">5.1. Flutter packages và Pods</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Từ thư mục gốc ChemSort:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter pub get</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Nếu build iOS, cài Pods:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>cd ios
+pod install
+cd ..</code></pre>
+
+            <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #78350f; font-size: 0.875rem;">⚠️ <strong>Quan trọng:</strong> Mở <code>ios/Runner.xcworkspace</code> trong Xcode, không phải <code>Runner.xcodeproj</code></p>
+            </div>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Packages chính của dự án:</p>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><code>image</code> - Xử lý ảnh</li>
+              <li><code>image_picker</code> - Chụp/chọn ảnh</li>
+              <li><code>tflite_flutter</code> - Chạy model TFLite</li>
+            </ul>
+          </section>
+
+          <!-- Section 6 -->
+          <section id="android" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">6. Chạy và build trên Android</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">6.1. Kết nối thiết bị</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Bật <strong>USB debugging</strong> trên điện thoại, kết nối USB và chấp nhận tin cậy máy tính:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>adb devices
+flutter devices</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">6.2. Chạy bản debug</h3>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter run</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Hoặc chọn thiết bị cụ thể:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter run -d emulator-5554</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">6.3. Build APK và cài lên điện thoại</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Build APK theo từng kiến trúc:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter build apk --release --split-per-abi</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">APK ARM64 (thường dùng) nằm ở:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>build\app\outputs\flutter-apk\app-arm64-v8a-release.apk</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Cài lên điện thoại:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>adb install -r build\app\outputs\flutter-apk\app-arm64-v8a-release.apk</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Kiểm tra đã cài:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>adb shell pm list packages | Select-String "vn.chemsort.app"</code></pre>
+
+            <div style="background: #fee2e2; border-left: 4px solid #ef4444; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #991b1b; font-size: 0.875rem;">⚠️ <strong>Về chữ ký:</strong> Cấu hình hiện dùng debug signing. APK phù hợp kiểm thử nội bộ, chưa phải bản ký release cho Google Play.</p>
+            </div>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;"><strong>Xiaomi/Redmi/POCO:</strong> Có thể cần bật thêm <strong>Cài đặt qua USB</strong> trong Tùy chọn nhà phát triển.</p>
+          </section>
+
+          <!-- Section 7 -->
+          <section id="ios" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">7. Chạy và build trên iOS</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">7.1. Chuẩn bị project</h3>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter pub get
+cd ios
+pod install
+cd ..
+open ios/Runner.xcworkspace</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Trong Xcode, chọn project <strong>Runner</strong> và target ứng dụng. Chọn <strong>Team</strong> trong <strong>Signing & Capabilities</strong> để chạy trên iPhone thật.</p>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">7.2. Chạy debug</h3>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter devices
+flutter run
+flutter run -d &lt;DEVICE_ID&gt;</code></pre>
+
+            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #1e40af; font-size: 0.875rem;">💡 Simulator dùng để kiểm tra UI. Hãy xác nhận TFLite trên iPhone thật trước khi kết luận bản iOS hoạt động.</p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">7.3. Build bản iOS</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Kiểm tra build chưa ký:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter build ios --release --no-codesign</code></pre>
+
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Tạo IPA cần signing/team hợp lệ:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter build ipa --release</code></pre>
+          </section>
+
+          <!-- Section 8 -->
+          <section id="kiem-tra" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">8. Kiểm tra sau khi cài</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">8.1. Kiểm tra cấu hình và mã nguồn</h3>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter doctor -v
+flutter analyze
+flutter test</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">8.2. Kiểm tra luồng ứng dụng thủ công</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>✅ App mở đến màn Home, nút <strong>Bắt đầu</strong> hoạt động</li>
+              <li>✅ Camera và Album chọn ảnh được</li>
+              <li>✅ Ảnh được xử lý, hiển thị kết quả và độ tin cậy</li>
+              <li>✅ Ngưỡng 0.5 hoạt động (độ tin cậy thấp yêu cầu chụp lại)</li>
+              <li>✅ Với Nhựa, màn hình mã 1-7 hoạt động</li>
+              <li>✅ Flashcard hiển thị nội dung và nguồn</li>
+              <li>✅ Nút <strong>Quét vật khác</strong> quay lại luồng quét</li>
+            </ul>
+
+            <div style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #065f46; font-size: 0.875rem;">✅ <strong>Test samples:</strong> Thử chai nhựa có mã rõ, vật kim loại và ảnh khó phân loại để kiểm tra đầy đủ.</p>
+            </div>
+          </section>
+
+          <!-- Section 9 -->
+          <section id="loi-thuong-gap" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">9. Xử lý sự cố</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">9.1. Flutter hoặc SDK không được nhận diện</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Chạy <code>flutter --version</code> và <code>flutter doctor -v</code> trong terminal mới</li>
+              <li>Kiểm tra PATH trỏ đúng <code>flutter/bin</code></li>
+              <li>Kiểm tra SDK Location trong Android Studio</li>
+              <li>Thêm <code>platform-tools</code> vào PATH nếu <code>adb</code> không nhận diện</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">9.2. Build Android lỗi hoặc Gradle không đồng bộ</h3>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter clean
+flutter pub get
+flutter doctor -v</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">9.3. CocoaPods không cài hoặc iOS build lỗi</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Xác nhận <code>pod --version</code> hoạt động trên macOS</li>
+              <li>Chạy <code>flutter pub get</code> rồi <code>(cd ios && pod install)</code></li>
+              <li>Nếu đổi cấu hình iOS: <code>flutter clean</code>, cài Pods lại, build lại</li>
+              <li>Kiểm tra <code>Strip Style</code> vẫn là <code>Non-Global Symbols</code></li>
+              <li>Mở <code>ios/Runner.xcworkspace</code>, không phải <code>.xcodeproj</code></li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">9.4. Không tìm thấy model hoặc flashcard</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Xác nhận các file asset tồn tại và <code>pubspec.yaml</code> khai báo <code>assets/chemsort/</code>:</p>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter clean
+flutter pub get</code></pre>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">9.5. Không mở camera hoặc album</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><strong>Android:</strong> Cài đặt → Ứng dụng → ChemSort → Quyền → Bật Camera và Media</li>
+              <li><strong>iOS:</strong> Settings → ChemSort → Bật Camera/Photos</li>
+              <li>Project đã có mô tả quyền trong <code>ios/Runner/Info.plist</code></li>
+              <li>Emulator/simulator có thể không có camera; thử thiết bị thật</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">9.6. Không cài APK hoặc app thoát</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><code>INSTALL_FAILED_UPDATE_INCOMPATIBLE</code>: Gỡ app cũ → <code>adb uninstall vn.chemsort.app</code></li>
+              <li><strong>Xiaomi/Redmi:</strong> Bật <strong>Cài đặt qua USB</strong> trong Dev Options</li>
+              <li>App thoát khi model: Kiểm tra model còn nguyên, thử thiết bị API 26+</li>
+              <li>iOS Simulator kết quả lạ: Test lại trên iPhone thật</li>
+            </ul>
+          </section>
+
+          <!-- Section 10 -->
+          <section id="phat-hanh" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">10. Chuẩn bị phát hành và tùy chỉnh</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">10.1. Android Release</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Trước khi phân phối:</p>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Cấu hình khóa ký release riêng trong Gradle</li>
+              <li>Bảo quản keystore và mật khẩu ngoài repository</li>
+              <li>Cập nhật <code>version</code> trong <code>pubspec.yaml</code></li>
+              <li>Xác nhận application ID phù hợp</li>
+              <li>Không commit keystore, mật khẩu hoặc thông tin ký</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">10.2. iOS Release</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Để phân phối qua TestFlight:</p>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Cấu hình Team, Bundle Identifier trong Xcode</li>
+              <li>Thêm signing certificate và provisioning profile</li>
+              <li>Tạo archive/IPA với cấu hình release đã ký</li>
+              <li>Build <code>--no-codesign</code> chỉ kiểm tra biên dịch, không cài được</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">10.3. Gỡ lỗi và hot reload</h3>
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>flutter run -v
+flutter logs</code></pre>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Nhấn <code>r</code> trong terminal để hot reload</li>
+              <li>Nhấn <code>R</code> để hot restart (khởi động lại app)</li>
+              <li>Dùng <code>flutter run --profile</code> để quan sát hiệu năng</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">10.4. Điểm thường tùy chỉnh</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Đường dẫn model và ngưỡng: <code>lib/config.dart</code></li>
+              <li>Nội dung flashcard: <code>assets/chemsort/flashcards.json</code></li>
+              <li>Ánh xạ nhãn: <code>assets/chemsort/chemsort_mapping.json</code></li>
+              <li>Màu sắc/giao diện: <code>lib/theme.dart</code></li>
+              <li>Thứ tự nhãn model: <code>assets/chemsort/labels_9.txt</code></li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">10.5. Kiểm tra giấy phép</h3>
+            <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #78350f; font-size: 0.875rem;">⚠️ README ghi RealWaste dùng CC BY-NC-SA 4.0 và Ultralytics dùng AGPL-3.0. Model/app hiện dành cho mục đích giáo dục, phi thương mại. Rà soát giấy phép trước khi phân phối thương mại.</p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">10.6. Tài liệu chính thức</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><a href="https://docs.flutter.dev/install/manual" target="_blank" rel="noopener" style="color: #00d9a3;">Cài Flutter SDK thủ công</a></li>
+              <li><a href="https://docs.flutter.dev/platform-integration/android/setup" target="_blank" rel="noopener" style="color: #00d9a3;">Thiết lập Android cho Flutter</a></li>
+              <li><a href="https://docs.flutter.dev/platform-integration/ios/setup" target="_blank" rel="noopener" style="color: #00d9a3;">Thiết lập iOS cho Flutter</a></li>
+              <li><a href="https://developer.android.com/studio/intro/update" target="_blank" rel="noopener" style="color: #00d9a3;">Android SDK Manager</a></li>
+              <li><a href="https://guides.cocoapods.org/using/getting-started" target="_blank" rel="noopener" style="color: #00d9a3;">CocoaPods Getting Started</a></li>
+            </ul>
+          </section>
+
+          <!-- Navigation -->
+          <div style="display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+            <a href="hdsd.html" class="button button-quiet" style="text-decoration: none;">
+              ← Hướng dẫn sử dụng
+            </a>
+            <a href="index.html" class="button button-primary" style="text-decoration: none;">
+              Trang chủ →
+            </a>
+          </div>
+
+        </article>
+      </div>
     </div>
   </main>
-  <button class="back-to-top" type="button" data-back-to-top aria-label="Quay lại đầu trang">↑</button>
-  <footer class="site-footer"><div class="container footer-inner"><span>Waste Scanner Documentation</span><span>© <span data-current-year>2026</span></span></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="index.html">
+        <img src="assets/images/chemsort-mark.svg" alt="" width="34" height="34">
+        <span>ChemSort</span>
+      </a>
+      <p>Quét vật liệu, mở ra kiến thức.</p>
+      <span class="copyright">© <span data-current-year>2026</span> ChemSort</span>
+    </div>
+  </footer>
 </body>
 </html>

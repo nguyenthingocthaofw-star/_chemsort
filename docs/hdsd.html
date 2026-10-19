@@ -3,117 +3,437 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="HDSD - Hướng dẫn sử dụng Waste Scanner.">
-  <title>HDSD — Hướng dẫn sử dụng | Waste Scanner</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="theme-color" content="#f6f7f1">
+  <meta name="description" content="Hướng dẫn sử dụng ChemSort - Ứng dụng nhận diện vật liệu và học Hóa học">
+  <title>Hướng dẫn sử dụng — ChemSort</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/chemsort-mark.svg">
+  <link rel="stylesheet" href="assets/css/home.css">
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Waste Scanner Documentation - Trang chủ">
-        <span class="brand-mark" aria-hidden="true">♻</span>
-        <span>Waste Scanner <small>Documentation</small></span>
+      <a class="brand" href="index.html" aria-label="ChemSort — Trang chủ tài liệu">
+        <img src="assets/images/chemsort-mark.svg" alt="" width="44" height="44">
+        <span class="brand-copy"><strong>ChemSort</strong><small>TÀI LIỆU HƯỚNG DẪN</small></span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Mở menu</span>☰</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Mở menu</span><span aria-hidden="true">☰</span>
+      </button>
       <nav id="site-nav" class="site-nav" aria-label="Điều hướng chính">
         <a href="index.html">Trang chủ</a>
-        <a class="active" href="hdsd.html" aria-current="page">HDSD</a>
-        <a href="hdcd.html">HDCD</a>
+        <a class="active" href="hdsd.html" aria-current="page">Cách sử dụng</a>
+        <a href="hdcd.html">Cài đặt</a>
       </nav>
     </div>
   </header>
-  <main id="main-content" class="doc-layout container">
-    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><span>HDSD</span></div>
-    <div class="doc-heading">
-      <p class="eyebrow">HDSD</p>
-      <h1>Hướng dẫn sử dụng</h1>
-      <p>Tài liệu dành cho người sử dụng Waste Scanner.</p>
-    </div>
-    <div class="doc-grid">
-      <aside class="toc" aria-label="Mục lục HDSD">
-        <h2>Mục lục</h2>
-        <nav>
-          <a href="#gioi-thieu">1. Giới thiệu</a>
-          <a href="#bat-dau">2. Bắt đầu quét</a>
-          <a href="#ket-qua">3. Đọc kết quả</a>
-          <a href="#ma-nhua">4. Trường hợp nhựa</a>
-          <a href="#flashcard">5. Flashcard Hóa học</a>
-          <a href="#luu-y">6. Lưu ý</a>
-          <a href="#hinh-minh-hoa">7. Hình minh họa</a>
-        </nav>
-      </aside>
-      <article class="doc-content">
-        <section id="gioi-thieu">
-          <h2>1. Giới thiệu</h2>
-          <p>ChemSort là ứng dụng Flutter cho Android và iOS, hỗ trợ nhận diện một vật thể rác, hiển thị nhóm vật liệu và cung cấp một flashcard Hóa học liên quan.</p>
-          <p>Ứng dụng hiện xử lý ảnh bằng model YOLO11n-cls dạng TFLite chạy trực tiếp trên điện thoại. Luồng sử dụng chính là:</p>
-          <p class="callout"><strong>Trang bắt đầu → Quét vật thể → Kết quả nhận diện → (nếu là nhựa) chọn mã nhựa → Flashcard Hóa học.</strong></p>
-        </section>
-        <section id="bat-dau">
-          <h2>2. Bắt đầu quét</h2>
-          <ol>
-            <li>Mở ứng dụng và chọn <strong>Bắt đầu</strong>.</li>
-            <li>Ở màn hình <strong>Quét vật thể</strong>, chọn một trong hai cách:
-              <ul>
-                <li><strong>Chụp ảnh</strong>: dùng camera để chụp vật thể.</li>
-                <li><strong>Album</strong>: chọn ảnh đã có trên thiết bị.</li>
+
+  <main id="main-content" style="background: #f8fafb; padding: 3rem 0;">
+    <div class="container" style="max-width: 1200px;">
+      <!-- Breadcrumb -->
+      <div style="margin-bottom: 2rem; font-size: 0.875rem; color: #64748b;">
+        <a href="index.html" style="color: #00d9a3;">Trang chủ</a>
+        <span style="margin: 0 0.5rem;">/</span>
+        <span>Hướng dẫn sử dụng</span>
+      </div>
+
+      <!-- Page Header -->
+      <div style="margin-bottom: 3rem;">
+        <p style="color: #00d9a3; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 0.5rem;">HƯỚNG DẪN SỬ DỤNG</p>
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #1e293b;">ChemSort — Hướng dẫn người dùng</h1>
+        <p style="font-size: 1.125rem; color: #64748b;">Tài liệu chi tiết dành cho người sử dụng ChemSort - Quét vật liệu, phân loại và học Hóa học.</p>
+      </div>
+
+      <!-- Two Column Layout -->
+      <div style="display: grid; grid-template-columns: 280px 1fr; gap: 3rem; align-items: start;">
+        
+        <!-- Table of Contents -->
+        <aside style="position: sticky; top: 90px;">
+          <nav style="background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">Mục lục</h2>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <a href="#gioi-thieu" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">1. ChemSort là gì?</a>
+              <a href="#bat-dau" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">2. Bắt đầu sử dụng</a>
+              <a href="#ket-qua" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">3. Đọc kết quả</a>
+              <a href="#ma-nhua" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">4. Nhựa và mã nhựa</a>
+              <a href="#flashcard" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">5. Flashcard Hóa học</a>
+              <a href="#meo" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">6. Mẹo sử dụng</a>
+              <a href="#faq" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">7. Câu hỏi thường gặp</a>
+              <a href="#su-co" style="padding: 0.5rem; border-radius: 0.5rem; color: #64748b; font-size: 0.875rem; transition: all 0.15s;">8. Xử lý sự cố</a>
+            </div>
+          </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <article style="background: white; border-radius: 1.5rem; padding: 3rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+          
+          <!-- Section 1 -->
+          <section id="gioi-thieu" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">1. ChemSort là gì?</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">1.1. Mục đích của ứng dụng</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">ChemSort là ứng dụng học tập giúp bạn quan sát một vật liệu quen thuộc trong rác sinh hoạt, nhận diện nhóm vật liệu và liên hệ nó với một kiến thức Hóa học. Luồng sử dụng cơ bản là:</p>
+            <div style="background: linear-gradient(135deg, rgba(0, 217, 163, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%); border-left: 4px solid #00d9a3; padding: 1.5rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <strong style="color: #1e293b;">Home → Quét vật thể → Kết quả → (nếu là nhựa) chọn mã nhựa → Flashcard Hóa học</strong>
+            </div>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Phân loại rác tại nguồn là tách rác ngay tại nơi phát sinh để hỗ trợ tái sử dụng, tái chế và xử lý phù hợp. ChemSort hỗ trợ học và nhận diện sơ bộ; app không thay thế hướng dẫn thu gom tại địa phương.</p>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">1.2. Tính năng chính</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><strong>Nhận diện trên thiết bị:</strong> Sử dụng model YOLO11n-cls dạng TFLite để phân tích ảnh ngay trên điện thoại. Ảnh quét không được gửi lên máy chủ.</li>
+              <li><strong>Sáu nhóm hiển thị:</strong> Giấy/Bìa carton, Thực phẩm, Thủy tinh, Kim loại, Nhựa và Chưa xác định.</li>
+              <li><strong>Gợi ý phân loại:</strong> Nhóm I và Nhóm II theo cách phân loại chung tại Việt Nam.</li>
+              <li><strong>178 flashcard Hóa học:</strong> Mỗi thẻ có nội dung và nguồn tham khảo được viết và rà soát trước.</li>
+              <li><strong>Không cần Internet:</strong> Sau khi cài đặt, việc nhận diện và xem flashcard có thể thực hiện ngoại tuyến.</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">1.3. Phân loại rác tại nguồn</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Điều 75 Luật Bảo vệ môi trường 2020 nêu ba loại rác sinh hoạt: có khả năng tái sử dụng/tái chế, chất thải thực phẩm và chất thải khác. ChemSort gợi ý Nhóm I cho Giấy, Thủy tinh, Kim loại, Nhựa; Nhóm II cho Thực phẩm.</p>
+            <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #78350f; font-size: 0.875rem;">⚠️ <strong>Lưu ý:</strong> Đây là tham chiếu học tập, không xác định độ bẩn, nguy hại hay cách thu gom tại địa phương.</p>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="bat-dau" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">2. Bắt đầu sử dụng</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">2.1. Mở ứng dụng lần đầu</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Màn hình Home có tên ChemSort, biểu tượng Hóa học, lời nhắc "Mỗi lần quét — Một kiến thức mới" và nút <strong>Bắt đầu</strong>. Chọn nút này để mở <strong>Quét vật thể</strong>.</p>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Ở màn hình quét, app có khung xem trước và hai cách đưa ảnh vào:</p>
+            <ol style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><strong>Chụp ảnh</strong> — mở camera của thiết bị</li>
+              <li><strong>Album</strong> — chọn ảnh đã có trên điện thoại</li>
+            </ol>
+            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #1e40af; font-size: 0.875rem;">💡 <strong>Mẹo:</strong> Khi dùng lần đầu, hệ điều hành có thể hỏi quyền camera hoặc ảnh. Nếu từ chối, hãy bật quyền trong Cài đặt của điện thoại.</p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">2.2. Chụp ảnh hoặc chọn ảnh</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Để nhận diện tốt hơn, đưa một vật thể chính vào giữa khung hình, đủ gần để thấy rõ nhưng vẫn lấy nét được. Với vật nhỏ, có thể thử chụp ở khoảng 20–30 cm.</p>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Khi chọn <strong>Chụp ảnh</strong>, hướng camera vào vật thể, giữ điện thoại ổn định và chụp khi hình ảnh đủ sáng</li>
+              <li>Khi chọn <strong>Album</strong>, chọn ảnh mà bạn có thể nhận ra rõ vật thể</li>
+              <li>App thu nhỏ ảnh đầu vào còn tối đa khoảng 1024 px</li>
+              <li>Nếu kết quả chưa chắc chắn, đổi góc chụp hoặc điều kiện sáng</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">2.3. Chờ ứng dụng nhận diện</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Sau khi chụp hoặc chọn ảnh, app hiển thị ảnh cùng trạng thái <strong>Đang nhận diện…</strong>. Thời gian xử lý tùy thiết bị và ảnh.</p>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Model TFLite xử lý ảnh cục bộ; không cần Internet để quét. Nếu model chưa đủ chắc chắn, màn hình sẽ hướng dẫn chụp gần hơn, đủ sáng và chỉ để một vật thể trong ảnh.</p>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="ket-qua" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">3. Đọc kết quả nhận diện</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">3.1. Thông tin trên màn hình kết quả</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Khi dự đoán vượt ngưỡng, màn hình <strong>Kết quả nhận diện</strong> hiển thị:</p>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li><strong>Tên nhóm</strong> bằng tiếng Anh và tiếng Việt (ví dụ "PLASTIC" và "Nhựa")</li>
+              <li><strong>Ảnh đã phân tích</strong> để bạn kiểm tra lại</li>
+              <li><strong>Độ tin cậy</strong> hiển thị dưới dạng phần trăm</li>
+              <li><strong>Thẻ nhóm phân loại</strong> nếu app có đủ thông tin</li>
+              <li>Gợi ý ngắn liên quan đến vật liệu</li>
+            </ul>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Chọn <strong>Tiếp tục</strong> để đi tiếp hoặc <strong>Quét lại</strong> để trở về màn hình quét.</p>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">3.2. Độ tin cậy và ngưỡng</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Độ tin cậy là điểm của nhóm vật liệu được chọn. Ngưỡng của ChemSort là <strong>0.5 (50%)</strong>. Điểm thấp hơn thì app yêu cầu chụp lại; điểm cao hơn thì hiển thị dự đoán.</p>
+            <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #78350f; font-size: 0.875rem;">⚠️ Vượt ngưỡng <strong>không bảo đảm</strong> kết quả luôn đúng. Model đạt 92.2% accuracy trên tập test, không phải cam kết trên mọi ảnh thực tế.</p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">3.3. Sáu nhóm vật liệu</h3>
+            <div style="overflow-x: auto; margin: 1.5rem 0;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                <thead style="background: #f1f5f9;">
+                  <tr>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Nhóm hiển thị</th>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Ví dụ</th>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Gợi ý trong app</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Giấy / Bìa carton</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Giấy rời, hộp carton</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Nhóm I – tái sử dụng, tái chế</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Thực phẩm</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Thức ăn thừa, rác hữu cơ</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Nhóm II – chất thải thực phẩm</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Thủy tinh</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Chai, lọ thủy tinh</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Nhóm I – tái sử dụng, tái chế</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Kim loại</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Lon hoặc vật kim loại</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Nhóm I – tái sử dụng, tái chế</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Nhựa</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Chai, hộp nhựa</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Nhóm I – cần lưu ý mã</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Chưa xác định</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Vải, lá cây, rác hỗn hợp</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Chưa đủ thông tin</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="ma-nhua" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">4. Trường hợp đặc biệt: Nhựa và mã nhựa</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">4.1. Vì sao cần tự chọn mã nhựa?</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Model nhận diện nhóm <strong>Nhựa</strong>, nhưng không đọc ký hiệu resin trên bao bì. Sau khi chọn <strong>Tiếp tục</strong>, hãy đọc mã in trên sản phẩm và chọn mã đó ở màn hình <strong>Chọn mã nhựa</strong>.</p>
+            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #1e40af; font-size: 0.875rem;">💡 Mã cho biết loại resin/polymer và chọn chủ đề flashcard. Mã <strong>không quyết định</strong> sản phẩm có được thu gom tái chế ở địa phương.</p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">4.2. Tìm mã trên bao bì</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Mã resin thường được in hoặc dập nổi ở đáy chai/hộp. Hãy tìm hình tam giác ba mũi tên có số từ 1 đến 7 ở giữa và chữ viết tắt polymer bên dưới.</p>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">4.3. Bảy mã nhận diện nhựa</h3>
+            <div style="overflow-x: auto; margin: 1.5rem 0;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                <thead style="background: #f1f5f9;">
+                  <tr>
+                    <th style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;">Mã</th>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Ký hiệu</th>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Tên polymer</th>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Ví dụ thường gặp</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;"><strong>1</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">PET</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Polyethylene terephthalate</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Chai nước, chai nước ngọt</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;"><strong>2</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">HDPE</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">High-density polyethylene</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Chai sữa, chai tẩy rửa</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;"><strong>3</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">PVC</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Polyvinyl chloride</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Ống và sản phẩm PVC</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;"><strong>4</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">LDPE</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Low-density polyethylene</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Túi, màng nhựa</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;"><strong>5</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">PP</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Polypropylene</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Hộp thực phẩm, nắp chai</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;"><strong>6</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">PS</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Polystyrene</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Hộp, cốc xốp</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; text-align: center; border: 1px solid #e2e8f0;"><strong>7</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">OTHER</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Các loại nhựa khác</td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Polymer khác hoặc hỗn hợp</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">4.4. Không tìm thấy mã</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Nếu sản phẩm không có mã hoặc không đọc được, quay lại màn hình <strong>Chọn mã nhựa</strong> và chọn <strong>Không thấy mã? Xem fact nhựa chung</strong>. App sẽ mở flashcard chung về nhựa.</p>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="flashcard" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">5. Flashcard Hóa học</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">5.1. Nội dung và nguồn tham khảo</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Thư viện có <strong>178 fact</strong> do con người viết và rà soát, không được AI sinh tại thời điểm sử dụng. Mỗi thẻ có tiêu đề, giải thích và nguồn; nội dung được đóng gói cùng app.</p>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Các chủ đề gồm nhựa/polymer, giấy, thực phẩm, thủy tinh và kim loại. Nguồn gồm OpenStax, US EPA, USDA, NIST, Corning Museum of Glass, Cornell Composting và các tài liệu học thuật khác.</p>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">5.2. Cách chọn và xem flashcard</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Với vật liệu không phải Nhựa, chọn <strong>Tiếp tục</strong> ở màn hình kết quả để mở một fact liên quan. Với Nhựa, chọn mã resin trước hoặc chọn fact nhựa chung.</p>
+            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #1e40af; font-size: 0.875rem;">💡 Mỗi lượt quét chỉ mở <strong>một</strong> flashcard. Muốn xem chủ đề khác, hãy bắt đầu lượt quét mới.</p>
+            </div>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">5.3. Quét vật khác</h3>
+            <p style="line-height: 1.8; color: #475569; margin-bottom: 1rem;">Khi đọc xong, chọn <strong>Quét vật khác</strong> để quay về màn hình Quét vật thể. Mỗi lần quét chỉ mở một fact; muốn xem chủ đề khác, hãy quét lại.</p>
+          </section>
+
+          <!-- Section 6 -->
+          <section id="meo" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">6. Mẹo sử dụng và giới hạn</h2>
+            
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">6.1. Chụp ảnh rõ hơn</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Chụp đủ sáng, giữ máy ổn định và đặt một vật thể chính ở giữa ảnh</li>
+              <li>Đưa camera đủ gần để thấy rõ vật thể nhưng vẫn lấy nét được</li>
+              <li>Dùng nền đơn giản; tránh ảnh nhiều vật, bị che, rung hoặc quá mờ</li>
+              <li>Lau ống kính nếu ảnh thường xuyên không rõ</li>
+            </ul>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">6.2. Khi kết quả chưa đúng</h3>
+            <ol style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Chọn đúng vật thể và chụp gần hơn để ảnh rõ</li>
+              <li>Đổi góc hoặc tăng ánh sáng; dùng nền ít vật thể</li>
+              <li>Nếu vật gồm nhiều chất liệu, thử một vật đơn giản hơn</li>
+            </ol>
+
+            <h3 style="font-size: 1.25rem; margin: 2rem 0 1rem; color: #1e293b;">6.3. Những điều model chưa làm được</h3>
+            <ul style="line-height: 2; color: #475569; padding-left: 1.5rem;">
+              <li>Model phân loại <strong>nhóm vật liệu chính</strong>, không xác định chính xác nhãn hiệu hay thành phần</li>
+              <li>Model không tách nhiều vật thể trong một ảnh</li>
+              <li>Vật nhiều lớp, dính bẩn có thể bị nhận diện nhầm</li>
+              <li>Model không đọc mã nhựa 1–7; người dùng tự đọc</li>
+              <li>Model không quyết định vật có thể tái chế ở khu vực cụ thể</li>
+              <li>Rác đặc biệt (pin, bóng đèn, điện tử) cần hướng dẫn xử lý riêng</li>
+            </ul>
+            <div style="background: #fee2e2; border-left: 4px solid #ef4444; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #991b1b; font-size: 0.875rem;">❌ <strong>Cảnh báo:</strong> Không dựa vào dự đoán của app để xử lý vật liệu nguy hại.</p>
+            </div>
+          </section>
+
+          <!-- Section 7 -->
+          <section id="faq" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">7. Câu hỏi thường gặp</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <details style="background: #f8fafb; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                <summary style="font-weight: 600; color: #1e293b; cursor: pointer; list-style: none;">▸ App có gửi ảnh lên máy chủ không?</summary>
+                <p style="margin-top: 1rem; line-height: 1.8; color: #475569;">Theo thiết kế hiện tại, model TFLite chạy trực tiếp trên điện thoại và ảnh quét không được gửi lên máy chủ. Ứng dụng không cần Internet để phân loại sau khi được cài đủ asset.</p>
+              </details>
+
+              <details style="background: #f8fafb; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                <summary style="font-weight: 600; color: #1e293b; cursor: pointer; list-style: none;">▸ Tại sao app yêu cầu chụp lại?</summary>
+                <p style="margin-top: 1rem; line-height: 1.8; color: #475569;">Điểm của nhóm vật liệu cao nhất thấp hơn ngưỡng 0.5, nên app chưa mở kết quả. Hãy thử ảnh gần hơn, sáng hơn và chỉ có một vật thể chính.</p>
+              </details>
+
+              <details style="background: #f8fafb; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                <summary style="font-weight: 600; color: #1e293b; cursor: pointer; list-style: none;">▸ Kết quả có chính xác 100% không?</summary>
+                <p style="margin-top: 1rem; line-height: 1.8; color: #475569;">Không. Model đạt 92.2% accuracy trên tập test 713 ảnh RealWaste, nhưng không bảo đảm chính xác với mọi ảnh thực tế. Model có thể nhầm, hãy kiểm tra vật thể và hướng dẫn địa phương.</p>
+              </details>
+
+              <details style="background: #f8fafb; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                <summary style="font-weight: 600; color: #1e293b; cursor: pointer; list-style: none;">▸ App có cần Internet không?</summary>
+                <p style="margin-top: 1rem; line-height: 1.8; color: #475569;">Không cần Internet khi chụp, phân loại và đọc flashcard nếu ứng dụng cùng dữ liệu đã được cài đầy đủ. Tải hoặc cập nhật ứng dụng vẫn cần kết nối.</p>
+              </details>
+
+              <details style="background: #f8fafb; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                <summary style="font-weight: 600; color: #1e293b; cursor: pointer; list-style: none;">▸ Tại sao app không tự đọc mã nhựa?</summary>
+                <p style="margin-top: 1rem; line-height: 1.8; color: #475569;">Model nhận diện nhóm vật liệu Nhựa, không phải hệ thống OCR đọc ký hiệu nhỏ trên sản phẩm. App để người dùng đọc mã rồi chọn, tránh biến dự đoán thành khẳng định về loại polymer.</p>
+              </details>
+
+              <details style="background: #f8fafb; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                <summary style="font-weight: 600; color: #1e293b; cursor: pointer; list-style: none;">▸ Flashcard có cập nhật trực tiếp không?</summary>
+                <p style="margin-top: 1rem; line-height: 1.8; color: #475569;">Không. Thư viện được đóng gói cùng ứng dụng và cập nhật khi có phiên bản mới. Mỗi fact có tiêu đề nguồn tham khảo.</p>
+              </details>
+
+              <details style="background: #f8fafb; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+                <summary style="font-weight: 600; color: #1e293b; cursor: pointer; list-style: none;">▸ "Chưa xác định" có nghĩa là Nhóm III không?</summary>
+                <p style="margin-top: 1rem; line-height: 1.8; color: #475569;">Không. App chưa đủ thông tin để gán nhóm cho loại vật liệu đó; ứng dụng cố ý không đánh đồng nhãn này với nhóm chất thải sinh hoạt khác. Xem hướng dẫn địa phương.</p>
+              </details>
+            </div>
+          </section>
+
+          <!-- Section 8 -->
+          <section id="su-co" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1e293b; padding-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0;">8. Xử lý sự cố</h2>
+            
+            <div style="overflow-x: auto; margin: 1.5rem 0;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                <thead style="background: #f1f5f9;">
+                  <tr>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0; width: 30%;">Sự cố</th>
+                    <th style="padding: 0.75rem; text-align: left; border: 1px solid #e2e8f0;">Cách xử lý</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Không mở được camera</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Mở Cài đặt điện thoại, tìm ChemSort và cho phép quyền Camera. Nếu đã bật nhưng vẫn lỗi, đóng rồi mở lại app.</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Không chọn được ảnh Album</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Kiểm tra quyền Photos/Ảnh của ChemSort. Thử chọn ảnh JPEG/PNG khác để loại trừ tệp hỏng.</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>App yêu cầu chụp lại</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Chụp gần hơn, tăng ánh sáng và để một vật thể chính ở giữa. Nếu vẫn không chắc chắn, đổi góc chụp.</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Kết quả luôn "Chưa xác định"</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Thử vật liệu rõ ràng hơn như giấy, chai nhựa, lọ thủy tinh. Tránh vật hỗn hợp, quá nhỏ hoặc bị che.</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Ứng dụng thoát khi nhận diện</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Mở lại app, thử ảnh rõ và dung lượng vừa. Nếu lỗi lặp lại, cập nhật/cài lại bản ứng dụng và báo lỗi chi tiết.</td>
+                  </tr>
+                  <tr style="background: #f8fafb;">
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;"><strong>Flashcard không mở</strong></td>
+                    <td style="padding: 0.75rem; border: 1px solid #e2e8f0;">Quay lại Home, mở lại app và thử lại. Nếu nhiều nhóm đều lỗi, có thể asset flashcard bị thiếu/hỏng; cài lại bản chính thức.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0;">
+              <p style="margin: 0; color: #1e40af; font-size: 0.875rem;"><strong>Quyền trên điện thoại:</strong></p>
+              <ul style="margin: 0.5rem 0 0 1.5rem; color: #1e40af; font-size: 0.875rem;">
+                <li><strong>iPhone:</strong> Settings → ChemSort</li>
+                <li><strong>Android:</strong> Cài đặt → Ứng dụng → ChemSort → Quyền</li>
               </ul>
-            </li>
-            <li>Chờ ứng dụng phân tích ảnh. Trong lúc xử lý, màn hình hiển thị trạng thái <strong>Đang nhận diện…</strong>.</li>
-          </ol>
-          <p>Để kết quả ổn định hơn, nên chụp đủ sáng, đưa một vật thể chính vào khung hình và chụp tương đối gần.</p>
-        </section>
-        <section id="ket-qua">
-          <h2>3. Đọc kết quả</h2>
-          <p>Màn hình <strong>Kết quả nhận diện</strong> hiển thị:</p>
-          <ul>
-            <li>Tên vật liệu bằng tiếng Anh và tiếng Việt.</li>
-            <li>Ảnh đã được phân tích.</li>
-            <li>Độ tin cậy của dự đoán.</li>
-            <li>Nhóm phân loại và gợi ý liên quan.</li>
-          </ul>
-          <p>Chọn <strong>Tiếp tục</strong> để xem nội dung tiếp theo hoặc chọn <strong>Quét lại</strong> nếu muốn chụp/chọn ảnh khác.</p>
-          <p class="callout">Nếu độ tin cậy thấp hơn ngưỡng của ứng dụng, kết quả sẽ không được mở. Ứng dụng yêu cầu chụp gần hơn, đủ sáng và chỉ đưa một vật thể vào ảnh.</p>
-        </section>
-        <section id="ma-nhua">
-          <h2>4. Trường hợp vật thể là nhựa</h2>
-          <p>Ứng dụng không tự đọc mã nhựa từ hình ảnh. Khi kết quả là <strong>Nhựa</strong>, màn hình <strong>Chọn mã nhựa</strong> hiển thị các mã từ 1 đến 7.</p>
-          <ol>
-            <li>Tìm ký hiệu mã nhựa được in trên sản phẩm.</li>
-            <li>Chọn mã tương ứng trong ứng dụng.</li>
-            <li>Xem tên resin/polymer và chọn <strong>Xem fact</strong>.</li>
-          </ol>
-          <p>Nếu không thấy mã, chọn <strong>Không thấy mã? Xem fact nhựa chung</strong>. Mã nhựa cho biết loại resin/polymer, không tự quyết định nhóm phân loại rác.</p>
-        </section>
-        <section id="flashcard">
-          <h2>5. Flashcard Hóa học</h2>
-          <p>Flashcard hiển thị một kiến thức liên quan đến vật liệu hoặc mã nhựa đã chọn, kèm nguồn tham khảo.</p>
-          <p>Sau khi đọc, chọn <strong>Quét vật khác</strong> để quay lại màn hình quét. Ứng dụng được thiết kế theo nguyên tắc mỗi lần quét hiển thị một kiến thức.</p>
-        </section>
-        <section id="luu-y">
-          <h2>6. Lưu ý khi sử dụng</h2>
-          <ul>
-            <li>Model nhận diện vật thể chính trong ảnh; ảnh có nhiều vật thể hoặc vật làm từ nhiều vật liệu có thể cho kết quả không chính xác.</li>
-            <li>Kết quả nhóm rác là phân loại chung tại Việt Nam, không có nghĩa vật liệu chắc chắn được tái chế ở mọi địa phương.</li>
-            <li>Ảnh được xử lý trên thiết bị theo kiến trúc hiện tại của repository; tài liệu này không mô tả một dịch vụ tải ảnh lên máy chủ.</li>
-            <li>Nếu app không khởi động được, nguyên nhân có thể là model hoặc dữ liệu flashcard đi kèm không tải được; hãy báo người phụ trách bản cài đặt.</li>
-          </ul>
-        </section>
-        <section id="hinh-minh-hoa">
-          <h2>7. Hình minh họa</h2>
-          <div class="image-placeholder">[BỔ SUNG ẢNH MINH HỌA TẠI ĐÂY]</div>
-          <p class="muted">Các ảnh giao diện thực tế chưa có trong repository. Đặt ảnh trong <code>docs/assets/images/</code> và thay placeholder bằng thẻ <code>&lt;img&gt;</code> có văn bản thay thế.</p>
-        </section>
-        <div class="doc-navigation">
-          <a class="button button-secondary" href="index.html">← Trang chủ</a>
-          <a class="button button-primary" href="hdcd.html">Xem HDCD →</a>
-        </div>
-      </article>
+            </div>
+          </section>
+
+          <!-- Navigation -->
+          <div style="display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+            <a href="index.html" class="button button-quiet" style="text-decoration: none;">
+              ← Trang chủ
+            </a>
+            <a href="hdcd.html" class="button button-primary" style="text-decoration: none;">
+              Xem hướng dẫn cài đặt →
+            </a>
+          </div>
+
+        </article>
+      </div>
     </div>
   </main>
-  <button class="back-to-top" type="button" data-back-to-top aria-label="Quay lại đầu trang">↑</button>
-  <footer class="site-footer"><div class="container footer-inner"><span>Waste Scanner Documentation</span><span>© <span data-current-year>2026</span></span></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="index.html">
+        <img src="assets/images/chemsort-mark.svg" alt="" width="34" height="34">
+        <span>ChemSort</span>
+      </a>
+      <p>Quét vật liệu, mở ra kiến thức.</p>
+      <span class="copyright">© <span data-current-year>2026</span> ChemSort</span>
+    </div>
+  </footer>
 </body>
 </html>
