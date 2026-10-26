@@ -1,0 +1,27 @@
+EfficientNetB0 TFLite float16 - test_ext - 9 RealWaste classes
+==============================================================
+
+                      precision    recall  f1-score   specif.   support
+
+Cardboard                0.8824    0.9494    0.9146    0.9806        79
+Food Organics            0.9744    0.9500    0.9620    0.9982        40
+Glass                    0.8864    0.8864    0.8864    0.9802        88
+Metal                    0.8692    0.9029    0.8857    0.9715       103
+Miscellaneous Trash      0.8649    0.5926    0.7033    0.9907        54
+Paper                    0.8506    0.9250    0.8862    0.9747        80
+Plastic                  0.8807    0.8727    0.8767    0.9731       110
+Textile Trash            0.9756    1.0000    0.9877    0.9982        40
+Vegetation               0.0000    0.0000    0.0000    0.9983         0
+
+accuracy                                               0.8855                 594
+macro avg                0.7982    0.7866    0.7892                 594
+weighted avg             0.8870    0.8855    0.8835                 594
+
+balanced accuracy : 0.8849
+Cohen's kappa     : 0.8668
+MCC               : 0.8673
+log loss          : 0.3193
+ECE (15 bins)     : 0.0276
+ROC-AUC (OvR)     : 0.9914
+top-3 accuracy    : 0.9848
+note: only 8/9 classes occur; macro F1 over present classes = 0.8878

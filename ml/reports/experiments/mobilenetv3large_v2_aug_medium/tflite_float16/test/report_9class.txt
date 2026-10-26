@@ -1,0 +1,26 @@
+MobileNetV3Large TFLite float16 - test - 9 RealWaste classes
+============================================================
+
+                      precision    recall  f1-score   specif.   support
+
+Cardboard                0.8636    0.8261    0.8444    0.9860        69
+Food Organics            0.8696    0.9677    0.9160    0.9862        62
+Glass                    0.8226    0.8095    0.8160    0.9831        63
+Metal                    0.8189    0.8814    0.8490    0.9613       118
+Miscellaneous Trash      0.7391    0.6800    0.7083    0.9718        75
+Paper                    0.8904    0.8667    0.8784    0.9875        75
+Plastic                  0.8372    0.7826    0.8090    0.9635       138
+Textile Trash            0.8148    0.9167    0.8627    0.9850        48
+Vegetation               0.9688    0.9538    0.9612    0.9969        65
+
+accuracy                                               0.8443                 713
+macro avg                0.8472    0.8538    0.8495                 713
+weighted avg             0.8440    0.8443    0.8432                 713
+
+balanced accuracy : 0.8538
+Cohen's kappa     : 0.8223
+MCC               : 0.8226
+log loss          : 0.4772
+ECE (15 bins)     : 0.0469
+ROC-AUC (OvR)     : 0.9826
+top-3 accuracy    : 0.9762

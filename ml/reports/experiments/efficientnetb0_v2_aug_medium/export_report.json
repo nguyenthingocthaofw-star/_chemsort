@@ -1,0 +1,63 @@
+{
+  "run_name": "efficientnetb0_v2_aug_medium",
+  "backend": "keras",
+  "model": "efficientnetb0",
+  "parity_subset": {
+    "split": "val",
+    "per_class": 10,
+    "images": 90
+  },
+  "reference_metrics": {
+    "accuracy_9class": 0.8888888888888888,
+    "macro_f1_9class": 0.887619821985147,
+    "accuracy_6class": 0.9,
+    "macro_f1_6class": 0.8881130913803913
+  },
+  "formats": {
+    "float16": {
+      "backend": "tflite",
+      "model_path": "C:\\Users\\wande\\_chemsort\\ml\\models\\efficientnetb0_v2_aug_medium\\tflite\\efficientnetb0_v2_aug_medium_float16.tflite",
+      "model_sha256": "bdbad29cc476ec2f6c9fd0c858428abd656b8c422ea1e6741629fcbc699fc4e8",
+      "model_size_mb": 7.784954071044922,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "input_dtype": "float32",
+      "output_shape": [
+        1,
+        9
+      ],
+      "output_dtype": "float32",
+      "threads": 4,
+      "input_spec": {
+        "layout": "NHWC",
+        "pixel_max": 255.0,
+        "framing": "center_square_crop+area_average",
+        "size": 224
+      },
+      "inference_ms_per_image": 9.293615555442456,
+      "metrics": {
+        "accuracy_9class": 0.8888888888888888,
+        "macro_f1_9class": 0.887619821985147,
+        "accuracy_6class": 0.9,
+        "macro_f1_6class": 0.8881130913803913
+      },
+      "parity": {
+        "agreement_9class": 1.0,
+        "agreement_6class": 1.0,
+        "max_abs_probability_difference": 0.013451159683045999,
+        "mean_abs_probability_difference": 0.00021219782213324857
+      },
+      "passed_gate": true
+    }
+  },
+  "test_set_used": false,
+  "recommended_format": "float16",
+  "gate": {
+    "agreement_9class": 0.98,
+    "agreement_6class": 0.99
+  }
+}

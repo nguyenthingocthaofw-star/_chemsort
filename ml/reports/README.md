@@ -28,6 +28,32 @@ McNemar trên 683 ảnh chung cho p < 0,001 với cả hai model v1.
 | EfficientNet-Lite0 TFLite float16 | v1 | 0.8500 [0.821, 0.877] | 0.8583 |
 | MobileNetV2 fine-tuned (Keras) | v1 | 0.8304 [0.800, 0.858] | 0.8401 |
 
+### Benchmark trên dữ liệu augment (`v2_aug_medium`)
+
+Train trên `data/augmented/v2_medium/manifest_v2_aug_medium.csv` (train cân bằng
+1.648 ảnh/lớp bằng augment offline preset `medium`, cộng augment online
+`medium`); val/test/test_ext giữ nguyên nên so trực tiếp được với model app.
+YOLO train trên GPU (RTX 3060 Laptop), Keras train trên CPU. Model Keras được
+đánh giá ở dạng TFLite float16 (parity 100% với Keras).
+
+| Model | Size MB | Macro-F1 6 val | **Macro-F1 6 test** | Macro-F1 6 test_ext | Macro-F1 9 test |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| YOLO11n-cls v2 (app, TFLite) | 5.94 | **0.9482** | 0.9171 | **0.9260** | 0.9127 |
+| YOLO11n-cls v2_aug_medium (PyTorch) | 3.06 | 0.9374 | **0.9258** | 0.9187 | 0.9136 |
+| MobileNetV3Large v2_aug_medium (TFLite fp16) | 5.79 | 0.8464 | 0.8679 | 0.9115 | 0.8478 |
+| EfficientNetB0 v2_aug_medium (TFLite fp16) | 7.78 | 0.8590 | 0.8484 | 0.8949 | 0.8360 |
+| MobileNetV2 v2_aug_medium (TFLite fp16) | 4.33 | 0.8117 | 0.8128 | 0.9037 | 0.8031 |
+
+McNemar (6 nhóm, test): YOLO app vs YOLO aug p = 0.51 (không khác biệt có ý
+nghĩa); YOLO app vs MobileNetV3Large p = 2.6e-4, vs EfficientNetB0 p = 1.8e-6,
+vs MobileNetV2 p = 5.9e-11; MobileNetV3Large vs EfficientNetB0 p = 0.18.
+
+Kết luận: YOLO11n-cls vẫn tốt nhất và giữ nguyên model trong app; augment
+offline không cải thiện YOLO có ý nghĩa thống kê. Trong nhóm Keras,
+MobileNetV3Large tốt nhất trên test/test_ext. MobileNetV3Large và
+EfficientNetB0 đạt val loss tốt nhất ở epoch cuối, nên train thêm
+(`--finetune-epochs`) có thể còn cải thiện.
+
 | Câu hỏi | File/thư mục |
 | --- | --- |
 | Model nào tốt nhất trên test / test_ext? | `comparison/<split>/comparison.md` |
