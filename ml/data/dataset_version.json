@@ -1,0 +1,22 @@
+{
+  "dataset_name": "RealWaste-ChemSort",
+  "version": "1.0.0",
+  "source": "https://doi.org/10.24432/C5SS4G",
+  "created_at_utc": "2026-08-25T05:13:03.027742+00:00",
+  "seed": 42,
+  "target_split": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "valid_raw_images": 4752,
+  "manifest_images": 4752,
+  "invalid_images": 0,
+  "split_counts": {
+    "train": 3326,
+    "test": 713,
+    "val": 713
+  },
+  "inventory_sha256": "d355fedc4243bf79aadfd459954a9843e7ff3ffac042dfab8abe0cee55898a1f",
+  "manifest_sha256": "61a204c9b680a4cc34e889ce6b26e0546dc802634a8232c64a82d6af3cc3d516"
+}

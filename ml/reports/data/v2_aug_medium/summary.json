@@ -1,0 +1,51 @@
+{
+  "manifest": "C:\\Users\\wande\\_chemsort\\ml\\data\\augmented\\v2_medium\\manifest_v2_aug_medium.csv",
+  "dataset": "v2_aug_medium",
+  "images": 16852,
+  "splits": {
+    "train": 14832,
+    "test": 713,
+    "val": 713,
+    "test_ext": 594
+  },
+  "sources": {
+    "augmented": 6115,
+    "realwaste": 4752,
+    "garbage_classification": 3140,
+    "trashnet": 1645,
+    "drinking_waste": 1200
+  },
+  "train_imbalance_ratio_max_over_min": 1.0,
+  "duplicate_sha256": 0,
+  "classes_missing_per_split": {
+    "train": [],
+    "val": [],
+    "test": [],
+    "test_ext": [
+      "Vegetation"
+    ]
+  },
+  "image_size": {
+    "width": {
+      "count": 16852.0,
+      "mean": 437.8,
+      "std": 124.5,
+      "min": 111.0,
+      "25%": 300.0,
+      "50%": 512.0,
+      "75%": 524.0,
+      "max": 4032.0
+    },
+    "height": {
+      "count": 16852.0,
+      "mean": 424.4,
+      "std": 147.5,
+      "min": 100.0,
+      "25%": 267.0,
+      "50%": 512.0,
+      "75%": 524.0,
+      "max": 3024.0
+    },
+    "smaller_than_224": 3347
+  }
+}

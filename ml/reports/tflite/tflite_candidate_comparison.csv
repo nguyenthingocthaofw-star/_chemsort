@@ -1,0 +1,4 @@
+﻿candidate,validation_macro_f1_6class,tflite_format,tflite_size_mb,agreement_9class,agreement_6class,max_probability_difference
+EfficientNet-Lite0,0.8779159773575947,float16,6.468559265136719,1.0,1.0,0.007557123899459839
+MobileNetV3Large,0.8773710663949651,float32,11.408340454101562,1.0,1.0,3.874301910400391e-06
+MobileNetV2,0.8684327146525329,float32,8.522579193115234,1.0,1.0,9.328126907348633e-06

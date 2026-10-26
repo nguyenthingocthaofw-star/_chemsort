@@ -1,0 +1,8 @@
+# Shared by every pipeline: data, metrics, reports, comparison, tests.
+ImageHash>=4.3,<5
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+pandas>=2.2,<3
+Pillow>=10,<13
+scikit-learn>=1.4,<2
+scipy>=1.11,<2

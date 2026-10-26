@@ -1,0 +1,7 @@
+model_a,model_b,images,only_a_correct,only_b_correct,statistic,p_value,method
+app_yolo11n-cls_v2 [tflite],yolo11n-cls_v2_aug_medium [pytorch],713,19,13,0.78125,0.3767591178115821,chi2_continuity
+app_yolo11n-cls_v2 [tflite],mobilenetv2_v2_aug_medium [keras],713,106,13,71.12605042016807,3.3511601593758604e-17,chi2_continuity
+app_yolo11n-cls_v2 [tflite],mobilenetv2_v2_aug_medium [tflite_float16],713,106,13,71.12605042016807,3.3511601593758604e-17,chi2_continuity
+yolo11n-cls_v2_aug_medium [pytorch],mobilenetv2_v2_aug_medium [keras],713,103,16,62.15126050420168,3.180633715681099e-15,chi2_continuity
+yolo11n-cls_v2_aug_medium [pytorch],mobilenetv2_v2_aug_medium [tflite_float16],713,104,17,61.12396694214876,5.3591747447626465e-15,chi2_continuity
+mobilenetv2_v2_aug_medium [keras],mobilenetv2_v2_aug_medium [tflite_float16],713,1,1,1.0,1.0,exact_binomial

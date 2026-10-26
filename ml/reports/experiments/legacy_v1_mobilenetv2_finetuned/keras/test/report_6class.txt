@@ -1,0 +1,23 @@
+MobileNetV2 legacy v1 [keras] - test - 6 app groups
+===================================================
+
+                  precision    recall  f1-score   specif.   support
+
+Paper/Cardboard      0.9500    0.9236    0.9366    0.9877       144
+Organic              0.8772    0.8065    0.8403    0.9892        62
+Glass                0.7246    0.7937    0.7576    0.9708        63
+Metal                0.8362    0.8220    0.8291    0.9681       118
+Other                0.8164    0.8989    0.8557    0.9276       188
+Plastic              0.8065    0.7246    0.7634    0.9583       138
+
+accuracy                                           0.8401                 713
+macro avg            0.8352    0.8282    0.8304                 713
+weighted avg         0.8419    0.8401    0.8398                 713
+
+balanced accuracy : 0.8282
+Cohen's kappa     : 0.8020
+MCC               : 0.8027
+log loss          : 0.4393
+ECE (15 bins)     : 0.0495
+ROC-AUC (OvR)     : 0.9799
+top-3 accuracy    : 0.9832

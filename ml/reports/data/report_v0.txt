@@ -1,0 +1,26 @@
+Class mapping:
+0: Cardboard
+1: Food Organics
+2: Glass
+3: Metal
+4: Miscellaneous Trash
+5: Paper
+6: Plastic
+7: Textile Trash
+8: Vegetation
+### Ánh xạ lớp (Class Mapping)
+0: Bìa carton
+1: Rác hữu cơ thực phẩm
+2: Thủy tinh
+3: Kim loại
+4: Rác thải hỗn hợp
+5: Giấy
+6: Nhựa
+7: Rác thải dệt may
+8: Thảm thực vật
+Batch kiểm tra:
+Image shape: (32, 224, 224, 3)
+Label shape: (32,)
+Image dtype: <dtype: 'float32'>
+Pixel min: 0.0
+Pixel max: 255.0

@@ -1,0 +1,31 @@
+{
+  "dataset_name": "RealWaste-ChemSort",
+  "version": "2.0.0",
+  "base_manifest": "data\\manifest.csv",
+  "base_manifest_sha256": "61a204c9b680a4cc34e889ce6b26e0546dc802634a8232c64a82d6af3cc3d516",
+  "sources": {
+    "realwaste": "https://doi.org/10.24432/C5SS4G",
+    "drinking_waste": "DrinkingWasteClassification/rawimgs",
+    "trashnet": "TrashNet",
+    "garbage_classification": "Garbage_Classification"
+  },
+  "excluded_sources": [],
+  "cap_per_source_label": 400,
+  "holdout": 0.1,
+  "seed": 42,
+  "external_filtering": {
+    "scanned": 22862,
+    "after_exact_dedup": 19731,
+    "after_realwaste_near_dedup": 19721,
+    "after_cap": 5991,
+    "test_ext_dropped_as_near_dup_of_train": 6
+  },
+  "split_counts": {
+    "train": 8717,
+    "test": 713,
+    "val": 713,
+    "test_ext": 594
+  },
+  "created_at_utc": "2026-09-23T18:48:32.178198+00:00",
+  "manifest_sha256": "def32b18fd2a2a2830eb63373e3a25de8a5791eaa593ebb31797e1dad6403056"
+}

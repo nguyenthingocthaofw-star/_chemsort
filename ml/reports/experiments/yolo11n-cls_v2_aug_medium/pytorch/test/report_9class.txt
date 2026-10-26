@@ -1,0 +1,26 @@
+YOLO11n-cls (PyTorch) - test - 9 RealWaste classes
+==================================================
+
+                      precision    recall  f1-score   specif.   support
+
+Cardboard                0.8919    0.9565    0.9231    0.9876        69
+Food Organics            0.9322    0.8871    0.9091    0.9939        62
+Glass                    0.9091    0.9524    0.9302    0.9908        63
+Metal                    0.9167    0.9322    0.9244    0.9832       118
+Miscellaneous Trash      0.8732    0.8267    0.8493    0.9859        75
+Paper                    0.9324    0.9200    0.9262    0.9922        75
+Plastic                  0.9030    0.8768    0.8897    0.9774       138
+Textile Trash            0.9000    0.9375    0.9184    0.9925        48
+Vegetation               0.9385    0.9385    0.9385    0.9938        65
+
+accuracy                                               0.9102                 713
+macro avg                0.9108    0.9142    0.9121                 713
+weighted avg             0.9103    0.9102    0.9099                 713
+
+balanced accuracy : 0.9142
+Cohen's kappa     : 0.8975
+MCC               : 0.8976
+log loss          : 0.3684
+ECE (15 bins)     : 0.0480
+ROC-AUC (OvR)     : 0.9932
+top-3 accuracy    : 0.9874

@@ -1,0 +1,111 @@
+{
+  "status": "tflite_export_completed",
+  "training_performed": false,
+  "test_split_used": false,
+  "source_model": {
+    "path": "models\\mobilenetv2_no_aug_finetuned.keras",
+    "sha256": "83a238fa2554af9a556985322605ae2a648883f68a3c465f642e03ae47e17477",
+    "size_mb": 20.84220790863037
+  },
+  "validation_parity_subset": {
+    "image_count": 90,
+    "images_per_original_class": 10,
+    "seed": 42
+  },
+  "keras_reference_metrics": {
+    "accuracy_9class": 0.8444444444444444,
+    "macro_f1_9class": 0.8466580372758863,
+    "accuracy_6class": 0.8777777777777778,
+    "macro_f1_6class": 0.8795515656171392
+  },
+  "float32": {
+    "path": "models\\tflite\\chemsort_mobilenetv2_float32.tflite",
+    "sha256": "ba7728f8c74d62361174d913e11ce7a8af7c8fc0f0934ee6657eabc0a3350129",
+    "size_mb": 8.522579193115234,
+    "io": {
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "input_dtype": "float32",
+      "input_quantization": [
+        0.0,
+        0
+      ],
+      "output_shape": [
+        1,
+        9
+      ],
+      "output_dtype": "float32",
+      "output_quantization": [
+        0.0,
+        0
+      ]
+    },
+    "metrics": {
+      "accuracy_9class": 0.8444444444444444,
+      "macro_f1_9class": 0.8466580372758863,
+      "accuracy_6class": 0.8777777777777778,
+      "macro_f1_6class": 0.8795515656171392
+    },
+    "parity": {
+      "max_absolute_probability_difference": 9.328126907348633e-06,
+      "mean_absolute_probability_difference": 2.3424891537615622e-07,
+      "prediction_agreement_9class": 1.0,
+      "prediction_agreement_6class": 1.0,
+      "accuracy_delta_9class": 0.0,
+      "macro_f1_delta_9class": 0.0,
+      "accuracy_delta_6class": 0.0,
+      "macro_f1_delta_6class": 0.0
+    }
+  },
+  "float16": {
+    "path": "models\\tflite\\chemsort_mobilenetv2_float16.tflite",
+    "sha256": "70be03cd61430b76af293141d78b4e6864ac2bba7d5d435b8dc4e3a53a27b858",
+    "size_mb": 4.325595855712891,
+    "io": {
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "input_dtype": "float32",
+      "input_quantization": [
+        0.0,
+        0
+      ],
+      "output_shape": [
+        1,
+        9
+      ],
+      "output_dtype": "float32",
+      "output_quantization": [
+        0.0,
+        0
+      ]
+    },
+    "metrics": {
+      "accuracy_9class": 0.8444444444444444,
+      "macro_f1_9class": 0.8466580372758863,
+      "accuracy_6class": 0.8888888888888888,
+      "macro_f1_6class": 0.8906685906685907
+    },
+    "parity": {
+      "max_absolute_probability_difference": 0.018791228532791138,
+      "mean_absolute_probability_difference": 0.0008055115467868745,
+      "prediction_agreement_9class": 1.0,
+      "prediction_agreement_6class": 0.9888888888888889,
+      "accuracy_delta_9class": 0.0,
+      "macro_f1_delta_9class": 0.0,
+      "accuracy_delta_6class": 0.011111111111111072,
+      "macro_f1_delta_6class": 0.011117025051451512
+    },
+    "passed_mobile_selection_gate": false
+  },
+  "recommended_mobile_model": "models\\tflite\\chemsort_mobilenetv2_float32.tflite",
+  "mobile_contract_path": "models\\tflite\\chemsort_mapping.json",
+  "labels_path": "models\\tflite\\labels_9.txt"
+}

@@ -1,0 +1,8 @@
+label_6,train,val,test,test_ext,total
+Paper/Cardboard,2113,144,144,159,2560
+Organic,648,61,62,40,811
+Glass,1088,63,63,88,1302
+Metal,1504,119,118,103,1844
+Other,1716,188,188,94,2186
+Plastic,1648,138,138,110,2034
+total,8717,713,713,594,10737

@@ -1,0 +1,16 @@
+model_a,model_b,images,only_a_correct,only_b_correct,statistic,p_value,method
+yolo11n-cls_v2_aug_medium [pytorch],app_yolo11n-cls_v2 [tflite],713,23,22,0.0,1.0,chi2_continuity
+yolo11n-cls_v2_aug_medium [pytorch],legacy_v1_efficientnet_lite0 [tflite_float16],683,85,29,26.535087719298247,2.587946757239265e-07,chi2_continuity
+yolo11n-cls_v2_aug_medium [pytorch],legacy_v1_mobilenetv2_finetuned [keras],683,83,23,32.839622641509436,1.0008392173030936e-08,chi2_continuity
+yolo11n-cls_v2_aug_medium [pytorch],mobilenetv2_v2_aug_medium [keras],713,105,24,49.6124031007752,1.8732568745054856e-12,chi2_continuity
+yolo11n-cls_v2_aug_medium [pytorch],mobilenetv2_v2_aug_medium [tflite_float16],713,107,24,51.32824427480916,7.814322118794885e-13,chi2_continuity
+app_yolo11n-cls_v2 [tflite],legacy_v1_efficientnet_lite0 [tflite_float16],683,80,24,29.08653846153846,6.921626107360163e-08,chi2_continuity
+app_yolo11n-cls_v2 [tflite],legacy_v1_mobilenetv2_finetuned [keras],683,79,19,35.52040816326531,2.5239231525239306e-09,chi2_continuity
+app_yolo11n-cls_v2 [tflite],mobilenetv2_v2_aug_medium [keras],713,106,26,47.28030303030303,6.152739417519966e-12,chi2_continuity
+app_yolo11n-cls_v2 [tflite],mobilenetv2_v2_aug_medium [tflite_float16],713,108,26,48.96268656716418,2.6087840762105926e-12,chi2_continuity
+legacy_v1_efficientnet_lite0 [tflite_float16],legacy_v1_mobilenetv2_finetuned [keras],713,54,51,0.0380952380952381,0.8452520242196513,chi2_continuity
+legacy_v1_efficientnet_lite0 [tflite_float16],mobilenetv2_v2_aug_medium [keras],683,72,53,2.592,0.10740463633025313,chi2_continuity
+legacy_v1_efficientnet_lite0 [tflite_float16],mobilenetv2_v2_aug_medium [tflite_float16],683,74,53,3.1496062992125986,0.07594528459029029,chi2_continuity
+legacy_v1_mobilenetv2_finetuned [keras],mobilenetv2_v2_aug_medium [keras],683,57,42,1.97979797979798,0.15941169079839146,chi2_continuity
+legacy_v1_mobilenetv2_finetuned [keras],mobilenetv2_v2_aug_medium [tflite_float16],683,59,42,2.5346534653465347,0.11137133501896605,chi2_continuity
+mobilenetv2_v2_aug_medium [keras],mobilenetv2_v2_aug_medium [tflite_float16],713,3,1,1.0,0.625,exact_binomial

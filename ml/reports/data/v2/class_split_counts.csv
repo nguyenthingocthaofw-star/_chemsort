@@ -1,0 +1,11 @@
+label,train,val,test,test_ext,total
+Cardboard,1043,69,69,79,1260
+Food Organics,648,61,62,40,811
+Glass,1088,63,63,88,1302
+Metal,1504,119,118,103,1844
+Miscellaneous Trash,829,74,75,54,1032
+Paper,1070,75,75,80,1300
+Plastic,1648,138,138,110,2034
+Textile Trash,582,48,48,40,718
+Vegetation,305,66,65,0,436
+total,8717,713,713,594,10737

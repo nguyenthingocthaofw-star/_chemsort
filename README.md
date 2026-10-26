@@ -174,6 +174,17 @@ thứ tự này trước khi xuất.
 LiteRT (6,2 MB). Đầu vào `[1, 3, 224, 224]` (NCHW, RGB, giá trị 0–1), đầu ra
 `[1, 9]` là xác suất softmax.
 
+Toàn bộ code dữ liệu, train, export và đánh giá nằm trong [`ml/`](ml/README.md):
+
+```powershell
+cd ml
+python -m tools.extract_data_bundle                  # giải nén ChemSort_Data.zip
+python -m pipelines.train_yolo                       # YOLO11n-cls với cấu hình ở trên
+python -m pipelines.train_keras --model mobilenetv3large   # hoặc mobilenetv2, efficientnetb0, ...
+python -m pipelines.export_tflite --run yolo11n-cls_v2
+python -m pipelines.run_experiments                  # train + export + đánh giá + so sánh nhiều model
+```
+
 ---
 
 ## 4. Đánh giá
@@ -207,6 +218,19 @@ phân loại (đóng băng backbone), trên cùng dataset v2, đạt macro-F1 6 
 trên cả hai tập và nhẹ bằng một nửa.
 
 Tập val đã dùng để chọn epoch nên không được dùng làm điểm cuối cùng.
+
+Tái lập các con số trên (và confusion matrix, precision/recall/F1 từng lớp,
+khoảng tin cậy 95%) từ chính file TFLite trong app:
+
+```powershell
+cd ml
+python -m pipelines.evaluate --tflite ../assets/chemsort/yolo11n-cls_data_v2_float32.tflite `
+    --mapping ../assets/chemsort/chemsort_mapping.json --name app_yolo11n-cls_v2 --split test test_ext
+python -m pipelines.compare_models --split test      # so sánh mọi model đã đánh giá
+```
+
+Báo cáo nằm trong `ml/reports/experiments/` và `ml/reports/comparison/`
+(xem [`ml/reports/README.md`](ml/reports/README.md)).
 
 ---
 
@@ -284,6 +308,12 @@ assets/chemsort/
   chemsort_mapping.json                Gộp 9 lớp → 6 nhóm
   flashcards.json                      178 fact
 test/                         Unit test mapping, tiền xử lý ảnh, flashcard, widget
+ml/                           Dữ liệu, train, export, đánh giá, so sánh model (Python)
+  src/chemsort/               Contract 9→6, tiền xử lý giống app, metrics, báo cáo
+  pipelines/                  train_yolo, train_keras, export_tflite, evaluate, compare_models
+  tools/                      Giải nén / dựng dataset, kiểm tra asset, đồng bộ model vào app
+  data/                       manifest v1, v2 (ảnh gốc bị gitignore)
+  reports/                    Confusion matrix, metrics, bảng so sánh
 ```
 
 ---

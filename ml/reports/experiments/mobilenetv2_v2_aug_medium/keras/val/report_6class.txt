@@ -1,0 +1,23 @@
+MobileNetV2 (mobilenetv2_v2_aug_medium) - val - 6 app groups
+============================================================
+
+                  precision    recall  f1-score   specif.   support
+
+Paper/Cardboard      0.9576    0.7847    0.8626    0.9912       144
+Organic              0.8936    0.6885    0.7778    0.9923        61
+Glass                0.8846    0.7302    0.8000    0.9908        63
+Metal                0.8182    0.8319    0.8250    0.9630       119
+Other                0.8402    0.8670    0.8534    0.9410       188
+Plastic              0.6630    0.8696    0.7524    0.8939       138
+
+accuracy                                           0.8177                 713
+macro avg            0.8429    0.7953    0.8119                 713
+weighted avg         0.8344    0.8177    0.8198                 713
+
+balanced accuracy : 0.7953
+Cohen's kappa     : 0.7736
+MCC               : 0.7763
+log loss          : 0.5386
+ECE (15 bins)     : 0.0589
+ROC-AUC (OvR)     : 0.9756
+top-3 accuracy    : 0.9874
