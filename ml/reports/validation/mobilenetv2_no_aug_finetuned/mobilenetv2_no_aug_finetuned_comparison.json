@@ -1,0 +1,45 @@
+{
+  "baseline_model": "models\\mobilenetv2_no_aug.keras",
+  "finetuned_model": "models\\mobilenetv2_no_aug_finetuned.keras",
+  "configuration": {
+    "augmentation": false,
+    "unfreeze_last_layers": 30,
+    "batch_normalization_frozen": true,
+    "learning_rate": 1e-05,
+    "maximum_epochs": 8,
+    "epochs_completed": 8,
+    "best_epoch_by_val_loss": 8,
+    "trainable_parameters": 1522249,
+    "seed": 42
+  },
+  "baseline": {
+    "accuracy_9class": 0.7938288920056101,
+    "macro_f1_9class": 0.792047625211031,
+    "accuracy_6class": 0.8429172510518934,
+    "macro_f1_6class": 0.8424254749311418,
+    "organic_precision_6class": 0.9107142857142857,
+    "organic_recall_6class": 0.8360655737704918,
+    "plastic_precision_6class": 0.8106060606060606,
+    "plastic_recall_6class": 0.7753623188405797
+  },
+  "finetuned": {
+    "accuracy_9class": 0.8302945301542777,
+    "macro_f1_9class": 0.8299125849574902,
+    "accuracy_6class": 0.8681626928471248,
+    "macro_f1_6class": 0.8684327146525329,
+    "organic_precision_6class": 0.9310344827586207,
+    "organic_recall_6class": 0.8852459016393442,
+    "plastic_precision_6class": 0.8571428571428571,
+    "plastic_recall_6class": 0.782608695652174
+  },
+  "delta_finetuned_minus_baseline": {
+    "accuracy_9class": 0.036465638148667545,
+    "macro_f1_9class": 0.037864959746459204,
+    "accuracy_6class": 0.02524544179523136,
+    "macro_f1_6class": 0.026007239721391073,
+    "organic_recall_6class": 0.0491803278688524,
+    "plastic_precision_6class": 0.04653679653679654,
+    "plastic_recall_6class": 0.007246376811594235
+  },
+  "test_set_used": false
+}

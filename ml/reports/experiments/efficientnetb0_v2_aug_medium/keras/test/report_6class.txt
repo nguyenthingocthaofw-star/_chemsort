@@ -1,0 +1,23 @@
+EfficientNetB0 (Keras) - test - 6 app groups
+============================================
+
+                  precision    recall  f1-score   specif.   support
+
+Paper/Cardboard      0.8947    0.9444    0.9189    0.9719       144
+Organic              0.9123    0.8387    0.8739    0.9923        62
+Glass                0.8361    0.8095    0.8226    0.9846        63
+Metal                0.8304    0.7881    0.8087    0.9681       118
+Other                0.8919    0.8777    0.8847    0.9619       188
+Plastic              0.7603    0.8043    0.7817    0.9391       138
+
+accuracy                                           0.8527                 713
+macro avg            0.8543    0.8438    0.8484                 713
+weighted avg         0.8536    0.8527    0.8527                 713
+
+balanced accuracy : 0.8438
+Cohen's kappa     : 0.8178
+MCC               : 0.8180
+log loss          : 0.3729
+ECE (15 bins)     : 0.0367
+ROC-AUC (OvR)     : 0.9849
+top-3 accuracy    : 0.9874

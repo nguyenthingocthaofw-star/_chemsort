@@ -1,0 +1,26 @@
+MobileNetV3Large (mobilenetv3large_v2_aug_medium) - val - 9 RealWaste classes
+=============================================================================
+
+                      precision    recall  f1-score   specif.   support
+
+Cardboard                0.8209    0.7971    0.8088    0.9814        69
+Food Organics            0.8060    0.8852    0.8438    0.9801        61
+Glass                    0.8197    0.7937    0.8065    0.9831        63
+Metal                    0.8413    0.8908    0.8653    0.9663       119
+Miscellaneous Trash      0.6377    0.5946    0.6154    0.9609        74
+Paper                    0.8551    0.7867    0.8194    0.9843        75
+Plastic                  0.8295    0.7754    0.8015    0.9617       138
+Textile Trash            0.6909    0.7917    0.7379    0.9744        48
+Vegetation               0.9143    0.9697    0.9412    0.9907        66
+
+accuracy                                               0.8093                 713
+macro avg                0.8017    0.8094    0.8044                 713
+weighted avg             0.8090    0.8093    0.8081                 713
+
+balanced accuracy : 0.8094
+Cohen's kappa     : 0.7823
+MCC               : 0.7826
+log loss          : 0.5434
+ECE (15 bins)     : 0.0544
+ROC-AUC (OvR)     : 0.9795
+top-3 accuracy    : 0.9776

@@ -1,0 +1,106 @@
+{
+  "status": "tflite_export_completed",
+  "candidate": "EfficientNet-Lite0",
+  "architecture_key": "efficientnet_lite0",
+  "source_weights": {
+    "path": "models\\efficientnet_lite0_no_aug.weights.h5",
+    "sha256": "1ae5525ad6a23ade647ea095ad053cf7322aa0248e8d2f4cc5313fa0734c4fca"
+  },
+  "full_validation_metrics": {
+    "accuracy_9class": 0.8485273492286115,
+    "macro_f1_9class": 0.8439985359163685,
+    "accuracy_6class": 0.8821879382889201,
+    "macro_f1_6class": 0.8779159773575947,
+    "organic_precision_6class": 0.8666666666666667,
+    "organic_recall_6class": 0.8524590163934426,
+    "plastic_precision_6class": 0.8321678321678322,
+    "plastic_recall_6class": 0.8623188405797102
+  },
+  "parity_subset": {
+    "image_count": 90,
+    "images_per_original_class": 10,
+    "seed": 42,
+    "keras_metrics": {
+      "accuracy_9class": 0.8,
+      "macro_f1_9class": 0.7983654670445176,
+      "accuracy_6class": 0.8333333333333334,
+      "macro_f1_6class": 0.8184634938504908
+    }
+  },
+  "float32": {
+    "path": "models\\tflite\\efficientnet_lite0_float32.tflite",
+    "sha256": "4f094e2516531ee71ab4ed3f271c79856f4a617b266f5863eb4c4fc7aa79fa0b",
+    "size_mb": 12.859367370605469,
+    "io": {
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "input_dtype": "float32",
+      "output_shape": [
+        1,
+        9
+      ],
+      "output_dtype": "float32"
+    },
+    "metrics": {
+      "accuracy_9class": 0.8,
+      "macro_f1_9class": 0.7983654670445176,
+      "accuracy_6class": 0.8333333333333334,
+      "macro_f1_6class": 0.8184634938504908
+    },
+    "parity": {
+      "max_absolute_probability_difference": 2.6226043701171875e-06,
+      "mean_absolute_probability_difference": 1.303885426295892e-07,
+      "prediction_agreement_9class": 1.0,
+      "prediction_agreement_6class": 1.0,
+      "accuracy_delta_9class": 0.0,
+      "macro_f1_delta_9class": 0.0,
+      "accuracy_delta_6class": 0.0,
+      "macro_f1_delta_6class": 0.0
+    },
+    "passed_gate": true
+  },
+  "float16": {
+    "path": "models\\tflite\\efficientnet_lite0_float16.tflite",
+    "sha256": "7b46bdb6c5bdbab420e9ac9cdb59d9b8ff32928a0f320f2ab61a4c2ef261f643",
+    "size_mb": 6.468559265136719,
+    "io": {
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "input_dtype": "float32",
+      "output_shape": [
+        1,
+        9
+      ],
+      "output_dtype": "float32"
+    },
+    "metrics": {
+      "accuracy_9class": 0.8,
+      "macro_f1_9class": 0.7983654670445176,
+      "accuracy_6class": 0.8333333333333334,
+      "macro_f1_6class": 0.8184634938504908
+    },
+    "parity": {
+      "max_absolute_probability_difference": 0.007557123899459839,
+      "mean_absolute_probability_difference": 0.0003333534114062786,
+      "prediction_agreement_9class": 1.0,
+      "prediction_agreement_6class": 1.0,
+      "accuracy_delta_9class": 0.0,
+      "macro_f1_delta_9class": 0.0,
+      "accuracy_delta_6class": 0.0,
+      "macro_f1_delta_6class": 0.0
+    },
+    "passed_gate": true
+  },
+  "recommended_mobile_model": "models\\tflite\\efficientnet_lite0_float16.tflite",
+  "recommended_format": "float16",
+  "training_performed": false,
+  "test_split_used": false
+}

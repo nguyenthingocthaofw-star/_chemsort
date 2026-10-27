@@ -1,0 +1,160 @@
+{
+  "run_name": "mobilenetv3large_no_aug",
+  "architecture": {
+    "display_name": "MobileNetV3Large",
+    "preprocessing": "embedded [0,255] to [-1,1] rescaling",
+    "pretrained_weights": "ImageNet via tf.keras.applications",
+    "backbone_fine_tuning_supported": true
+  },
+  "stage": "baseline",
+  "augmentation": false,
+  "image_size": [
+    224,
+    224
+  ],
+  "input_contract": "RGB float32 [0,255]",
+  "batch_size": 32,
+  "seed": 42,
+  "learning_rate": 0.001,
+  "epochs_requested": 15,
+  "epochs_completed": 15,
+  "best_epoch_by_val_loss": 13,
+  "best_val_loss": 0.45276764035224915,
+  "total_parameters": 3005001,
+  "trainable_parameters": 8649,
+  "unfrozen_backbone_layers": [],
+  "model_artifact": "models\\mobilenetv3large_no_aug.keras",
+  "best_weights": "models\\mobilenetv3large_no_aug.weights.h5",
+  "model_save_error": null,
+  "validation": {
+    "accuracy_9class": 0.8373071528751753,
+    "macro_f1_9class": 0.8404528603018337,
+    "accuracy_6class": 0.8653576437587658,
+    "macro_f1_6class": 0.8639792652217341,
+    "organic_precision_6class": 0.8833333333333333,
+    "organic_recall_6class": 0.8688524590163934,
+    "plastic_precision_6class": 0.7762237762237763,
+    "plastic_recall_6class": 0.8043478260869565
+  },
+  "classification_report_9class": {
+    "Cardboard": {
+      "precision": 0.8676470588235294,
+      "recall": 0.855072463768116,
+      "f1-score": 0.8613138686131386,
+      "support": 69.0
+    },
+    "Food Organics": {
+      "precision": 0.8833333333333333,
+      "recall": 0.8688524590163934,
+      "f1-score": 0.8760330578512396,
+      "support": 61.0
+    },
+    "Glass": {
+      "precision": 0.8813559322033898,
+      "recall": 0.8253968253968254,
+      "f1-score": 0.8524590163934426,
+      "support": 63.0
+    },
+    "Metal": {
+      "precision": 0.8267716535433071,
+      "recall": 0.8823529411764706,
+      "f1-score": 0.8536585365853658,
+      "support": 119.0
+    },
+    "Miscellaneous Trash": {
+      "precision": 0.7777777777777778,
+      "recall": 0.6621621621621622,
+      "f1-score": 0.7153284671532847,
+      "support": 74.0
+    },
+    "Paper": {
+      "precision": 0.88,
+      "recall": 0.88,
+      "f1-score": 0.88,
+      "support": 75.0
+    },
+    "Plastic": {
+      "precision": 0.7762237762237763,
+      "recall": 0.8043478260869565,
+      "f1-score": 0.7900355871886121,
+      "support": 138.0
+    },
+    "Textile Trash": {
+      "precision": 0.7647058823529411,
+      "recall": 0.8125,
+      "f1-score": 0.7878787878787878,
+      "support": 48.0
+    },
+    "Vegetation": {
+      "precision": 0.9402985074626866,
+      "recall": 0.9545454545454546,
+      "f1-score": 0.9473684210526315,
+      "support": 66.0
+    },
+    "accuracy": 0.8373071528751753,
+    "macro avg": {
+      "precision": 0.8442348801911934,
+      "recall": 0.8383589035724867,
+      "f1-score": 0.8404528603018337,
+      "support": 713.0
+    },
+    "weighted avg": {
+      "precision": 0.8374505629909385,
+      "recall": 0.8373071528751753,
+      "f1-score": 0.8365535379504974,
+      "support": 713.0
+    }
+  },
+  "classification_report_6class": {
+    "Paper/Cardboard": {
+      "precision": 0.9236111111111112,
+      "recall": 0.9236111111111112,
+      "f1-score": 0.9236111111111112,
+      "support": 144.0
+    },
+    "Organic": {
+      "precision": 0.8833333333333333,
+      "recall": 0.8688524590163934,
+      "f1-score": 0.8760330578512396,
+      "support": 61.0
+    },
+    "Glass": {
+      "precision": 0.8813559322033898,
+      "recall": 0.8253968253968254,
+      "f1-score": 0.8524590163934426,
+      "support": 63.0
+    },
+    "Metal": {
+      "precision": 0.84,
+      "recall": 0.8823529411764706,
+      "f1-score": 0.860655737704918,
+      "support": 119.0
+    },
+    "Other": {
+      "precision": 0.8956043956043956,
+      "recall": 0.8670212765957447,
+      "f1-score": 0.8810810810810811,
+      "support": 188.0
+    },
+    "Plastic": {
+      "precision": 0.7762237762237763,
+      "recall": 0.8043478260869565,
+      "f1-score": 0.7900355871886121,
+      "support": 138.0
+    },
+    "accuracy": 0.8653576437587658,
+    "macro avg": {
+      "precision": 0.8666880914126676,
+      "recall": 0.8619304065639168,
+      "f1-score": 0.8639792652217341,
+      "support": 713.0
+    },
+    "weighted avg": {
+      "precision": 0.8665655884357003,
+      "recall": 0.8653576437587658,
+      "f1-score": 0.8656789924598449,
+      "support": 713.0
+    }
+  },
+  "test_set_used": false
+}

@@ -1,0 +1,511 @@
+{
+  "run_name": "yolo11n-cls_v2_aug_medium",
+  "artifact": "pytorch",
+  "split": "val",
+  "dataset": "v2_aug_medium",
+  "manifest": "C:\\Users\\wande\\_chemsort\\ml\\data\\augmented\\v2_medium\\manifest_v2_aug_medium.csv",
+  "test_set_used": false,
+  "model": {
+    "backend": "pytorch",
+    "model_path": "C:\\Users\\wande\\_chemsort\\ml\\models\\yolo11n-cls_v2_aug_medium\\best.pt",
+    "model_sha256": "7079548da3ca1a14594129f8507cb0e5c9a23ef646b7bc028fd3d49978f49595",
+    "model_size_mb": 3.061586380004883,
+    "parameters": 1542633,
+    "device": "cuda:0"
+  },
+  "input_spec": {
+    "layout": "NCHW",
+    "pixel_max": 1.0,
+    "framing": "center_square_crop+area_average",
+    "size": 224
+  },
+  "timing": {
+    "inference_ms_per_image": 2.466025946842739,
+    "preprocess_ms_per_image": 28.42253141637779,
+    "batch_size": 64
+  },
+  "title": "yolo11n-cls (yolo11n-cls_v2_aug_medium) - val",
+  "evaluated_at_utc": "2026-10-26T15:09:29.176780+00:00",
+  "n_images": 713,
+  "class_counts_9class": {
+    "Cardboard": 69,
+    "Food Organics": 61,
+    "Glass": 63,
+    "Metal": 119,
+    "Miscellaneous Trash": 74,
+    "Paper": 75,
+    "Plastic": 138,
+    "Textile Trash": 48,
+    "Vegetation": 66
+  },
+  "summary": {
+    "accuracy_9class": 0.9242636746143057,
+    "balanced_accuracy_9class": 0.9199249923877123,
+    "macro_precision_9class": 0.9296665061619943,
+    "macro_recall_9class": 0.9199249923877123,
+    "macro_f1_9class": 0.924422491037024,
+    "macro_f1_present_9class": 0.924422491037024,
+    "weighted_f1_9class": 0.9243687558551237,
+    "cohen_kappa_9class": 0.9133296566006731,
+    "mcc_9class": 0.9134688497288702,
+    "log_loss_9class": 0.2909051254753565,
+    "ece_9class": 0.03382579082600427,
+    "roc_auc_ovr_macro_9class": 0.9946861003575455,
+    "top3_accuracy_9class": 0.9929873772791024,
+    "f1_9class_cardboard": 0.9710144927536232,
+    "f1_9class_food_organics": 0.9572649572649573,
+    "f1_9class_glass": 0.9032258064516129,
+    "f1_9class_metal": 0.9282700421940928,
+    "f1_9class_miscellaneous_trash": 0.8707482993197279,
+    "f1_9class_paper": 0.9271523178807947,
+    "f1_9class_plastic": 0.916083916083916,
+    "f1_9class_textile_trash": 0.8842105263157894,
+    "f1_9class_vegetation": 0.9618320610687023,
+    "accuracy_6class": 0.9396914446002805,
+    "balanced_accuracy_6class": 0.9326506109041266,
+    "macro_precision_6class": 0.9431894093842815,
+    "macro_recall_6class": 0.9326506109041266,
+    "macro_f1_6class": 0.9373871667684778,
+    "macro_f1_present_6class": 0.9373871667684778,
+    "weighted_f1_6class": 0.9398425862058769,
+    "cohen_kappa_6class": 0.9254009888462811,
+    "mcc_6class": 0.925559264179887,
+    "log_loss_6class": 0.2002858915410167,
+    "ece_6class": 0.026411939275175496,
+    "roc_auc_ovr_macro_6class": 0.9966424924268874,
+    "top3_accuracy_6class": 0.9943899018232819,
+    "f1_6class_paper_cardboard": 0.9757785467128027,
+    "f1_6class_organic": 0.9572649572649573,
+    "f1_6class_glass": 0.9032258064516129,
+    "f1_6class_metal": 0.9282700421940928,
+    "f1_6class_other": 0.9436997319034852,
+    "f1_6class_plastic": 0.916083916083916,
+    "organic_precision_6class": 1.0,
+    "organic_recall_6class": 0.9180327868852459,
+    "plastic_precision_6class": 0.8851351351351351,
+    "plastic_recall_6class": 0.9492753623188406
+  },
+  "confidence_intervals_95": {
+    "9class": {
+      "accuracy": {
+        "lower": 0.9046283309957924,
+        "upper": 0.9424964936886395,
+        "std": 0.009823946134253836,
+        "samples": 2000,
+        "seed": 42
+      },
+      "macro_f1": {
+        "lower": 0.9030195064074826,
+        "upper": 0.9428324924791747,
+        "std": 0.010291712387339983,
+        "samples": 2000,
+        "seed": 42
+      }
+    },
+    "6class": {
+      "accuracy": {
+        "lower": 0.9214586255259467,
+        "upper": 0.9565217391304348,
+        "std": 0.008774272111429015,
+        "samples": 2000,
+        "seed": 42
+      },
+      "macro_f1": {
+        "lower": 0.9163697176383402,
+        "upper": 0.95523581833236,
+        "std": 0.00948344539877656,
+        "samples": 2000,
+        "seed": 42
+      }
+    }
+  },
+  "per_source": {},
+  "calibration_6class": {
+    "bin_center": [
+      0.3,
+      0.43333333333333335,
+      0.5,
+      0.5666666666666667,
+      0.6333333333333333,
+      0.7,
+      0.7666666666666666,
+      0.8333333333333334,
+      0.9,
+      0.9666666666666667
+    ],
+    "accuracy": [
+      0.0,
+      0.0,
+      0.25,
+      0.4,
+      0.6666666666666666,
+      0.4666666666666667,
+      0.8571428571428571,
+      0.7,
+      0.8214285714285714,
+      0.9855769230769231
+    ],
+    "confidence": [
+      0.3091403890752474,
+      0.46664007443134586,
+      0.504631788114337,
+      0.555754753916911,
+      0.6311548227081568,
+      0.701823083509717,
+      0.7562811666607925,
+      0.8326402681430467,
+      0.8952490618586867,
+      0.9960175790071943
+    ],
+    "count": [
+      1,
+      1,
+      8,
+      10,
+      9,
+      15,
+      7,
+      10,
+      28,
+      624
+    ]
+  },
+  "metrics_9class": {
+    "n_samples": 713,
+    "accuracy": 0.9242636746143057,
+    "balanced_accuracy": 0.9199249923877123,
+    "macro_precision": 0.9296665061619943,
+    "macro_recall": 0.9199249923877123,
+    "macro_f1": 0.924422491037024,
+    "macro_f1_present": 0.924422491037024,
+    "weighted_precision": 0.9252951263673844,
+    "weighted_recall": 0.9242636746143057,
+    "weighted_f1": 0.9243687558551237,
+    "cohen_kappa": 0.9133296566006731,
+    "mcc": 0.9134688497288702,
+    "log_loss": 0.2909051254753565,
+    "brier_score": 0.11648368184250295,
+    "ece": 0.03382579082600427,
+    "mean_confidence": 0.9540149283791033,
+    "roc_auc_ovr_macro": 0.9946861003575455,
+    "classes_present": 9,
+    "class_names": [
+      "Cardboard",
+      "Food Organics",
+      "Glass",
+      "Metal",
+      "Miscellaneous Trash",
+      "Paper",
+      "Plastic",
+      "Textile Trash",
+      "Vegetation"
+    ],
+    "confusion_matrix": [
+      [
+        67,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        56,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        56,
+        1,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        110,
+        4,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        64,
+        1,
+        4,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        70,
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        4,
+        1,
+        0,
+        131,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        3,
+        2,
+        0,
+        42,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        63
+      ]
+    ],
+    "per_class": {
+      "Cardboard": {
+        "precision": 0.9710144927536232,
+        "recall": 0.9710144927536232,
+        "f1": 0.9710144927536232,
+        "specificity": 0.9968944099378882,
+        "support": 69,
+        "predicted": 69
+      },
+      "Food Organics": {
+        "precision": 1.0,
+        "recall": 0.9180327868852459,
+        "f1": 0.9572649572649573,
+        "specificity": 1.0,
+        "support": 61,
+        "predicted": 56
+      },
+      "Glass": {
+        "precision": 0.9180327868852459,
+        "recall": 0.8888888888888888,
+        "f1": 0.9032258064516129,
+        "specificity": 0.9923076923076923,
+        "support": 63,
+        "predicted": 61
+      },
+      "Metal": {
+        "precision": 0.9322033898305084,
+        "recall": 0.9243697478991597,
+        "f1": 0.9282700421940928,
+        "specificity": 0.9865319865319865,
+        "support": 119,
+        "predicted": 118
+      },
+      "Miscellaneous Trash": {
+        "precision": 0.8767123287671232,
+        "recall": 0.8648648648648649,
+        "f1": 0.8707482993197279,
+        "specificity": 0.9859154929577465,
+        "support": 74,
+        "predicted": 73
+      },
+      "Paper": {
+        "precision": 0.9210526315789473,
+        "recall": 0.9333333333333333,
+        "f1": 0.9271523178807947,
+        "specificity": 0.9905956112852664,
+        "support": 75,
+        "predicted": 76
+      },
+      "Plastic": {
+        "precision": 0.8851351351351351,
+        "recall": 0.9492753623188406,
+        "f1": 0.916083916083916,
+        "specificity": 0.9704347826086956,
+        "support": 138,
+        "predicted": 148
+      },
+      "Textile Trash": {
+        "precision": 0.8936170212765957,
+        "recall": 0.875,
+        "f1": 0.8842105263157894,
+        "specificity": 0.9924812030075187,
+        "support": 48,
+        "predicted": 47
+      },
+      "Vegetation": {
+        "precision": 0.9692307692307692,
+        "recall": 0.9545454545454546,
+        "f1": 0.9618320610687023,
+        "specificity": 0.9969088098918083,
+        "support": 66,
+        "predicted": 65
+      }
+    },
+    "top2_accuracy": 0.97054698457223,
+    "top3_accuracy": 0.9929873772791024
+  },
+  "metrics_6class": {
+    "n_samples": 713,
+    "accuracy": 0.9396914446002805,
+    "balanced_accuracy": 0.9326506109041266,
+    "macro_precision": 0.9431894093842815,
+    "macro_recall": 0.9326506109041266,
+    "macro_f1": 0.9373871667684778,
+    "macro_f1_present": 0.9373871667684778,
+    "weighted_precision": 0.9408114416173916,
+    "weighted_recall": 0.9396914446002805,
+    "weighted_f1": 0.9398425862058769,
+    "cohen_kappa": 0.9254009888462811,
+    "mcc": 0.925559264179887,
+    "log_loss": 0.2002858915410167,
+    "brier_score": 0.08909323983711298,
+    "ece": 0.026411939275175496,
+    "mean_confidence": 0.9632264177352007,
+    "roc_auc_ovr_macro": 0.9966424924268874,
+    "classes_present": 6,
+    "class_names": [
+      "Paper/Cardboard",
+      "Organic",
+      "Glass",
+      "Metal",
+      "Other",
+      "Plastic"
+    ],
+    "confusion_matrix": [
+      [
+        141,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        56,
+        0,
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        56,
+        1,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        110,
+        4,
+        5
+      ],
+      [
+        3,
+        0,
+        3,
+        2,
+        176,
+        4
+      ],
+      [
+        0,
+        0,
+        2,
+        4,
+        1,
+        131
+      ]
+    ],
+    "per_class": {
+      "Paper/Cardboard": {
+        "precision": 0.9724137931034482,
+        "recall": 0.9791666666666666,
+        "f1": 0.9757785467128027,
+        "specificity": 0.9929701230228472,
+        "support": 144,
+        "predicted": 145
+      },
+      "Organic": {
+        "precision": 1.0,
+        "recall": 0.9180327868852459,
+        "f1": 0.9572649572649573,
+        "specificity": 1.0,
+        "support": 61,
+        "predicted": 56
+      },
+      "Glass": {
+        "precision": 0.9180327868852459,
+        "recall": 0.8888888888888888,
+        "f1": 0.9032258064516129,
+        "specificity": 0.9923076923076923,
+        "support": 63,
+        "predicted": 61
+      },
+      "Metal": {
+        "precision": 0.9322033898305084,
+        "recall": 0.9243697478991597,
+        "f1": 0.9282700421940928,
+        "specificity": 0.9865319865319865,
+        "support": 119,
+        "predicted": 118
+      },
+      "Other": {
+        "precision": 0.9513513513513514,
+        "recall": 0.9361702127659575,
+        "f1": 0.9436997319034852,
+        "specificity": 0.9828571428571429,
+        "support": 188,
+        "predicted": 185
+      },
+      "Plastic": {
+        "precision": 0.8851351351351351,
+        "recall": 0.9492753623188406,
+        "f1": 0.916083916083916,
+        "specificity": 0.9704347826086956,
+        "support": 138,
+        "predicted": 148
+      }
+    },
+    "top2_accuracy": 0.9775596072931276,
+    "top3_accuracy": 0.9943899018232819
+  }
+}

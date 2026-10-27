@@ -1,0 +1,27 @@
+MobileNetV2 (Keras) - test_ext - 9 RealWaste classes
+====================================================
+
+                      precision    recall  f1-score   specif.   support
+
+Cardboard                0.9103    0.8987    0.9045    0.9864        79
+Food Organics            0.9744    0.9500    0.9620    0.9982        40
+Glass                    0.8750    0.8750    0.8750    0.9783        88
+Metal                    0.9048    0.9223    0.9135    0.9796       103
+Miscellaneous Trash      0.8571    0.6667    0.7500    0.9889        54
+Paper                    0.8295    0.9125    0.8690    0.9708        80
+Plastic                  0.9000    0.9000    0.9000    0.9773       110
+Textile Trash            0.9524    1.0000    0.9756    0.9964        40
+Vegetation               0.0000    0.0000    0.0000    0.9966         0
+
+accuracy                                               0.8906                 594
+macro avg                0.8004    0.7917    0.7944                 594
+weighted avg             0.8936    0.8906    0.8907                 594
+
+balanced accuracy : 0.8907
+Cohen's kappa     : 0.8728
+MCC               : 0.8731
+log loss          : 0.3503
+ECE (15 bins)     : 0.0393
+ROC-AUC (OvR)     : 0.9882
+top-3 accuracy    : 0.9832
+note: only 8/9 classes occur; macro F1 over present classes = 0.8937

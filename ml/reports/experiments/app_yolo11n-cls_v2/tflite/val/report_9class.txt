@@ -1,0 +1,26 @@
+app_yolo11n-cls_v2 - val - 9 RealWaste classes
+==============================================
+
+                      precision    recall  f1-score   specif.   support
+
+Cardboard                0.9067    0.9855    0.9444    0.9891        69
+Food Organics            0.9828    0.9344    0.9580    0.9985        61
+Glass                    0.9516    0.9365    0.9440    0.9954        63
+Metal                    0.9412    0.9412    0.9412    0.9882       119
+Miscellaneous Trash      0.9130    0.8514    0.8811    0.9906        74
+Paper                    0.9444    0.9067    0.9252    0.9937        75
+Plastic                  0.9225    0.9493    0.9357    0.9809       138
+Textile Trash            0.8958    0.8958    0.8958    0.9925        48
+Vegetation               0.9559    0.9848    0.9701    0.9954        66
+
+accuracy                                               0.9341                 713
+macro avg                0.9349    0.9317    0.9328                 713
+weighted avg             0.9344    0.9341    0.9338                 713
+
+balanced accuracy : 0.9317
+Cohen's kappa     : 0.9246
+MCC               : 0.9247
+log loss          : 0.2600
+ECE (15 bins)     : 0.0395
+ROC-AUC (OvR)     : 0.9962
+top-3 accuracy    : 0.9916

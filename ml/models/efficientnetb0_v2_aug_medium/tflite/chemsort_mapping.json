@@ -1,0 +1,70 @@
+{
+  "model": {
+    "run_name": "efficientnetb0_v2_aug_medium",
+    "architecture": "EfficientNetB0"
+  },
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "layout": "NHWC",
+    "color_order": "RGB",
+    "dtype": "float32",
+    "pixel_range": [
+      0.0,
+      255.0
+    ],
+    "resize": "center_square_crop+area_average",
+    "note": "Do not divide by 255; preprocessing is embedded."
+  },
+  "model_output_9class": {
+    "classes_in_index_order": [
+      "Cardboard",
+      "Food Organics",
+      "Glass",
+      "Metal",
+      "Miscellaneous Trash",
+      "Paper",
+      "Plastic",
+      "Textile Trash",
+      "Vegetation"
+    ]
+  },
+  "app_output_6class": {
+    "classes_in_index_order": [
+      "Paper/Cardboard",
+      "Organic",
+      "Glass",
+      "Metal",
+      "Other",
+      "Plastic"
+    ],
+    "groups": {
+      "Paper/Cardboard": [
+        "Cardboard",
+        "Paper"
+      ],
+      "Organic": [
+        "Food Organics"
+      ],
+      "Glass": [
+        "Glass"
+      ],
+      "Metal": [
+        "Metal"
+      ],
+      "Other": [
+        "Miscellaneous Trash",
+        "Textile Trash",
+        "Vegetation"
+      ],
+      "Plastic": [
+        "Plastic"
+      ]
+    },
+    "rule": "Sum probabilities within each group, then take argmax."
+  }
+}

@@ -1,0 +1,23 @@
+MobileNetV3Large (Keras) - test - 6 app groups
+==============================================
+
+                  precision    recall  f1-score   specif.   support
+
+Paper/Cardboard      0.9353    0.9028    0.9187    0.9842       144
+Organic              0.8696    0.9677    0.9160    0.9862        62
+Glass                0.8095    0.8095    0.8095    0.9815        63
+Metal                0.8240    0.8729    0.8477    0.9630       118
+Other                0.8842    0.8936    0.8889    0.9581       188
+Plastic              0.8504    0.7826    0.8151    0.9670       138
+
+accuracy                                           0.8696                 713
+macro avg            0.8622    0.8715    0.8660                 713
+weighted avg         0.8701    0.8696    0.8692                 713
+
+balanced accuracy : 0.8715
+Cohen's kappa     : 0.8391
+MCC               : 0.8394
+log loss          : 0.3893
+ECE (15 bins)     : 0.0293
+ROC-AUC (OvR)     : 0.9832
+top-3 accuracy    : 0.9874

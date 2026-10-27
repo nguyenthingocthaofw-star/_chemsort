@@ -1,0 +1,48 @@
+# Python bytecode and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local configuration
+.venv/
+.venv-*/
+venv/
+.env
+
+# Editors and OS files
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.log
+
+# Dataset: keep manifests/version/split stats, ignore images and rebuildables
+data/raw/
+data/processed/
+data/build/
+data/content/
+data/augmented/
+data/.bundle_*/
+data/DOC_TRUOC.txt
+data/inventory.csv
+data/invalid_images.csv
+data/exact_duplicates.csv
+data/near_duplicate_candidates.csv
+data/*.rebuilt*
+
+# Models: keep labels/mapping/run config, ignore binaries and Ultralytics runs
+models/**/*.keras
+models/**/*.h5
+models/**/*.pt
+models/**/*.tflite
+models/**/*.onnx
+models/**/*.ckpt*
+models/**/checkpoint
+models/**/saved_model.pb
+models/**/variables/
+models/**/ultralytics/
+*.pt

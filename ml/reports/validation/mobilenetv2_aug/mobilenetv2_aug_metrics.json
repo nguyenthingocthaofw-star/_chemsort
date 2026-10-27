@@ -1,0 +1,26 @@
+{
+  "run_name": "mobilenetv2_aug",
+  "model": "MobileNetV2",
+  "stage": "frozen_backbone_baseline",
+  "augmentation": true,
+  "image_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "seed": 42,
+  "learning_rate": 0.001,
+  "epochs_requested": 15,
+  "epochs_completed": 15,
+  "best_epoch_by_val_loss": 13,
+  "best_val_loss": 0.6186788082122803,
+  "validation_9class": {
+    "accuracy": 0.7798036465638148,
+    "macro_f1": 0.7739981623100324
+  },
+  "validation_6class_probability_aggregation": {
+    "accuracy": 0.8316970546984572,
+    "macro_f1": 0.8241563558703828
+  },
+  "test_set_used": false
+}

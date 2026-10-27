@@ -1,0 +1,12 @@
+split,test,test_ext,test_ext,test_ext,train,train,train,train,val
+source,realwaste,drinking_waste,garbage_classification,trashnet,drinking_waste,garbage_classification,realwaste,trashnet,realwaste
+original_label,,,,,,,,,
+Cardboard,69,0,39,40,0,360,323,360,69
+Food Organics,62,0,40,0,0,360,288,0,61
+Glass,63,40,40,8,360,360,294,74,63
+Metal,118,40,35,28,360,322,553,269,119
+Miscellaneous Trash,75,0,40,14,0,360,346,123,74
+Paper,75,0,40,40,0,360,350,360,75
+Plastic,138,40,37,33,360,347,645,296,138
+Textile Trash,48,0,40,0,0,360,222,0,48
+Vegetation,65,0,0,0,0,0,305,0,66

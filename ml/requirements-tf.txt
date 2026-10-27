@@ -1,0 +1,6 @@
+# Keras candidates: MobileNetV2/V3, EfficientNetB0/V2B0, EfficientNet-Lite0.
+-r requirements.txt
+certifi>=2024.2.2
+tensorflow==2.21.*
+tensorflow-hub==0.16.1
+tf-keras~=2.21.0

@@ -1,0 +1,23 @@
+MobileNetV2 TFLite float16 - test - 6 app groups
+================================================
+
+                  precision    recall  f1-score   specif.   support
+
+Paper/Cardboard      0.9667    0.8056    0.8788    0.9930       144
+Organic              0.9000    0.7258    0.8036    0.9923        62
+Glass                0.8182    0.7143    0.7627    0.9846        63
+Metal                0.8362    0.8220    0.8291    0.9681       118
+Other                0.8256    0.8564    0.8407    0.9352       188
+Plastic              0.6780    0.8696    0.7619    0.9009       138
+
+accuracy                                           0.8191                 713
+macro avg            0.8374    0.7989    0.8128                 713
+weighted avg         0.8331    0.8191    0.8211                 713
+
+balanced accuracy : 0.7989
+Cohen's kappa     : 0.7755
+MCC               : 0.7778
+log loss          : 0.5031
+ECE (15 bins)     : 0.0535
+ROC-AUC (OvR)     : 0.9754
+top-3 accuracy    : 0.9818

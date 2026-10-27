@@ -1,0 +1,23 @@
+app_yolo11n-cls_v2 - val - 6 app groups
+=======================================
+
+                  precision    recall  f1-score   specif.   support
+
+Paper/Cardboard      0.9459    0.9722    0.9589    0.9859       144
+Organic              0.9828    0.9344    0.9580    0.9985        61
+Glass                0.9516    0.9365    0.9440    0.9954        63
+Metal                0.9412    0.9412    0.9412    0.9882       119
+Other                0.9620    0.9415    0.9516    0.9867       188
+Plastic              0.9225    0.9493    0.9357    0.9809       138
+
+accuracy                                           0.9481                 713
+macro avg            0.9510    0.9458    0.9482                 713
+weighted avg         0.9485    0.9481    0.9481                 713
+
+balanced accuracy : 0.9458
+Cohen's kappa     : 0.9359
+MCC               : 0.9359
+log loss          : 0.1774
+ECE (15 bins)     : 0.0303
+ROC-AUC (OvR)     : 0.9974
+top-3 accuracy    : 0.9972

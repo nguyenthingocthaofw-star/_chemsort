@@ -1,0 +1,5 @@
+source,Cardboard,Food Organics,Glass,Metal,Miscellaneous Trash,Paper,Plastic,Textile Trash,Vegetation
+drinking_waste,0,0,400,400,0,0,400,0,0
+garbage_classification,399,400,400,357,400,400,384,400,0
+realwaste,461,411,420,790,495,500,921,318,436
+trashnet,400,0,82,297,137,400,329,0,0

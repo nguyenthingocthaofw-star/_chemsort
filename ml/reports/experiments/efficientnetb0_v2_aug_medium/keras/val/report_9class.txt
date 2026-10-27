@@ -1,0 +1,26 @@
+EfficientNetB0 (efficientnetb0_v2_aug_medium) - val - 9 RealWaste classes
+=========================================================================
+
+                      precision    recall  f1-score   specif.   support
+
+Cardboard                0.7848    0.8986    0.8378    0.9736        69
+Food Organics            0.8254    0.8525    0.8387    0.9831        61
+Glass                    0.8947    0.8095    0.8500    0.9908        63
+Metal                    0.8250    0.8319    0.8285    0.9646       119
+Miscellaneous Trash      0.8776    0.5811    0.6992    0.9906        74
+Paper                    0.9242    0.8133    0.8652    0.9922        75
+Plastic                  0.7917    0.8261    0.8085    0.9478       138
+Textile Trash            0.7414    0.8958    0.8113    0.9774        48
+Vegetation               0.8571    1.0000    0.9231    0.9830        66
+
+accuracy                                               0.8289                 713
+macro avg                0.8358    0.8343    0.8291                 713
+weighted avg             0.8341    0.8289    0.8263                 713
+
+balanced accuracy : 0.8343
+Cohen's kappa     : 0.8045
+MCC               : 0.8055
+log loss          : 0.4970
+ECE (15 bins)     : 0.0529
+ROC-AUC (OvR)     : 0.9843
+top-3 accuracy    : 0.9705

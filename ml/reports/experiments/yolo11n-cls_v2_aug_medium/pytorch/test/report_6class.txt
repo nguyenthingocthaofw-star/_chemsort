@@ -1,0 +1,23 @@
+YOLO11n-cls (PyTorch) - test - 6 app groups
+===========================================
+
+                  precision    recall  f1-score   specif.   support
+
+Paper/Cardboard      0.9527    0.9792    0.9658    0.9877       144
+Organic              0.9322    0.8871    0.9091    0.9939        62
+Glass                0.9091    0.9524    0.9302    0.9908        63
+Metal                0.9167    0.9322    0.9244    0.9832       118
+Other                0.9409    0.9309    0.9358    0.9790       188
+Plastic              0.9030    0.8768    0.8897    0.9774       138
+
+accuracy                                           0.9285                 713
+macro avg            0.9258    0.9264    0.9258                 713
+weighted avg         0.9284    0.9285    0.9282                 713
+
+balanced accuracy : 0.9264
+Cohen's kappa     : 0.9117
+MCC               : 0.9117
+log loss          : 0.3074
+ECE (15 bins)     : 0.0413
+ROC-AUC (OvR)     : 0.9930
+top-3 accuracy    : 0.9888

@@ -1,0 +1,128 @@
+{
+  "run_name": "yolo11n-cls_v2_aug_medium",
+  "backend": "yolo",
+  "model": "yolo11n-cls",
+  "architecture": {
+    "display_name": "YOLO11n-cls",
+    "family": "Ultralytics YOLO"
+  },
+  "dataset": "v2_aug_medium",
+  "manifest": "C:\\Users\\wande\\_chemsort\\ml\\data\\augmented\\v2_medium\\manifest_v2_aug_medium.csv",
+  "dataset_dir": "C:\\Users\\wande\\_chemsort\\ml\\data\\build\\yolo_v2_aug_medium",
+  "dataset_tree": {
+    "manifest": "C:\\Users\\wande\\_chemsort\\ml\\data\\augmented\\v2_medium\\manifest_v2_aug_medium.csv",
+    "manifest_digest": "d8d05ce6a69fa1e765c19d551be1b82eee30e1f2a08a9d2518b6cca177568ecc",
+    "splits": [
+      "train",
+      "val",
+      "test",
+      "test_ext"
+    ],
+    "counts": {
+      "train": {
+        "Cardboard": 1648,
+        "Food Organics": 1648,
+        "Glass": 1648,
+        "Metal": 1648,
+        "Miscellaneous Trash": 1648,
+        "Paper": 1648,
+        "Plastic": 1648,
+        "Textile Trash": 1648,
+        "Vegetation": 1648
+      },
+      "val": {
+        "Cardboard": 69,
+        "Food Organics": 61,
+        "Glass": 63,
+        "Metal": 119,
+        "Miscellaneous Trash": 74,
+        "Paper": 75,
+        "Plastic": 138,
+        "Textile Trash": 48,
+        "Vegetation": 66
+      },
+      "test": {
+        "Cardboard": 69,
+        "Food Organics": 62,
+        "Glass": 63,
+        "Metal": 118,
+        "Miscellaneous Trash": 75,
+        "Paper": 75,
+        "Plastic": 138,
+        "Textile Trash": 48,
+        "Vegetation": 65
+      },
+      "test_ext": {
+        "Cardboard": 79,
+        "Food Organics": 40,
+        "Glass": 88,
+        "Metal": 103,
+        "Miscellaneous Trash": 54,
+        "Paper": 80,
+        "Plastic": 110,
+        "Textile Trash": 40,
+        "Vegetation": 0
+      }
+    },
+    "placement": {
+      "hardlink": 16852
+    },
+    "class_order": [
+      "Cardboard",
+      "Food Organics",
+      "Glass",
+      "Metal",
+      "Miscellaneous Trash",
+      "Paper",
+      "Plastic",
+      "Textile Trash",
+      "Vegetation"
+    ]
+  },
+  "input_spec": {
+    "layout": "NCHW",
+    "pixel_max": 1.0,
+    "framing": "center_square_crop+area_average",
+    "size": 224
+  },
+  "class_names": [
+    "Cardboard",
+    "Food Organics",
+    "Glass",
+    "Metal",
+    "Miscellaneous Trash",
+    "Paper",
+    "Plastic",
+    "Textile Trash",
+    "Vegetation"
+  ],
+  "hyperparameters": {
+    "epochs": 60,
+    "imgsz": 224,
+    "batch": 64,
+    "patience": 15,
+    "optimizer": "auto",
+    "seed": 42,
+    "deterministic": true,
+    "pretrained": true,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "erasing": 0.4,
+    "auto_augment": "randaugment",
+    "workers": 2,
+    "fraction": 1.0,
+    "plots": true,
+    "device": "0"
+  },
+  "augment_preset": "medium",
+  "epochs_completed": 58,
+  "best_epoch": 43,
+  "total_parameters": 1542633,
+  "weights": "C:\\Users\\wande\\_chemsort\\ml\\models\\yolo11n-cls_v2_aug_medium\\best.pt",
+  "trained_at_utc": "2026-10-26T15:09:03.508943+00:00",
+  "command": "C:\\Users\\wande\\_chemsort\\ml\\pipelines\\train_yolo.py --manifest data/augmented/v2_medium/manifest_v2_aug_medium.csv --device 0 --workers 2 --overwrite",
+  "test_set_used": false
+}
