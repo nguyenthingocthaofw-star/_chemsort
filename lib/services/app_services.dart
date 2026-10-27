@@ -6,8 +6,6 @@ import 'fact_service.dart';
 import 'mapping_service.dart';
 import 'yolo_classifier.dart';
 
-/// Loads every bundled asset once at startup and exposes the services to
-/// the widget tree.
 class AppServices extends InheritedWidget {
   const AppServices({
     super.key,

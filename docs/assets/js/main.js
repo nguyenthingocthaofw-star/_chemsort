@@ -258,3 +258,107 @@
   });
 
 })();
+
+  // ───────────────────────────────────────────────────────────
+  // Initialize Swiper for Documents Section
+  // ───────────────────────────────────────────────────────────
+  function initSwiper() {
+    const swiperEl = document.querySelector('.documents-swiper');
+    
+    if (swiperEl && typeof Swiper !== 'undefined') {
+      new Swiper('.documents-swiper', {
+        // Swiper parameters
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: false,
+        
+        // Responsive breakpoints
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          }
+        },
+        
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        
+        // Pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+        
+        // Keyboard control
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
+        
+        // Accessibility
+        a11y: {
+          prevSlideMessage: 'Slide trước',
+          nextSlideMessage: 'Slide sau',
+          paginationBulletMessage: 'Đi tới slide {{index}}'
+        },
+        
+        // Effects
+        effect: 'slide',
+        speed: 600,
+        
+        // Auto height
+        autoHeight: false,
+        
+        // Grab cursor
+        grabCursor: true,
+        
+        // Events
+        on: {
+          init: function() {
+            console.log('✅ Swiper initialized');
+          },
+          slideChange: function() {
+            // Optional: Track slide changes
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'swiper_slide_change', {
+                slide_index: this.activeIndex
+              });
+            }
+          }
+        }
+      });
+    }
+  }
+  
+  // Initialize Swiper when DOM is ready and Swiper library is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      // Wait for Swiper library to load
+      const checkSwiper = setInterval(function() {
+        if (typeof Swiper !== 'undefined') {
+          clearInterval(checkSwiper);
+          initSwiper();
+        }
+      }, 100);
+    });
+  } else {
+    // DOM already loaded
+    const checkSwiper = setInterval(function() {
+      if (typeof Swiper !== 'undefined') {
+        clearInterval(checkSwiper);
+        initSwiper();
+      }
+    }, 100);
+  }

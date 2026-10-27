@@ -4,8 +4,6 @@ import 'dart:math';
 import '../models/flashcard.dart';
 import '../models/waste_material.dart';
 
-/// Picks verified flashcards from the local library. Facts are never
-/// generated at runtime.
 class FactService {
   FactService(Iterable<Flashcard> cards, {Random? random})
       : _cards = cards.where((card) => card.isReviewed).toList(growable: false),
@@ -25,12 +23,11 @@ class FactService {
   final Map<(String, int?), FactDeck> _decks = {};
 
   /// The single fact shown for one scan.
-  Flashcard nextFact(WasteMaterial material, {int? plasticCode}) => _decks
-      .putIfAbsent(
+  Flashcard nextFact(WasteMaterial material, {int? plasticCode}) =>
+      _decks.putIfAbsent(
         (material.key, plasticCode),
         () => deck(material, plasticCode: plasticCode),
-      )
-      .next();
+      ).next();
 
   /// Pool for a material; for plastic, [plasticCode] 1–7 selects the resin
   /// pool and null selects the general plastic facts.

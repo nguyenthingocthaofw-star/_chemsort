@@ -9,6 +9,8 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/chemsort-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="assets/js/main.js"></script>
   
   <!-- Open Graph Meta Tags -->
@@ -119,17 +121,26 @@
           </div>
           <p class="section-intro">Chọn hướng dẫn phù hợp để bắt đầu dùng ChemSort hoặc cài đặt dự án trên thiết bị của bạn.</p>
         </div>
-        <div class="document-grid">
-          <a class="document-card user-card" href="hdsd.html">
-            <div class="card-topline"><span class="card-number">01</span><span class="card-arrow" aria-hidden="true">↗</span></div>
-            <div class="card-icon user-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="10" y="5" width="28" height="38" rx="7" stroke="currentColor" stroke-width="2.5"/><path d="M19 10h10M20 37h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="m18 25 4 4 9-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="card-content"><span class="card-kicker">DÀNH CHO NGƯỜI DÙNG</span><h3>Hướng dẫn sử dụng</h3><p>Tìm hiểu cách quét vật thể, đọc kết quả phân loại, chọn mã nhựa và khám phá flashcard Hóa học.</p><span class="card-link">Mở hướng dẫn <span aria-hidden="true">→</span></span></div>
-          </a>
-          <a class="document-card install-card" href="hdcd.html">
-            <div class="card-topline"><span class="card-number">02</span><span class="card-arrow" aria-hidden="true">↗</span></div>
-            <div class="card-icon install-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6v23m0 0 9-9m-9 9-9-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 30v7a5 5 0 0 0 5 5h18a5 5 0 0 0 5-5v-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
-            <div class="card-content"><span class="card-kicker">DÀNH CHO NGƯỜI CÀI ĐẶT</span><h3>Hướng dẫn cài đặt</h3><p>Chuẩn bị môi trường, lấy mã nguồn và chạy ChemSort trên Android hoặc iOS.</p><span class="card-link">Mở hướng dẫn <span aria-hidden="true">→</span></span></div>
-          </a>
+        <div class="swiper documents-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="document-card user-card" href="hdsd.html">
+                <div class="card-topline"><span class="card-number">01</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                <div class="card-icon user-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="10" y="5" width="28" height="38" rx="7" stroke="currentColor" stroke-width="2.5"/><path d="M19 10h10M20 37h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="m18 25 4 4 9-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div class="card-content"><span class="card-kicker">DÀNH CHO NGƯỜI DÙNG</span><h3>Hướng dẫn sử dụng</h3><p>Tìm hiểu cách quét vật thể, đọc kết quả phân loại, chọn mã nhựa và khám phá flashcard Hóa học.</p><span class="card-link">Mở hướng dẫn <span aria-hidden="true">→</span></span></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="document-card install-card" href="hdcd.html">
+                <div class="card-topline"><span class="card-number">02</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                <div class="card-icon install-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6v23m0 0 9-9m-9 9-9-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 30v7a5 5 0 0 0 5 5h18a5 5 0 0 0 5-5v-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+                <div class="card-content"><span class="card-kicker">DÀNH CHO NGƯỜI CÀI ĐẶT</span><h3>Hướng dẫn cài đặt</h3><p>Chuẩn bị môi trường, lấy mã nguồn và chạy ChemSort trên Android hoặc iOS.</p><span class="card-link">Mở hướng dẫn <span aria-hidden="true">→</span></span></div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
